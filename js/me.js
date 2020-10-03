@@ -6,9 +6,9 @@
 var mediaList = {
 	code: [
 		{
-			id:'d3-table-cards', 
-			title: 'D3 Table/Cards',
-			url:'http://evoluteur.github.io/d3-table-cards'
+			id:'isomorphic-table-cards', 
+			title: 'Isomorphic Table/Cards',
+			url:'http://evoluteur.github.io/isomorphic-table-cards'
 		},
 		{
 			id:'many-bubbles', 
