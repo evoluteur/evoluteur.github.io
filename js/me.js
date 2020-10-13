@@ -84,7 +84,7 @@ var mediaList = {
 		{
 			id: "orbital1",
 			title: "Orbital",
-			url: "http://www.bedetheque.com/serie-13342-BD-Orbital.html"
+			url: "https://www.bdgest.com/preview-2765-BD-orbital-contacts.html"
 		},
 		{
 			id: "niourk1",
@@ -537,22 +537,10 @@ function linkMore(id, preview){
 function setMosaic(id){
 	e(id+'2').innerHTML = mosaic(id);
 }
-function setMosaicNoLinks(id){
-	var ext=id==='code'?'.gif':'.jpg',
-		arrList=mediaList[id].slice(0, 4),
-		holder=e(id+'2'),
-		dir='pix/'+id+'/';
-
-	arrList.forEach(function(i){
-		var p=document.createElement("IMG");
-		p.src=dir+i.id+ext;
-		holder.appendChild(p);
-	});
-}
 function setupPage(){
 	var pixAreas = ['code','comics','recipes','movies','fractals','art','chakras']
 	if(!isMobile){
 		pixAreas.push('comics_us', 'comics_euro_us')
 	}
-	pixAreas.forEach(isMobile?setMosaicNoLinks:setMosaic);
+	pixAreas.forEach(setMosaic);
 }
