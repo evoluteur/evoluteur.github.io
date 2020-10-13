@@ -3,11 +3,6 @@
  	(c) 2020 Olivier Giulieri 
  */
 
-html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
 @font-face{
   font-family:'Raleway-Regular';
   src:url('Raleway-Regular.ttf');
@@ -17,6 +12,11 @@ html {
   src:url('Raleway-Bold.ttf');
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
   margin: 0;
@@ -151,7 +151,7 @@ img.pixShadow,
 }
 .avatar{
   font-family: 'Raleway-Regular', "Century Gothic", arial;
-  width: 310px;
+  width: 320px;
   padding: 5px;
   margin: auto;
 }
@@ -169,7 +169,7 @@ img.pixShadow,
 
 .pixTitleHolder{
   position: relative;
-  float: left;
+  display: inline-block;
 }
 .pixTitleHolder > a{
   background-color: transparent !important;
@@ -424,8 +424,7 @@ section.c0{
 
 .iceCreamCard > div{
   float:left;
-  margin: 10px 10px 0 0;
-  float: left;
+  margin: 10px;
   width: 250px;
   height: 200px;
 }
@@ -582,7 +581,6 @@ section.c0{
   width: 120px;
   background-color: #ffb74d;
   line-height: 40px;
-  font-size: 24px;
   margin-left: 5vw;
 } 
 .cards > div {
@@ -590,79 +588,24 @@ section.c0{
   margin: 10px 20px 0 0;
 }
 
-@media only screen and (max-width: 480px) {
-  section{ 
-    padding: 0 0 10px 45px;
-    margin: 20px 20px 20px 5px;
-  }
-  .c7-dots{
-    display: none;
-  }
-  .avatar-holder{
-    width: 100%;
-  }
-  .avatar{
-    padding: 0;
-    margin: 0;
-  }
-  .pixShadow,
-  .pixGroup img{
-    margin: 4px;
-  }
+@media only screen and (max-width: 1100px){ 
+    .japancircle {
+      top: 120px;
+      width: 160px;
+      height: 160px;
+    }
 }
-@media only screen and (max-width: 600px){ 
-  .japancircle {
-    display: none;
+
+@media only screen and (max-width: 1000px){ 
+    .japancircle {
+      top: 140px;
+      width: 100px;
+      height: 100px;
+    }
+    .dear{
+      display: none;
+    }
   }
-  .jcircle {
-    display: none;
-  }
-}
-@media only screen and (max-width: 750px){ 
-  table{
-    margin: 10px 2px 10px 2px;
-  }
-  .hello,
-  .dear {
-    display: none !important;
-  }
-  .avatar-holder{
-    float: none;
-  }
-  .helloworld{
-    padding: 2vw 0 2vw 12px;
-    margin: 0;
-  }
-  table {
-    margin-left: 5px;
-  }
-  td:first-child,
-  section {
-    border-left-width: 6px;
-    padding-left: 0;
-  }
-  .pad {
-    position: relative;
-    padding: 0 10px 10px !important;
-    border-left-width: 6px;
-  }
-  .me{
-    float: left;
-    border-radius: 20px;
-    width: auto;
-    height: auto;
-    padding: 20px;
-    margin: 0 0 0 30px;
-  }
-  .me > div {
-    margin: 10px;
-  }
-  .sTitle{
-    font-size: 1.2em;
-    left: -140px;
-    padding-left : 20px;
-  }
-}
 @media only screen and (max-width: 850px){ 
   .japancircle {
     top: 170px;
@@ -688,21 +631,86 @@ section.c0{
     margin-left: 0 !important;
   }
 }
-@media only screen and (max-width: 1000px){ 
-  .japancircle {
-    top: 140px;
-    width: 100px;
-    height: 100px;
+
+@media only screen and (max-width: 750px){ 
+    body{
+        font-size: 15pt;
+    }
+    .c7-dots{
+      display: none;
+    }
+    table{
+      margin: 10px 2px 10px 2px;
+    }
+    .hello,
+    .dear {
+      display: none !important;
+    }
+    .avatar-holder{
+      float: none;
+    }
+    .helloworld{
+      padding: 2vw 0 2vw 12px;
+      margin: 0;
+    }
+    table {
+      margin-left: 5px;
+    }
+    td:first-child,
+    section {
+      border-left-width: 6px;
+      padding-left: 0;
+    }
+    .pad {
+      position: relative;
+      padding: 0 10px 10px !important;
+      border-left-width: 6px;
+    }
+    .me{
+      float: left;
+      border-radius: 20px;
+      width: auto;
+      height: auto;
+      padding: 20px;
+      margin: 0 0 0 30px;
+    }
+    .me > div {
+      margin: 10px;
+    }
+    .sTitle{
+      font-size: 1.2em;
+      left: -140px;
+      padding-left : 0;
+    }
   }
-  .dear{
-    display: none;
+  
+  @media only screen and (max-width: 600px){ 
+    .japancircle {
+      display: none;
+    }
+    .jcircle {
+      display: none;
+    }
   }
-}
-@media only screen and (max-width: 1100px){ 
-  .japancircle {
-    top: 120px;
-    width: 160px;
-    height: 160px;
+@media only screen and (max-width: 480px) {
+    body{
+        font-size: 14pt;
+        overflow-x: hidden;
+    }
+  section{ 
+    padding: 0 0 10px 0;
+    margin: 20px 0 20px 5px;
+  }
+  .avatar-holder{
+    width: 100%;
+  }
+  .avatar{
+    padding: 0;
+    margin: 0;
+  }
+  .pixShadow,
+  .pixGroup img{
+    margin: 4px;
   }
 }
 

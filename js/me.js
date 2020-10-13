@@ -21,16 +21,6 @@ var mediaList = {
 			url:'https://evoluteur.github.io/motivational-numerology/',
 		},
 		{
-			id:'chord', 
-			title: 'Chord diagram',
-			url:'http://www.chakradesign.com/gemstones-d3-chord.html',
-		},
-		{
-			id:'structured-filter', 
-			title: 'Structured filter',
-			url:'http://evoluteur.github.io/structured-filter/',
-		},
-		{
 			id:'d3-dual-range-slider', 
 			title: 'D3 dual range slider',
 			url:'http://evoluteur.github.io/d3-dual-range-slider/',
@@ -39,12 +29,22 @@ var mediaList = {
 			id:'madeleine-data-science', 
 			title: 'Madeleine data science',
 			url:'http://evoluteur.github.io/madeleinology/ingredients-top4.html',
-		},/*
+		},
 		{
 			id:'colorpicker', 
 			title: 'Color picker widget',
 			url:'http://evoluteur.github.io/colorpicker/',
-		},*/
+		},
+		{
+			id:'structured-filter', 
+			title: 'Structured filter',
+			url:'http://evoluteur.github.io/structured-filter/',
+		},
+		{
+			id:'chord', 
+			title: 'Chord diagram',
+			url:'http://www.chakradesign.com/gemstones-d3-chord.html',
+		},
 	],
 	recipes: [
 		{
@@ -538,9 +538,6 @@ function setMosaic(id){
 	e(id+'2').innerHTML = mosaic(id);
 }
 function setupPage(){
-	var pixAreas = ['code','comics','recipes','movies','fractals','art','chakras']
-	if(!isMobile){
-		pixAreas.push('comics_us', 'comics_euro_us')
-	}
+	var pixAreas = ['code','comics','comics_us', 'comics_euro_us', 'recipes','movies','fractals','art','chakras']
 	pixAreas.forEach(setMosaic);
 }
