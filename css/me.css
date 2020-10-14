@@ -18,7 +18,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   color: #1a1a1a;
@@ -68,9 +67,6 @@ p.clearer{
 }
 td {
   vertical-align: top;
-}
-.pixGroup{
-    overflow-x: hidden;
 }
 img.pixShadow,
 .pixShadow > img,
@@ -697,6 +693,9 @@ section.c0{
 @media only screen and (max-width: 480px) {
     body{
         font-size: 14pt;
+    }
+    .pixGroup{
+        overflow-x: hidden;
     }
   section{ 
     padding: 0 0 10px 0;
