@@ -69,6 +69,9 @@ p.clearer{
 td {
   vertical-align: top;
 }
+.pixGroup{
+    overflow-x: hidden;
+}
 img.pixShadow,
 .pixShadow > img,
 .pixGroup img{
@@ -619,7 +622,7 @@ section.c0{
   #egg { 
     margin: 20px 0 10px 0;
     width: auto;
-    padding: 0 30px;
+    padding: 0;
   }
   #you{
     width: cacl(100% - 100px);
@@ -672,7 +675,6 @@ section.c0{
       width: auto;
       height: auto;
       padding: 20px;
-      margin: 0 0 0 30px;
     }
     .me > div {
       margin: 10px;
@@ -683,19 +685,18 @@ section.c0{
       padding-left : 0;
     }
   }
-  
-  @media only screen and (max-width: 600px){ 
+
+@media only screen and (max-width: 600px){ 
     .japancircle {
-      display: none;
+        display: none;
     }
     .jcircle {
-      display: none;
+        display: none;
     }
-  }
+}
 @media only screen and (max-width: 480px) {
     body{
         font-size: 14pt;
-        overflow-x: hidden;
     }
   section{ 
     padding: 0 0 10px 0;
