@@ -541,3 +541,10 @@ function setupPage(){
 	var pixAreas = ['code','comics','comics_us', 'comics_euro_us', 'recipes','movies','fractals','art','chakras']
 	pixAreas.forEach(setMosaic);
 }
+
+let cTheme = ''
+function toggleTheme(){ 
+    const t = (cTheme==='-japan'?'':'-japan')
+    document.getElementById('thememe').href='css/me'+t+'.css'
+    cTheme = t
+}
