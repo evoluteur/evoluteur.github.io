@@ -108,18 +108,18 @@ img.pixShadow,
   margin: 0 20px;
 }
 
-.sociallinks img:hover {
-  opacity: 1;
-  filter: grayscale(0%);
-} 
 .sociallinks img {
+  opacity: .6;
   margin: 7px 7px 0;
   height: 32px;
   width: 32px;
-  opacity: .4;
   filter: grayscale(100%);
-  transition: opacity .2s;
+  transition: opacity .5s;
 }
+.sociallinks img:hover {
+  opacity: 1;
+  filter: none;
+} 
 .sociallinks a {
   border: 0;
 }
@@ -646,7 +646,11 @@ section.c0{
     }
   }
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 640px){ 
+    .sociallinks img{
+        opacity:.9;
+        filter:none;
+    }
     .japancircle {
         display: none;
     }

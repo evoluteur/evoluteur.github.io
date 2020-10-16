@@ -32,7 +32,7 @@ var mediaList = {
 		},
 		{
 			id:'colorpicker', 
-			title: 'Color picker widget',
+			title: 'Color-picker widget',
 			url:'http://evoluteur.github.io/colorpicker/',
 		},
 		{
@@ -376,6 +376,8 @@ var mediaList = {
 		{id:'mandelbrot-2', title:'Mandelbrot set', url:'https://en.wikipedia.org/wiki/Benoit_Mandelbrot#/media/File:Newton-lplane-Mandelbrot.jpg'},
 		{id:'mandelbrot_one_island', title:'Julia "island"', url:'https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Mandel_zoom_15_one_island.jpg'},
 		{id:'snowflake', title:'Snowflake', url:'http://gizmodo.com/this-physicists-designer-snowflakes-are-dazzling-1748893157'},
+		{id:'romanesco', title:'Romanesco Broccoli', url:'https://www.gardenbetty.com/romanesco-broccoli-a-fibonacci-fractal/'},
+		{id:'mountains', title:'Mountains', url:'https://www.wired.com/2010/09/fractal-patterns-in-nature/'},
 	],
  	art: [
  		{id:'monet', title:'Claude Monet', url:'https://www.google.com/search?tbm=isch&q=claude+monet+impressionism'},
