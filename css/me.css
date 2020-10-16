@@ -25,6 +25,7 @@ body {
   font-weight: 300;
     color: white;
     background-color: #0288d1;
+    overflow-x: hidden;
 }
 
 a, a:visited{
@@ -77,19 +78,6 @@ img.pixShadow,
   left: 2px;
   transition: top 0.6s, left 0.6s;
 }
-
-.gh-network{
-  border: solid 1px grey;
-  background-color: white;
-  margin-bottom: 50px;
-
-}
-.gh-network:hover{
-  top: 3px;
-  left: 2px;
-  transition: top 0.6s, left 0.6s;
-}
-
 
 .comicsPix img{
   height: 140px;
