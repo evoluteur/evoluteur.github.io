@@ -406,6 +406,10 @@ section.c0{
   color: white;
   background-color: #1a1a1a;
   padding: 8px 10px;
+  position: sticky;
+  top:0;
+  left:0;
+  z-index: 100;
 }
 .nav > a {
   color: #92cddc;
