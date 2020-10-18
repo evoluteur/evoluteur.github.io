@@ -558,6 +558,21 @@ section.c0{
 
 .br{
     max-height: 42px;
+    margin-bottom: 20px;
+}
+.brq{
+    max-height: 86px;
+    margin-bottom: 20px;
+}
+.br2{
+    position: relative;
+    top: 20px;
+    max-height: 42px;
+    margin-bottom: 10px;
+}
+.curious{
+    margin: 80px 0;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1100px){ 
@@ -608,6 +623,7 @@ section.c0{
     body{
         font-size: 15pt;
     }
+    .br,
     .c7-dots{
       display: none;
     }
