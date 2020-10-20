@@ -786,7 +786,7 @@ section.c0{
 .br{
     position: relative;
 	display: inline-block;
-	background: #0288d1 url('braille.gif');
+	background: #0288d1 url('braille-white.gif');
 	height: 54px;
     width: 38px;
     margin-bottom: 10px;
