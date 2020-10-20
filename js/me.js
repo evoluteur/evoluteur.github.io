@@ -401,6 +401,11 @@ var mediaList = {
 			//title: '7 Chakras Charm: Amethyst, Sodalite, Angelite, Amazonite, Amber, Carnelian, Red jasper',
 			url:'http://www.chakradesign.com'
 		},
+		{	
+			id:'sadhguru', 
+			title: 'Sadhguru',
+			url:'https://isha.sadhguru.org/'
+		},
 	],
 	movies: shuffle([
 		{id:'matrix', title:'Matrix', url:'https://www.imdb.com/title/tt0133093/'},
