@@ -1,0 +1,16 @@
+{
+  "name": "evoluteur.github.io",
+  "version": "2020.10.20",
+  "description": "Home Page of Olivier Giulieri",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evoluteur/evoluteur.github.io.git"
+  },
+  "copyright": "(c) 2020 Olivier Giulieri",
+  "author": "Olivier Giulieri (https://evoluteur.github.io/)",
+  "license": "AGPL-3.0",
+  "keywords": [
+    "homepage",
+    "personal-site"
+  ]
+}

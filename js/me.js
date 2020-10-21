@@ -458,9 +458,8 @@ var pixMe=['og-handlebar','og-2019','og-2017','og-neige','og-2018','og-closeup',
 var pixMeIdx=0;
 var isMobile = typeof window.orientation !== 'undefined';
 
-function e(id){
-	return document.getElementById(id);
-}
+const e = id => document.getElementById(id);
+
 function shuffle(arr){
 	var ln = arr.length,
 		rnd = Math.floor(Math.random() * (ln));
@@ -511,7 +510,7 @@ function mosaic(id, more){
 			var h = '<div class="pixTitleHolder">';
 			if(m.url){
 				h+= '<a href="'+m.url+'"'+
-						(id!='recipes' ? ' target="_blank"':'')+
+						(id!='recipes' ? ' target="_blank" rel="noopener"':'')+
 						(m.css?(' class="'+m.css+'"'):'')+
 					'>'+pix+'</a>';
 			}else{
@@ -537,9 +536,9 @@ function mosaic(id, more){
 	mm.push('<div class="clearer"></div>');
 	return mm.join('');
 }
-function linkMore(id, preview){
-	return '<span id="'+id+'_x" class="block"><a class="linkMore" href="javascript:more(\''+id+'\','+preview+')"> + '+linkCaptions[id]+'&nbsp;</a><br><br></span>';
-}
+const linkMore = (id, preview) => '<span id="'+id+'_x" class="block">'+
+    '<a class="linkMore" href="javascript:more(\''+id+'\','+preview+')"> + '+
+    linkCaptions[id]+'&nbsp;</a><br><br></span>';
 
 function setMosaic(id){
 	e(id+'2').innerHTML = mosaic(id);
@@ -554,7 +553,7 @@ const sectionTitles = {
     art: 'Namaste',
 }
 function setupPage(){
-    var pixAreas = ['code','comics','comics_us', 'comics_euro_us', 'recipes','movies','fractals','art','chakras']
+    const pixAreas = ['code','comics','comics_us','comics_euro_us','recipes','movies','fractals','art','chakras']
     const fn = isMobile ? 
         setMosaic
         : id => {
