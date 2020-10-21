@@ -451,7 +451,8 @@ var mediaList = {
 		{id:'jupiter', title:'Jupiter Ascending', url:'https://www.imdb.com/title/tt1617661/'},
 		{id:'avalon', title:'Avalon', url:'https://www.imdb.com/title/tt0267287/'},
 		{id:'rp1', title:'Ready Player One', url:'https://www.imdb.com/title/tt1677720/'},
-		{id:'existenz', title:'Existenz', url:'https://www.imdb.com/title/tt0120907/'},
+        {id:'existenz', title:'Existenz', url:'https://www.imdb.com/title/tt0120907/'},
+        {id:'mandolorian', title:'The Mandalorian', url:'https://www.imdb.com/title/tt8111088/'},
 	])
 }
 var pixMe=['og-handlebar','og-2019','og-2017','og-neige','og-2018','og-closeup','og-infant',];
