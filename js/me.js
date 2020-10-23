@@ -453,7 +453,56 @@ var mediaList = {
 		{id:'rp1', title:'Ready Player One', url:'https://www.imdb.com/title/tt1677720/'},
         {id:'existenz', title:'Existenz', url:'https://www.imdb.com/title/tt0120907/'},
         {id:'mandolorian', title:'The Mandalorian', url:'https://www.imdb.com/title/tt8111088/'},
-	])
+    ]),
+    movies_fr: [
+		{
+			id:'fr-amelie', 
+			title: 'Amelie',
+			title_us: '',
+			url:'http://www.imdb.com/title/tt0211915/' 
+		},
+		{
+			id:'fr-ridicule', 
+			title: 'Ridicule',
+			url:'http://www.imdb.com/title/tt0117477/'
+		},
+		{
+			id:'fr-verte', 
+			title: 'La belle verte',
+			title_us: '',
+			url:'http://www.imdb.com/title/tt0115650' 
+		},
+		{
+			id:'fr-gazon', 
+			title: 'Gazon maudit',
+			title_us: 'French Twist',
+			url:'https://www.imdb.com/title/tt0113149/?ref_=nv_sr_srsg_0' 
+		},
+		{
+			id:'fr-dinner', 
+			title: 'Le dîner de cons',
+			title_us: 'The Dinner Game',
+			url:'http://www.imdb.com/title/tt0119038/'
+		},
+		{
+			id:'fr-intouchable', 
+			title: 'Intouchables',
+			title_us: 'The Intouchables',
+			url:'http://www.imdb.com/title/tt1675434/' 
+		},
+		{
+			id:'fr-fleuve', 
+			title: 'La vie est un long fleuve tranquille',
+			title_us: 'Life Is a Long Quiet River',
+			url:'http://www.imdb.com/title/tt0096386' 
+		},
+		{
+			id:'fr-feu', 
+			title: 'La guerre du feu',
+			title_us: 'Quest for Fire',
+			url:'http://www.imdb.com/title/tt0082484' 
+		},
+	],
 }
 var pixMe=['og-handlebar','og-2019','og-2017','og-neige','og-2018','og-closeup','og-infant',];
 var pixMeIdx=0;
@@ -471,6 +520,9 @@ function more(id, min){
 	var elem=e(id+'_x');
 	elem.className='';
 	elem.innerHTML=mosaic(id, true)
+}
+function frenchMovies(){
+	e('movies_french').innerHTML=mosaic('movies_fr')
 }
 
 function switchPix(elem){
@@ -555,6 +607,7 @@ const sectionTitles = {
 }
 function setupPage(){
     const pixAreas = ['code','comics','comics_us','comics_euro_us','recipes','movies','fractals','art','chakras']
+    // 'movies_fr' for frenchMovies
     const fn = isMobile ? 
         setMosaic
         : id => {
