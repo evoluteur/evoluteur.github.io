@@ -27,7 +27,7 @@ var mediaList = {
 		},
 		{
 			id:'madeleine-data-science', 
-			title: 'Madeleine data science',
+			title: 'Madeleinology',
 			url:'http://evoluteur.github.io/madeleinology/ingredients-top4.html',
 		},
 		{
@@ -377,7 +377,7 @@ var mediaList = {
 		{id:'mandelbrot_one_island', title:'Julia "island"', url:'https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Mandel_zoom_15_one_island.jpg'},
 		{id:'snowflake', title:'Snowflake', url:'http://gizmodo.com/this-physicists-designer-snowflakes-are-dazzling-1748893157'},
 		{id:'romanesco', title:'Romanesco Broccoli', url:'https://www.gardenbetty.com/romanesco-broccoli-a-fibonacci-fractal/'},
-		{id:'mountains', title:'Mountains', url:'https://www.wired.com/2010/09/fractal-patterns-in-nature/'},
+		{id:'mountains', title:'Mountain tops', url:'https://www.wired.com/2010/09/fractal-patterns-in-nature/'},
 	],
  	art: [
  		{id:'monet', title:'Claude Monet', url:'https://www.google.com/search?tbm=isch&q=claude+monet+impressionism'},
@@ -504,7 +504,7 @@ var mediaList = {
 		},
 	],
 }
-var pixMe=['og-handlebar','og-2019','og-2017','og-neige','og-2018','og-closeup','og-infant',];
+var pixMe=['og-2020','og-handlebar','og-2019','og-2017','og-neige','og-2018','og-closeup','og-infant'];
 var pixMeIdx=0;
 var isMobile = typeof window.orientation !== 'undefined';
 
