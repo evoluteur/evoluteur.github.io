@@ -676,7 +676,7 @@ p.clearer {
 
 /* https://www.w3schools.com/howto/howto_css_shake_image.asp */
 .shake:hover {
-    animation: shake 0.5s;
+    animation: shake .5s .2s;
     animation-iteration-count: infinite;
 }
 
@@ -696,7 +696,7 @@ p.clearer {
 
 /* https://css-tricks.com/making-css-animations-feel-natural/ */
 .bounce:hover {
-    animation: bounce .5s;
+    animation: bounce .5s .2s;
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 }
 @keyframes bounce {
