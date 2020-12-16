@@ -26,19 +26,19 @@ var mediaList = {
 			url:'http://evoluteur.github.io/d3-dual-range-slider/',
 		},
 		{
-			id:'madeleine-data-science', 
-			title: 'Madeleinology',
-			url:'http://evoluteur.github.io/madeleinology/ingredients-top4.html',
-		},
-		{
-			id:'colorpicker', 
-			title: 'Color-picker widget',
-			url:'http://evoluteur.github.io/colorpicker/',
-		},
-		{
 			id:'structured-filter', 
 			title: 'Structured filter',
 			url:'http://evoluteur.github.io/structured-filter/',
+		},
+		{
+			id:'colorpicker', 
+			title: 'Color-picker',
+			url:'http://evoluteur.github.io/colorpicker/',
+		},
+		{
+			id:'madeleine-data-science', 
+			title: 'Madeleinology',
+			url:'http://evoluteur.github.io/madeleinology/ingredients-top4.html',
 		},
 		{
 			id:'chord', 
@@ -402,9 +402,14 @@ var mediaList = {
 			url:'http://www.chakradesign.com'
 		},
 		{	
+			id:'sai-maa', 
+			title: 'Sai Maa',
+			url:'https://www.sai-maa.com'
+		},
+		{	
 			id:'sadhguru', 
 			title: 'Sadhguru',
-			url:'https://isha.sadhguru.org/'
+			url:'https://isha.sadhguru.org'
 		},
 	],
 	movies: shuffle([
