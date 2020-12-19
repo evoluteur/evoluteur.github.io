@@ -509,7 +509,7 @@ var mediaList = {
 		},
 	],
 }
-var pixMe=['og-2020','og-handlebar','og-2019','og-2017','og-neige','og-2018','og-closeup','og-infant'];
+var pixMe=['og-2020','og-2019','og-2018','og-2017','og-neige','og-closeup','og-infant'];
 var pixMeIdx=0;
 var isMobile = typeof window.orientation !== 'undefined';
 
