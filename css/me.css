@@ -363,6 +363,9 @@ p.clearer {
     background-color: transparent;
     color: grey;
 }
+#you a{
+  color:navy;
+}
 #you a:visited,
 #you a:hover {
     color: black;
@@ -461,7 +464,7 @@ p.clearer {
 }
 .me a {
     background-color: #7B1FA2;
-    color: white;
+    color: #ffd54f;
 }
 .me a:hover {
     background-color: #4A148C;
