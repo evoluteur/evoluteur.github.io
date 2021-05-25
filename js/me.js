@@ -74,12 +74,12 @@ var mediaList = {
 		{
 			id: "incal1",
 			title: "L'Incal",
-			url: "https://smile.amazon.com/Incal-Alejandro-Jodorowsky/dp/1594650934"
+			url: "https://amzn.to/2QQz5v6"
 		},
 		{
 			id: "lama1",
 			title: "Le Lama Blanc",
-			url: "https://smile.amazon.com/White-Lama-Alexandro-Jodorowsky/dp/1594650802"
+			url: "https://amzn.to/3vnlJW7"
 		},
 		{
 			id: "orbital1",
@@ -99,7 +99,7 @@ var mediaList = {
 		{
 			id: "quete1",
 			title: "La Quête de l'Oiseau du Temps",
-			url: "https://smile.amazon.com/Quest-Time-Bird-Serge-Tendre/dp/1782763627"
+			url: "https://amzn.to/3fiBdVW"
 		},
 		{
 			id: "monstre1",
@@ -179,7 +179,7 @@ var mediaList = {
 		{
 			id: "edena1",
 			title: "Edena",
-			url: "https://smile.amazon.com/Moebius-Library-World-Edena/dp/1506702163"
+			url: "https://amzn.to/3fiQUfH"
 		},
 		{
 			id: "okko1",
@@ -224,7 +224,7 @@ var mediaList = {
 		{
 			id: "skydoll1",
 			title: "Sky Doll",
-			url: "https://smile.amazon.com/Sky-Doll-Vol-Barbara-Canepa/dp/0785132368/"
+			url: "https://amzn.to/3ww3L42"
 		},
 		{
 			id: "vampire-benares1",
@@ -306,64 +306,64 @@ var mediaList = {
 		{
 			id: "saga1",
 			title: "Saga",
-			url: "https://smile.amazon.com/Saga-Book-One-Brian-Vaughan/dp/1632150786",
+			url: "https://amzn.to/3bUfGR4",
 		},
 		{
 			id: "androitsheep1",
 			title: "Do androids dream of electronic sheeps",
-			url: "https://smile.amazon.com/Androids-Dream-Electric-Sheep-Vol/dp/1608865002",
+			url: "https://amzn.to/3wuXZzx",
 		},
 		{
 			id: "ronin",
 			title: "Ronin",
-			url: "https://smile.amazon.com/Frank-Millers-Ronin-Miller/dp/0930289218",
+			url: "https://amzn.to/2SnjXWn",
 		},
 		{
 			id: "low",
 			title: "Low",
-			url: "https://smile.amazon.com/Low-Vol-1-Delirium-Hope/dp/1632151944",
+			url: "https://amzn.to/3vkbUZ6",
 		},
 		{
 			id: "descender",
 			title: "Descender",
-			url: "https://smile.amazon.com/Descender-Vol-1-Tin-Stars/dp/1632154269",
+			url: "https://amzn.to/2QMnQni",
 		},
 		{
 			id: "east-of-west",
 			title: "East of West",
-			url: "https://smile.amazon.com/East-West-Promise-Jonathan-Hickman/dp/1607067706/",
+			url: "https://amzn.to/2QTOw5O",
 		},
 	]),
 	comics_euro_us: shuffle([
 		{
 			id: "edena",
 			title: "Edena",
-			url: "https://smile.amazon.com/Moebius-Library-World-Edena/dp/1506702163"
+			url: "https://amzn.to/3fe1x3j"
 		},
 		{
 			id: "incal",
 			title: "The Incal",
-			url: "https://smile.amazon.com/Incal-Alejandro-Jodorowsky/dp/1594650934"
+			url: "https://amzn.to/34sw5s9"
 		},
 		{
 			id: "incalb",
 			title: "Before The Incal",
-			url: "https://smile.amazon.com/Before-Incal-Alejandro-Jodorowsky/dp/159465901X"
+			url: "https://amzn.to/2Thr0Av"
 		},
 		{
 			id: "4power",
 			title: "The Fourth Power",
-			url: "https://smile.amazon.com/Fourth-Power-Oversized-Deluxe/dp/1594653011"
+			url: "https://amzn.to/34euFkJ"
 		},
 		{
 			id: "birdtime",
 			title: "The Quest For The Time Bird",
-			url: "https://smile.amazon.com/Quest-Time-Bird-Serge-Tendre/dp/1782763627"
+			url: "https://amzn.to/3vjsYy9"
 		},
 		{
 			id: "lama",
 			title: "The White Lama",
-			url: "https://smile.amazon.com/White-Lama-Alexandro-Jodorowsky/dp/1594650802"
+			url: "https://amzn.to/3vkbxOc"
 		},/*
 		{
 			id: "imperfectfuture",
