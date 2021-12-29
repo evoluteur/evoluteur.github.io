@@ -447,12 +447,12 @@ var mediaList = {
       title: "Meditation",
       url: "https://www.meetup.com/find/events/?allMeetups=false&keywords=meditation",
     },
-    {
-      id: "ch7-silver2",
-      title: "7 Chakras Charm",
-      //title: '7 Chakras Charm: Amethyst, Sodalite, Angelite, Amazonite, Amber, Carnelian, Red jasper',
-      url: "http://www.chakradesign.com",
-    },
+    // {
+    //   id: "ch7-silver2",
+    //   title: "7 Chakras Charm",
+    //   // title: '7 Chakras Charm: Amethyst, Sodalite, Angelite, Amazonite, Amber, Carnelian, Red jasper',
+    //   url: "http://www.chakradesign.com",
+    // },
     {
       id: "sai-maa",
       title: "Sai Maa",
