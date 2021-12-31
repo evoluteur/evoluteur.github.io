@@ -1,6 +1,6 @@
 /*
  	https://evoluteur.github.io/
- 	(c) 2021 Olivier Giulieri
+ 	(c) 2022 Olivier Giulieri
  */
 const hydrateURL = (m) => ({ ...m, url: "http://www.imdb.com/title/" + m.url });
 var mediaList = {
@@ -301,7 +301,89 @@ var mediaList = {
       title: "Bolchoi Arena",
       url: "https://www.bedetheque.com/serie-62493-BD-Bolchoi-Arena.html",
     },
+
+    {
+      id: "alim1",
+      title: "Alim le tanneur",
+      url: "https://www.bedetheque.com/serie-9998-BD-Alim-le-tanneur.html",
+    },
+    {
+      id: "codemc1",
+      title: "Code Mc Callum",
+      url: "https://www.bedetheque.com/serie-13421-BD-CODE-Mc-CALLUM.html",
+    },
+    {
+      id: "d",
+      title: "D",
+      url: "https://www.bedetheque.com/serie-19589-BD-D.html",
+    },
+    {
+      id: "divin",
+      title: "Divin",
+      url: "https://www.bedetheque.com/serie-45861-BD-Divin.html",
+    },
+    {
+      id: "ian",
+      title: "Ian",
+      url: "https://www.bedetheque.com/serie-6640-BD-Ian.html",
+    },
+    {
+      id: "incal-av1",
+      title: "Avant l'Incal",
+      url: "https://www.bedetheque.com/serie-16-BD-Incal-Avant-l.html",
+    },
+    {
+      id: "marshall",
+      title: "Marshall",
+      url: "https://www.bedetheque.com/serie-3872-BD-Marshall.html",
+    },
+    {
+      id: "porcelaine",
+      title: "Porcelaine",
+      url: "https://www.bedetheque.com/serie-44272-BD-Porcelaine.html",
+    },
+    {
+      id: "rapaces",
+      title: "Rapaces",
+      url: "https://www.bedetheque.com/serie-264-BD-Rapaces-Marini.html",
+    },
+    {
+      id: "valerian",
+      title: "Valerian",
+      url: "https://www.bedetheque.com/serie-174-BD-Valerian.html",
+    },
+    {
+      id: "azimut1",
+      title: "Azimut",
+      url: "https://www.bedetheque.com/serie-32886-BD-Azimut-Lupano-Andreae.html",
+    },
+    {
+      id: "sortileges",
+      title: "Sortileges",
+      url: "https://www.bedetheque.com/serie-34923-BD-Sortileges-Dufaux-Munuera.html",
+    },
+    {
+      id: "saisoncoul",
+      title: "La Saison de la Couloeuvre",
+      url: "https://www.bedetheque.com/serie-16372-BD-Saison-de-la-Couloeuvre.html",
+    },
+    {
+      id: "salammbo",
+      title: "Salammbo",
+      url: "https://smile.amazon.com/Salammbo-Gustave-Flaubert/dp/1785866648",
+    },
+    {
+      id: "prisonnier-etoiles",
+      title: "Le Prisonnier des etoiles",
+      url: "https://www.bedetheque.com/serie-2862-BD-Prisonnier-des-etoiles.html",
+    },
+    {
+      id: "regard",
+      title: "Où le regard ne porte pas...",
+      url: "https://www.bedetheque.com/BD-Ou-le-regard-ne-porte-pas-Tome-1-32202.html",
+    },
   ]),
+
   comics_us: shuffle([
     {
       id: "saga1",
@@ -332,6 +414,11 @@ var mediaList = {
       id: "east-of-west",
       title: "East of West",
       url: "https://amzn.to/2QTOw5O",
+    },
+    {
+      id: "tokyo-ghost",
+      title: "Tokyo Ghost",
+      url: "https://smile.amazon.com/Tokyo-Ghost-Deluxe-Rick-Remender/dp/1534300465",
     },
   ]),
   comics_euro_us: shuffle([
