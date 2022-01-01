@@ -3,7 +3,7 @@
  	(c) 2022 Olivier Giulieri
  */
 const hydrateURL = (m) => ({ ...m, url: "http://www.imdb.com/title/" + m.url });
-var mediaList = {
+const mediaList = {
   code: [
     {
       id: "isomorphic-table-cards",
@@ -836,7 +836,7 @@ var mediaList = {
     },
   ].map(hydrateURL),
 };
-var pixMe = [
+const pixMe = [
   "og-2020",
   "og-2019",
   "og-2018",
@@ -846,9 +846,8 @@ var pixMe = [
   "og-2021-stash",
   "og-infant",
 ];
-var pixMeIdx = 0;
-var isMobile = typeof window.orientation !== "undefined";
-
+let pixMeIdx = 0;
+const isMobile = typeof window.orientation !== "undefined";
 const e = (id) => document.getElementById(id);
 
 function shuffle(arr) {
@@ -856,7 +855,6 @@ function shuffle(arr) {
     rnd = Math.floor(Math.random() * ln);
   return arr.slice(rnd, ln).concat(arr.slice(0, rnd));
 }
-
 function more(id, min) {
   var elem = e(id + "_x");
   elem.className = "";
@@ -871,7 +869,7 @@ function switchPix(elem) {
   elem.src = "pix/olivier/" + pixMe[pixMeIdx] + ".jpg";
 }
 
-var linkCaptions = {
+const linkCaptions = {
   comics: "Show more French graphic novels",
   comics_2: "Show even more graphic novels",
   movies: "Show more sci-fi movies",
@@ -897,9 +895,9 @@ function mosaic(id, more) {
     arrListP = more ? arrList.slice(preview, ml) : arrList.slice(0, preview),
     pixPath = pixDir(id),
     imageLink = function (m) {
-      var pix = '<img src="' + pixPath + m.id + ext + '"/>';
+      var pix = `<img src="${pixPath + m.id + ext}"/>`;
       if (m.title) {
-        pix += '<div class="pixTitle">' + m.title + "</div>";
+        pix += `<div class="pixTitle">${m.title}</div>`;
       }
       var h = '<div class="pixTitleHolder">';
       if (m.url) {
@@ -936,16 +934,8 @@ function mosaic(id, more) {
   return mm.join("");
 }
 const linkMore = (id, preview) =>
-  '<span id="' +
-  id +
-  '_x" class="block">' +
-  '<a class="linkMore" href="javascript:more(\'' +
-  id +
-  "'," +
-  preview +
-  ')"> + ' +
-  linkCaptions[id] +
-  "&nbsp;</a><br><br></span>";
+  `<span id="${id}_x" class="block">` +
+  `<a class="linkMore" href="javascript:more('${id}',${preview})"> + ${linkCaptions[id]}&nbsp;</a><br><br></span>`;
 
 function setMosaic(id) {
   e(id + "2").innerHTML = mosaic(id);
@@ -992,15 +982,12 @@ function toggleTheme() {
   cTheme = t;
 }
 
-var br = {
+const br = {
   braille: function (message) {
     var h = "";
     var myChar, prevCharNum, inQuote;
-
-    function BrChar(bPix, bAlt) {
-      return '<div class="br br-' + bPix + '"><span>' + bAlt + "</span></div>";
-      //return '<div class="br br-'+bPix+'" title="'+bAlt+'"></div>'
-    }
+    const BrChar = (bPix, bAlt) =>
+      `<div class="br br-${bPix}"><span>${bAlt}</span></div>`;
 
     for (var i = 0; i < message.length; i++) {
       myChar = message.charAt(i);
@@ -1111,12 +1098,7 @@ var br = {
       char;
     for (var i = 97; i < 123; i++) {
       char = String.fromCharCode(i);
-      alpha +=
-        "<div><span>" +
-        char +
-        '</span><div class="br br-' +
-        char +
-        '"></div></div>';
+      alpha += `<div><span>${char}</span><div class="br br-${char}"></div></div>`;
     }
     return alpha + "</div>";
   },
