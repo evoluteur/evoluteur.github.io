@@ -383,7 +383,6 @@ var mediaList = {
       url: "https://www.bedetheque.com/BD-Ou-le-regard-ne-porte-pas-Tome-1-32202.html",
     },
   ]),
-
   comics_us: shuffle([
     {
       id: "saga1",
@@ -844,6 +843,7 @@ var pixMe = [
   "og-2017",
   "og-neige",
   "og-closeup",
+  "og-2021-stash",
   "og-infant",
 ];
 var pixMeIdx = 0;
