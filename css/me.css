@@ -1,6 +1,6 @@
 /*
   https://evoluteur.github.io/
-  (c) 2021 Olivier Giulieri
+  (c) 2022 Olivier Giulieri
  */
 
 @font-face {
@@ -570,6 +570,9 @@ p.clearer {
 .namaste {
   margin: 80px 0;
   text-align: center;
+}
+.mtf {
+  margin: 20px 0;
 }
 
 @media only screen and (max-width: 1100px) {
