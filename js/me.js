@@ -784,6 +784,11 @@ const mediaList = {
         title: "Game of Thrones",
         url: "tt0944947",
       },
+      {
+        id: "heroes",
+        title: "Heroes",
+        url: "tt0813715",
+      },
     ].map(hydrateURL)
   ),
   movies_fr: [
