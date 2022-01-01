@@ -775,6 +775,16 @@ var mediaList = {
         title: "The Mandalorian",
         url: "tt8111088",
       },
+      {
+        id: "true-blood",
+        title: "True Blood",
+        url: "tt0844441",
+      },
+      {
+        id: "game-of-thrones",
+        title: "Game of Thrones",
+        url: "tt0944947",
+      },
     ].map(hydrateURL)
   ),
   movies_fr: [
