@@ -329,6 +329,7 @@ section.c0 {
   height: 18px;
   width: 18px;
   border: solid 1px #0288d1;
+  transition: top 0.3s, left 0.3s, height 0.3s, width 0.3s;
 }
 .c7-dots > a:hover > div {
   top: -6px;

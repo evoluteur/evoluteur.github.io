@@ -370,6 +370,7 @@ section.c0 {
   height: 18px;
   width: 18px;
   border: solid 2px white;
+  transition: top 0.3s, left 0.3s, height 0.3s, width 0.3s;
 }
 .c7-dots > a:hover > div {
   top: -6px;
@@ -819,7 +820,7 @@ section.c0 {
 
 /* https://css-tricks.com/making-css-animations-feel-natural/ */
 .bounce:hover {
-  animation: bounce 0.5s;
+  animation: bounce 0.5s 0.2s;
   animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
 }
 @keyframes bounce {
