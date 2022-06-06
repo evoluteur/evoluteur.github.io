@@ -40,11 +40,6 @@ const mediaList = {
       title: "Madeleinology",
       url: "http://evoluteur.github.io/madeleinology/ingredients-top4.html",
     },
-    {
-      id: "chord",
-      title: "Chord diagram",
-      url: "http://www.chakradesign.com/gemstones-d3-chord.html",
-    },
   ],
   recipes: [
     {
