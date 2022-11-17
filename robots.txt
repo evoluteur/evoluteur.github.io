@@ -6,10 +6,11 @@
 # 3. A robot must protect its own existence as long as such protection does
 #    not conflict with the First or Second Law.
 
-User-agent: * 
+User-agent: *
 Disallow: /css/
 Disallow: /js/
 Disallow: /pix/art/
+Disallow: /pix/fractals/
 Disallow: /pix/movies/
 Disallow: /pix/comics/
 Disallow: /pix/social/
