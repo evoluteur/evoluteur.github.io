@@ -623,6 +623,11 @@ const mediaList = {
         title: "John Carter",
         url: "tt0401729",
       },
+      {
+        id: "umbrella",
+        title: "Umbrella Academy",
+        url: "tt1312171",
+      },
       { id: "tron", title: "TRON", url: "tt0084827/" },
       {
         id: "ghost-in-shell",
