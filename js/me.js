@@ -1,6 +1,6 @@
 /*
  	https://evoluteur.github.io/
- 	(c) 2022 Olivier Giulieri
+ 	(c) 2023 Olivier Giulieri
  */
 const hydrateURL = (m) => ({ ...m, url: "http://www.imdb.com/title/" + m.url });
 const mediaList = {
