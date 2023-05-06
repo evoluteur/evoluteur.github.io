@@ -900,7 +900,7 @@ function mosaic(id, more) {
     arrListP = more ? arrList.slice(preview, ml) : arrList.slice(0, preview),
     pixPath = pixDir(id),
     imageLink = function (m) {
-      var pix = `<img src="${pixPath + m.id + ext}"/>`;
+      var pix = `<img src="${pixPath + m.id + ext}" alt="${m.title}" />`;
       if (m.title) {
         pix += `<div class="pixTitle">${m.title}</div>`;
       }
@@ -909,7 +909,7 @@ function mosaic(id, more) {
         h +=
           '<a href="' +
           m.url +
-          '"' +
+          '" aria-label="' + m.title + '"' +
           (id != "recipes" ? ' target="_blank" rel="noopener"' : "") +
           (m.css ? ' class="' + m.css + '"' : "") +
           ">" +
