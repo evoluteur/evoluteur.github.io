@@ -412,7 +412,12 @@ const mediaList = {
     {
       id: "tokyo-ghost",
       title: "Tokyo Ghost",
-      url: "https://smile.amazon.com/Tokyo-Ghost-Deluxe-Rick-Remender/dp/1534300465",
+      url: "https://amazon.com/Tokyo-Ghost-Deluxe-Rick-Remender/dp/1534300465",
+    },
+    {
+      id: "300",
+      title: "300",
+      url: "https://www.amazon.com/Frank-Miller-300/dp/8877597631",
     },
   ]),
   comics_euro_us: shuffle([
@@ -793,6 +798,11 @@ const mediaList = {
         id:  "dontlookup",
         title: "Don't Look Up",
         url: "tt11286314",
+      },
+      {
+        id:  "foundation",
+        title: "Foundation",
+        url: "tt0804484",
       },
     ].map(hydrateURL)
   ),
