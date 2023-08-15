@@ -795,12 +795,12 @@ const mediaList = {
         url: "tt0813715",
       },
       {
-        id:  "dontlookup",
+        id: "dontlookup",
         title: "Don't Look Up",
         url: "tt11286314",
       },
       {
-        id:  "foundation",
+        id: "foundation",
         title: "Foundation",
         url: "tt0804484",
       },
@@ -854,7 +854,6 @@ const mediaList = {
       title_us: "Quest for Fire",
       url: "tt0082484",
     },
-
   ].map(hydrateURL),
 };
 const pixMe = [
@@ -877,7 +876,7 @@ function shuffle(arr) {
     rnd = Math.floor(Math.random() * ln);
   return arr.slice(rnd, ln).concat(arr.slice(0, rnd));
 }
-function more(id, min) {
+function more(id) {
   var elem = e(id + "_x");
   elem.className = "";
   elem.innerHTML = mosaic(id, true);
@@ -900,7 +899,7 @@ function pixDir(id) {
   if (id.startsWith("comic")) {
     id = "comics";
   }
-  return "pix/" + id + "/";
+  return `pix/${id}/`;
 }
 
 function mosaic(id, more) {
@@ -911,7 +910,7 @@ function mosaic(id, more) {
     more = more ? 1 : 0;
   }
   var preview = id === "movies" || id === "comics" ? 9 : 10,
-    ext = id === "code" ? ".gif" : ".jpg",
+    ext = id === "code" ? ".png" : ".jpg",
     arrList = mediaList[id],
     ml = id === "comics" && more ? 24 : arrList.length,
     arrListP = more ? arrList.slice(preview, ml) : arrList.slice(0, preview),
@@ -926,7 +925,9 @@ function mosaic(id, more) {
         h +=
           '<a href="' +
           m.url +
-          '" aria-label="' + m.title + '"' +
+          '" aria-label="' +
+          m.title +
+          '"' +
           (id != "recipes" ? ' target="_blank" rel="noopener"' : "") +
           (m.css ? ' class="' + m.css + '"' : "") +
           ">" +
@@ -997,15 +998,8 @@ function setupPage() {
   pixAreas.forEach(fn);
 }
 
-let cTheme = "";
-function toggleTheme() {
-  const t = cTheme === "-japan" ? "" : "-japan";
-  document.getElementById("thememe").href = "css/me" + t + ".css";
-  cTheme = t;
-}
-
 const br = {
-  braille: function (message) {
+  braille: (message) => {
     var h = "";
     var myChar, prevCharNum, inQuote;
     const BrChar = (bPix, bAlt) =>
@@ -1115,7 +1109,7 @@ const br = {
     return h;
   },
 
-  alphabet: function () {
+  alphabet: () => {
     var alpha = '<div class="braille-doc2 alphabet">',
       char;
     for (var i = 97; i < 123; i++) {
