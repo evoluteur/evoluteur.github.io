@@ -389,7 +389,7 @@ section.c0 {
 }
 
 @media only screen and (min-width: 768px) {
-  .nav{
+  .nav {
     position: sticky;
     top: 0;
     left: 0;
@@ -510,6 +510,16 @@ p.clearer {
 #hello > .pad {
   max-height: 390px;
 }
+.cols2 {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: top;
+}
+.goban {
+  width: 200px;
+  height: 190px;
+}
 .japancircle {
   position: absolute;
   float: left;
@@ -626,6 +636,10 @@ p.clearer {
   #you a:visited,
   #you a:hover {
     color: #ffb74d;
+  }
+  .goban {
+    width: 100px;
+    height: 95px;
   }
 }
 
