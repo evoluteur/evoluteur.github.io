@@ -6,6 +6,11 @@ const hydrateURL = (m) => ({ ...m, url: "http://www.imdb.com/title/" + m.url });
 const mediaList = {
   code: [
     {
+      id: "meet-the-fans",
+      title: "Meet the Fans",
+      url: "https://evoluteur.github.io/meet-the-fans/index.html",
+    },
+    {
       id: "isomorphic-table-cards",
       title: "Isomorphic Table/Cards",
       url: "http://evoluteur.github.io/isomorphic-table-cards",
