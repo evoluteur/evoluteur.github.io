@@ -639,6 +639,11 @@ const mediaList = {
         url: "tt0401729",
       },
       {
+        id: "abigail",
+        title: "Abigail",
+        url: "tt7025388",
+      },
+      {
         id: "umbrella",
         title: "Umbrella Academy",
         url: "tt1312171",
@@ -980,7 +985,7 @@ const sectionTitles = {
   movies: "Movies",
   fractals: "Inspiration",
   chakras: "Meditation",
-  art: "Namaste",
+  art: "Have a nice day",
 };
 function setupPage() {
   const pixAreas = [
