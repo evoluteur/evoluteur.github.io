@@ -37,6 +37,12 @@ a:hover {
   color: #ffcc80;
   text-decoration: underline;
 }
+h1,
+h2,
+h3,
+h4 {
+  color: black;
+}
 strong {
   font-family: "Overpass-Bold";
 }
@@ -568,6 +574,7 @@ p.clearer {
   padding: 2vw;
   font-size: 3vw;
   transition: font-size 0.3s;
+  color: white;
 }
 .dear {
   color: #0288d1;
