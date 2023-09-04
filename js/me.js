@@ -896,10 +896,6 @@ function more(id) {
   elem.className = "";
   elem.innerHTML = mosaic(id, true);
 }
-function frenchMovies() {
-  e("movies_french").innerHTML = mosaic("movies_fr");
-}
-
 function switchPix(elem) {
   pixMeIdx = pixMeIdx > pixMe.length - 2 ? 0 : pixMeIdx + 1;
   elem.src = "pix/olivier/" + pixMe[pixMeIdx] + ".jpg";
@@ -995,11 +991,11 @@ function setupPage() {
     "comics_euro_us",
     "recipes",
     "movies",
+    "movies_fr",
     "fractals",
     "art",
     "chakras",
   ];
-  // 'movies_fr' for frenchMovies
   const fn = isMobile
     ? setMosaic
     : (id) => {
