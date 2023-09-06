@@ -521,21 +521,21 @@ const mediaList = {
       url: "https://www.google.com/search?q=hokusai&newwindow=1&source=lnms&tbm=isch",
     },
     {
+      id: "hiroshige",
+      title: "Utagawa Hiroshige",
+      url: "https://en.wikipedia.org/wiki/Hiroshige",
+    },
+    {
       id: "jung",
       title: "Carl Jung",
       url: "https://www.google.com/search?tbm=isch&q=jung+red+book",
     },
     {
-      id: "hiroshige",
-      title: "Utagawa Hiroshige",
-      url: "https://en.wikipedia.org/wiki/Hiroshige",
-    },
-    { id: "moebius", title: "Moebius", url: "https://www.moebius.fr/" },
-    {
       id: "klimt",
       title: "Gustav Klimt",
       url: "https://www.google.com/search?tbm=isch&q=klimt",
     },
+    { id: "moebius", title: "Moebius", url: "https://www.moebius.fr/" },
   ],
   chakras: [
     {
@@ -908,7 +908,7 @@ const linkCaptions = {
 };
 function pixDir(id) {
   if (id.startsWith("comic")) {
-    id = "comics";
+    return "pix/comics/";
   }
   return `pix/${id}/`;
 }
@@ -934,11 +934,7 @@ function mosaic(id, more) {
       var h = '<div class="pixTitleHolder">';
       if (m.url) {
         h +=
-          '<a href="' +
-          m.url +
-          '" aria-label="' +
-          m.title +
-          '"' +
+          `<a href="${m.url}" aria-label="${m.title}"` +
           (id != "recipes" ? ' target="_blank" rel="noopener"' : "") +
           (m.css ? ' class="' + m.css + '"' : "") +
           ">" +
@@ -1010,12 +1006,12 @@ function setupPage() {
 }
 
 const braille = (message) => {
-  var h = "";
-  var myChar, prevCharNum, inQuote;
+  let h = "";
+  let myChar, prevCharNum, inQuote;
   const BrChar = (bPix, bAlt) =>
     `<div class="br br-${bPix}"><span>${bAlt}</span></div>`;
 
-  for (var i = 0; i < message.length; i++) {
+  for (let i = 0; i < message.length; i++) {
     myChar = message.charAt(i);
     if (myChar >= "a" && myChar <= "z") {
       // a to z
