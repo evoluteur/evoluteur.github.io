@@ -16,18 +16,20 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  background: url("zelda.png");
 }
 body {
   margin: 0;
   padding: 0;
   font-family: "Overpass-Regular", serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   color: white;
-  background-color: #0288d1;
   overflow-x: hidden;
 }
-
+h1 {
+  font-size: 2rem;
+}
 a,
 a:visited {
   color: #ffb74d;
@@ -123,21 +125,14 @@ img.pixShadow,
   text-align: center;
   margin: 0 5px 10px 0;
 }
-.avatar {
-  font-family: "Overpass-Regular", "Century Gothic", arial;
-  width: 320px;
-  padding: 5px;
-  margin: auto;
-}
 .avatar > div > img {
   width: 300px;
   cursor: pointer;
   border: solid 3px #0288d1;
   border-radius: 50%;
-  margin-bottom: 10px;
-}
-.avatar > div > img:hover {
-  border-color: #4dd0e1;
+  &:hover {
+    border-color: #4dd0e1;
+  }
 }
 .pixTitleHolder {
   position: relative;
@@ -258,7 +253,6 @@ section {
 table,
 section {
   margin: 20px 15px 45px 5px;
-  background-color: #0288d1;
 }
 div.pad {
   padding: 10px 20px 30px 80px;
@@ -616,6 +610,7 @@ p.clearer {
 
 @media only screen and (max-width: 850px) {
   #egg {
+    border-radius: 50px;
     margin: 20px 0 10px 0;
     width: auto;
     padding: 0;
@@ -624,15 +619,10 @@ p.clearer {
     display: none;
   }
   #you {
-    border-radius: 20px;
-    padding: 20px 0 20px 50px;
-    border-radius: 20px;
+    border-radius: 50px;
+    padding: 20px 20px 20px 50px;
     width: auto;
     height: auto;
-    background-color: #0288d1;
-  }
-  #you .pixTitle {
-    color: #ffb74d;
   }
   #you > div {
     margin-left: 0 !important;
@@ -640,10 +630,6 @@ p.clearer {
   .ml30,
   .ml0 {
     max-width: 100%;
-  }
-  #you a:visited,
-  #you a:hover {
-    color: #ffb74d;
   }
   .goban {
     width: 100px;
@@ -722,10 +708,6 @@ p.clearer {
   }
   .avatar-holder {
     width: 100%;
-  }
-  .avatar {
-    padding: 0;
-    margin: 0;
   }
   .pixShadow,
   .pixGroup img {
@@ -858,7 +840,7 @@ p.clearer {
 .br {
   position: relative;
   display: inline-block;
-  background: #0288d1 url("braille-white.gif");
+  background: url("braille-white.gif");
   height: 54px;
   width: 38px;
   margin-bottom: 10px;
