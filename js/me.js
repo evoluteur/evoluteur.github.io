@@ -2,6 +2,15 @@
  	https://evoluteur.github.io/
  	(c) 2023 Olivier Giulieri
  */
+const sectionTitles = {
+  code: "Code",
+  comics: "Graphic Novels",
+  recipes: "Cooking",
+  movies: "Movies",
+  fractals: "Inspiration",
+  meditation: "Meditation",
+  art: "Have a nice day",
+};
 const hydrateURL = (m) => ({ ...m, url: "http://www.imdb.com/title/" + m.url });
 const mediaList = {
   code: [
@@ -537,7 +546,7 @@ const mediaList = {
     },
     { id: "moebius", title: "Moebius", url: "https://www.moebius.fr/" },
   ],
-  chakras: [
+  meditation: [
     {
       id: "chakras",
       title: "Meditation",
@@ -892,7 +901,7 @@ function shuffle(arr) {
   return arr.slice(rnd, ln).concat(arr.slice(0, rnd));
 }
 function more(id) {
-  var elem = e(id + "_x");
+  const elem = e(id + "_x");
   elem.className = "";
   elem.innerHTML = mosaic(id, true);
 }
@@ -906,12 +915,7 @@ const linkCaptions = {
   comics_2: "Show even more graphic novels",
   movies: "Show more sci-fi movies",
 };
-function pixDir(id) {
-  if (id.startsWith("comic")) {
-    return "pix/comics/";
-  }
-  return `pix/${id}/`;
-}
+const pixDir = (id) => (id.startsWith("comic") ? "pix/comics/" : `pix/${id}/`);
 
 function mosaic(id, more) {
   if (id === "comics_2") {
@@ -970,15 +974,6 @@ const linkMore = (id, preview) =>
 function setMosaic(id) {
   e(id + "2").innerHTML = mosaic(id);
 }
-const sectionTitles = {
-  code: "Code",
-  comics: "Graphic Novels",
-  recipes: "Cooking",
-  movies: "Movies",
-  fractals: "Inspiration",
-  chakras: "Meditation",
-  art: "Have a nice day",
-};
 function setupPage() {
   const pixAreas = [
     "code",
@@ -990,7 +985,7 @@ function setupPage() {
     "movies_fr",
     "fractals",
     "art",
-    "chakras",
+    "meditation",
   ];
   const fn = isMobile
     ? setMosaic

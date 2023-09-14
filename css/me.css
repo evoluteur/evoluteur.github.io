@@ -16,7 +16,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background: url("zelda.png");
+  background: #0288d1 url("zelda.png");
 }
 body {
   margin: 0;
@@ -631,9 +631,8 @@ p.clearer {
   .ml0 {
     max-width: 100%;
   }
-  .goban {
-    width: 100px;
-    height: 95px;
+  .cols2 {
+    flex-direction: column-reverse;
   }
 }
 
