@@ -27,8 +27,19 @@ body {
   color: white;
   overflow-x: hidden;
 }
+h1,
+h2,
+h3,
+h4 {
+  color: #ffcc80;
+}
 h1 {
   font-size: 2rem;
+  font-family: "Overpass", serif;
+  font-weight: 400;
+}
+strong {
+  font-family: "Overpass-Bold";
 }
 a,
 a:visited {
@@ -38,15 +49,6 @@ a:visited {
 a:hover {
   color: #ffcc80;
   text-decoration: underline;
-}
-h1,
-h2,
-h3,
-h4 {
-  color: black;
-}
-strong {
-  font-family: "Overpass-Bold";
 }
 .extlink:after {
   content: " "
