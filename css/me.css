@@ -469,7 +469,7 @@ p.clearer {
 }
 .c7 > span {
   position: relative;
-  top: -2px;
+  top: 2px;
   left: 0;
 }
 
