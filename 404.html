@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>404 - Page not found</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#bbdefb" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="manifest" href="manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Overpass"
+    />
     <link href="https://evoluteur.github.io/css/me.css" rel="stylesheet" />
     <style>
-.center404{
-  position: relative;
-  margin: 40px;
-  text-align: center;
-}
-.center404 > p {
-  margin: 10px;
-}
-.circles404{
-  position: relative;
-  display: block;
-  margin: 50px auto 10px;
-  height: 440px;
-  width: 600px;
-}
-.circles404 p {
-  position: absolute;
-  top: 160px;
-  z-index: 50;
-}
-.left404,
-.spot404,
-.right404{
-  position: absolute;
-  color: white;
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-}
-.left404{
-  left: 0;
-  overflow: hidden;
-  background-color: #33CCFF;
-  z-index: 20;
-}
-.spot404{
-  background: #1A99CC;
-  top: 0;
-  right: -50%;
-}
-.right404{
-  background-color: #006699;
-  left: 200px;
-  z-index: 10;
-}
-.left404 > p {
-  left: 55px;
-}
-.spot404 > p {
-  top: 145px;
-  left: 40px;
-  font-size: 1.4em;
-}
-.right404 > p {
-  right: 30px;
-}
-@media only screen and (max-width: 700px) {
-    .circles404{
-        display: none;
-    }
-}
+      .center404 {
+        position: relative;
+        margin: 40px;
+        text-align: center;
+      }
+      .center404 > p {
+        margin: 10px;
+      }
+      .circles404 {
+        position: relative;
+        display: block;
+        margin: 50px auto 10px;
+        height: 440px;
+        width: 600px;
+      }
+      .circles404 p {
+        position: absolute;
+        top: 160px;
+        z-index: 50;
+      }
+      .left404,
+      .spot404,
+      .right404 {
+        position: absolute;
+        color: white;
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+      }
+      .left404 {
+        left: 0;
+        overflow: hidden;
+        background-color: #33ccff;
+        z-index: 20;
+      }
+      .spot404 {
+        background: #1a99cc;
+        top: 0;
+        right: -50%;
+      }
+      .right404 {
+        background-color: #006699;
+        left: 200px;
+        z-index: 10;
+      }
+      .left404 > p {
+        left: 55px;
+      }
+      .spot404 > p {
+        top: 145px;
+        left: 40px;
+        font-size: 1.4em;
+      }
+      .right404 > p {
+        right: 30px;
+      }
+      @media only screen and (max-width: 700px) {
+        .circles404 {
+          display: none;
+        }
+      }
     </style>
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LC2NEVRJBP"></script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LC2NEVRJBP"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date()); gtag('config', 'G-LC2NEVRJBP');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-LC2NEVRJBP");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="center404">
-        <p>Oops, something went wrong.</p>
-        <p>The page you are looking for cannot be found.</p>
+      <p>Oops, something went wrong.</p>
+      <p>The page you are looking for cannot be found.</p>
 
-        <div class="circles404">
-            <div class="left404">
-                <p>I broke it</p>
-                <div class="spot404">
-                    <p>404 Page</p>
-                </div>
-            </div>
-            <div class="right404">
-                <p>You can't type</p>
-            </div>
+      <div class="circles404">
+        <div class="left404">
+          <p>I broke it</p>
+          <div class="spot404">
+            <p>404 Page</p>
+          </div>
         </div>
+        <div class="right404">
+          <p>You can't type</p>
+        </div>
+      </div>
 
-        <p>Back to <a href="https://evoluteur.github.io/">Olivier's Home Page</a></p>
+      <p>
+        Back to <a href="https://evoluteur.github.io/">Olivier's Home Page</a>
+      </p>
     </div>
-</body>
-
+  </body>
 </html>
