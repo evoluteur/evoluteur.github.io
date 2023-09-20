@@ -552,12 +552,6 @@ const mediaList = {
       title: "Meditation",
       url: "https://www.meetup.com/find/events/?allMeetups=false&keywords=meditation",
     },
-    // {
-    //   id: "ch7-silver2",
-    //   title: "7 Chakras Charm",
-    //   // title: '7 Chakras Charm: Amethyst, Sodalite, Angelite, Amazonite, Amber, Carnelian, Red jasper',
-    //   url: "http://www.chakradesign.com",
-    // },
     {
       id: "sai-maa",
       title: "Sai Maa",
@@ -881,14 +875,13 @@ const mediaList = {
   ].map(hydrateURL),
 };
 const pixMe = [
+  "og-closeup",
   "og-2023",
   "og-2020",
   "og-2019",
   "og-2018",
   "og-2017",
   "og-neige",
-  "og-closeup",
-  "og-2021-stash",
   "og-infant",
 ];
 let pixMeIdx = 0;
