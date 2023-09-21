@@ -7,7 +7,7 @@ const sectionTitles = {
   comics: "Graphic Novels",
   recipes: "Cooking",
   movies: "Movies",
-  fractals: "Inspiration",
+  inspiration: "Inspiration",
   meditation: "Meditation",
   art: "Have a nice day",
 };
@@ -476,7 +476,7 @@ const mediaList = {
 			url: "https://www.amazon.com/Tales-Imperfect-Future-Alfonso-Font/dp/1616554940"
 		},*/,
   ]),
-  fractals: [
+  inspiration: [
     {
       id: "mandelbrot-1",
       title: 'Mandelbrot set ("the thumbprint of God")',
@@ -908,7 +908,12 @@ const linkCaptions = {
   comics_2: "Show even more graphic novels",
   movies: "Show more sci-fi movies",
 };
-const pixDir = (id) => (id.startsWith("comic") ? "pix/comics/" : `pix/${id}/`);
+const pixDir = (id) => {
+  if (id === "inspiration") {
+    return "pix/fractals/";
+  }
+  return id.startsWith("comic") ? "pix/comics/" : `pix/${id}/`;
+};
 
 function mosaic(id, more) {
   if (id === "comics_2") {
@@ -976,7 +981,7 @@ function setupPage() {
     "recipes",
     "movies",
     "movies_fr",
-    "fractals",
+    "inspiration",
     "art",
     "meditation",
   ];
