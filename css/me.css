@@ -31,10 +31,12 @@ a,
 a:visited {
   color: #ffb74d;
   text-decoration: none;
+  font-weight: 400;
 }
 a:hover {
   color: #ffcc80;
   text-decoration: underline;
+  font-weight: 400;
 }
 .extlink:after {
   content: " "
@@ -745,6 +747,34 @@ p.clearer {
   @page {
     margin: 1cm 1cm;
   }
+}
+
+.soft-quotes {
+  & > div {
+    min-width: 200px;
+    & > div {
+      margin-top: 10px;
+      color: bisque;
+    }
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  & > div {
+    flex-grow: 1;
+    background-color: #5594f4;
+    border: 3px solid #0288d1;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+.sitemap .card-home {
+  padding: 50px !important;
+  border-radius: 50% !important;
+  min-width: 200px;
+  max-width: 220px;
 }
 
 .handlebar-pixs {
