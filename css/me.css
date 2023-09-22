@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Overpass", serif;
+  font-family: "Marcellus", serif;
   font-size: 20px;
   font-weight: 300;
   color: white;
@@ -32,6 +32,7 @@ a:visited {
   color: #ffb74d;
   text-decoration: none;
   font-weight: 400;
+  background-color: #2b88d2;
 }
 a:hover {
   color: #ffcc80;
@@ -109,6 +110,7 @@ img.pixShadow,
 }
 .sociallinks a {
   border: 0;
+  background-color: transparent;
 }
 .avatar-holder {
   float: right;
@@ -431,10 +433,11 @@ p.clearer {
   background-color: transparent;
   color: grey;
 }
-#you a {
-  color: navy;
+#you a,
+#you a:visited {
+  color: #025785;
+  background-color: #f9a825;
 }
-#you a:visited,
 #you a:hover {
   color: black;
 }
