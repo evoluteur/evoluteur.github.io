@@ -764,26 +764,29 @@ p.clearer {
   }
 }
 
-.soft-quotes {
-  & > div {
-    min-width: 200px;
-    & > div {
-      margin-top: 10px;
-      color: bisque;
-    }
-  }
-}
 .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   & > div {
     flex-grow: 1;
-    width: 300px;
     background-color: #5594f4;
     border: 3px solid #0288d1;
     border-radius: 10px;
     padding: 20px;
+  }
+}
+.cards.handpan > div {
+  max-width: 562px;
+}
+.cards.quotes {
+  & > div {
+    width: 300px;
+    min-width: 200px;
+    & > div {
+      margin-top: 10px;
+      color: bisque;
+    }
   }
 }
 .sitemap .card-home {
