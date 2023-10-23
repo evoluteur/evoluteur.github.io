@@ -922,7 +922,7 @@ function mosaic(id, more) {
   } else {
     more = more ? 1 : 0;
   }
-  var preview = id === "movies" || id === "comics" ? 9 : 10,
+  var preview = id === "movies" || id === "comics" ? 8 : 10,
     ext = id === "code" ? ".png" : ".jpg",
     arrList = mediaList[id],
     ml = id === "comics" && more ? 24 : arrList.length,
