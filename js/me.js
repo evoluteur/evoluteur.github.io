@@ -21,7 +21,7 @@ const mediaList = {
     },
     {
       id: "isomorphic-table-cards",
-      title: "Isomorphic Table/Cards",
+      title: "Table/Cards animation",
       url: "http://evoluteur.github.io/isomorphic-table-cards",
     },
     {
@@ -871,6 +871,12 @@ const mediaList = {
       title: "La guerre du feu",
       title_us: "Quest for Fire",
       url: "tt0082484",
+    },
+    {
+      id: "fr-lost-children",
+      title: "La cité des enfants perdus",
+      title_us: "The city of lost children",
+      url: "tt0112682",
     },
   ].map(hydrateURL),
 };

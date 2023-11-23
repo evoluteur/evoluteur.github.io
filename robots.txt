@@ -9,6 +9,13 @@
 User-agent: *
 Disallow: /css/
 Disallow: /js/
-Disallow: /pix/
+Disallow: /pix/art
+Disallow: /pix/comics
+Disallow: /pix/fractals
+Disallow: /pix/meditation
+Disallow: /pix/movies
+Disallow: /pix/moveis_fr
+Disallow: /pix/olivier
+Disallow: /pix/social
 
 Sitemap: https://evoluteur.github.io/sitemap.xml
