@@ -607,10 +607,21 @@ p.clearer {
 .om {
   position: absolute;
   top: 30px;
-  right: 10%;
-  width: 160px;
+  right: 50px;
+  height: 240px;
+  width: 240px;
+  opacity: 0.4;
+  transition: all 0.3s;
   & :after {
     clear: both;
+  }
+  &:hover {
+    opacity: 0.6;
+    top: 0;
+    right: 20px;
+    height: 300px;
+    width: 300px;
+    z-index: 10;
   }
 }
 .evo-box {

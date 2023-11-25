@@ -1102,3 +1102,13 @@ const braille = (message) => {
   }
   return h;
 };
+
+function playOm() {
+  var omSound = $("om-sound");
+  omSound.play();
+}
+function stopOm() {
+  var omSound = $("om-sound");
+  omSound.pause();
+  omSound.currentTime = 0;
+}
