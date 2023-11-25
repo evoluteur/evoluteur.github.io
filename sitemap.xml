@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://evoluteur.github.io/</loc>
-    <lastmod>2023-09-20T07:05:00+00:00</lastmod>
+    <lastmod>2023-11-24T12:12:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -63,7 +63,7 @@
   </url>
   <url>
     <loc>https://evoluteur.github.io/fun/handlebar.html</loc>
-    <lastmod>2023-09-20T07:05:00+00:00</lastmod>
+    <lastmod>2023-10-20T07:05:00+00:00</lastmod>
     <priority>0.50</priority>
   </url>
   <url>
@@ -73,7 +73,7 @@
   </url>
   <url>
     <loc>https://evoluteur.github.io/fun/neige.html</loc>
-    <lastmod>2023-09-20T07:05:00+00:00</lastmod>
+    <lastmod>2023-11-23T07:05:00+00:00</lastmod>
     <priority>0.40</priority>
   </url>
 
@@ -85,7 +85,7 @@
   </url>
   <url>
     <loc>https://evoluteur.github.io/motivational-numerology/</loc>
-    <lastmod>2022-02-13T21:32:13+00:00</lastmod>
+    <lastmod>2023-09-05T12:12:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -102,6 +102,11 @@
     <loc>https://evoluteur.github.io/evolutility-ui-jquery/</loc>
     <lastmod>2020-11-04T07:39:11+00:00</lastmod>
     <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/evolutility-ui-react/</loc>
+    <lastmod>2023-11-20T12:12:00+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/d3-table-cards/</loc>
@@ -125,7 +130,7 @@
   </url>
   <url>
     <loc>https://evoluteur.github.io/react-crud-icons/</loc>
-    <lastmod>2021-10-18T07:39:11+00:00</lastmod>
+    <lastmod>2023-08-03T07:39:11+00:00</lastmod>
     <priority>0.82</priority>
   </url>
   <url>
@@ -136,6 +141,11 @@
   <url>
     <loc>https://evoluteur.github.io/braille-tools/</loc>
     <lastmod>2018-09-15T07:39:11+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/braille-text/</loc>
+    <lastmod>2023-09-17T12:12:00+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>

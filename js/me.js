@@ -11,13 +11,22 @@ const sectionTitles = {
   meditation: "Meditation",
   art: "Have a nice day",
 };
-const hydrateURL = (m) => ({ ...m, url: "http://www.imdb.com/title/" + m.url });
+const shuffle = (arr) => {
+  const ln = arr.length,
+    rnd = Math.floor(Math.random() * ln);
+  return arr.slice(rnd, ln).concat(arr.slice(0, rnd));
+};
 const mediaList = {
   code: [
+    // {
+    //   id: "meet-the-fans",
+    //   title: "Meet the Fans",
+    //   url: "https://evoluteur.github.io/meet-the-fans/index.html",
+    // },
     {
-      id: "meet-the-fans",
-      title: "Meet the Fans",
-      url: "https://evoluteur.github.io/meet-the-fans/index.html",
+      id: "motivational-numerology",
+      title: "Motivational Numerology",
+      url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
       id: "isomorphic-table-cards",
@@ -28,11 +37,6 @@ const mediaList = {
       id: "many-bubbles",
       title: "Evolutility bubbles view",
       url: "http://evoluteur.github.io/evolutility-ui-jquery/demo/index.html#comics/bubbles",
-    },
-    {
-      id: "motivational-numerology",
-      title: "Motivational Numerology",
-      url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
       id: "d3-dual-range-slider",
@@ -563,322 +567,320 @@ const mediaList = {
       url: "https://isha.sadhguru.org",
     },
   ],
-  movies: shuffle(
-    [
-      {
-        id: "matrix",
-        title: "Matrix",
-        url: "tt0133093",
-      },
-      {
-        id: "dark-city",
-        title: "Dark City",
-        url: "tt0118929",
-      },
-      {
-        id: "gattaca",
-        title: "Gattaca",
-        url: "tt0119177",
-      },
-      {
-        id: "bladerunner",
-        title: "Blade Runner",
-        url: "tt0083658",
-      },
-      {
-        id: "vendetta",
-        title: "V for Vendetta",
-        url: "tt0434409",
-      },
-      {
-        id: "fifthelem",
-        title: "The Fifth Element",
-        url: "tt0119116",
-      },
-      {
-        id: "star-wars",
-        title: "Star Wars",
-        url: "tt1185834",
-      },
-      {
-        id: "avatar",
-        title: "Avatar",
-        url: "tt0499549",
-      },
-      { id: "dune", title: "Dune", url: "tt0087182/" },
-      {
-        id: "kpax",
-        title: "K-PAX",
-        url: "tt0272152",
-      },
-      {
-        id: "inception",
-        title: "Inception",
-        url: "tt1375666",
-      },
-      {
-        id: "stargate",
-        title: "Star Gate",
-        url: "tt0111282",
-      },
-      {
-        id: "enders",
-        title: "Ender's Game",
-        url: "tt1731141",
-      },
-      {
-        id: "guardian-galaxy",
-        title: "Guardian of the Galaxy",
-        url: "tt2015381",
-      },
-      {
-        id: "xmen",
-        title: "X-Men",
-        url: "tt0120903",
-      },
-      {
-        id: "johncarter",
-        title: "John Carter",
-        url: "tt0401729",
-      },
-      {
-        id: "abigail",
-        title: "Abigail",
-        url: "tt7025388",
-      },
-      {
-        id: "umbrella",
-        title: "Umbrella Academy",
-        url: "tt1312171",
-      },
-      { id: "tron", title: "TRON", url: "tt0084827/" },
-      {
-        id: "ghost-in-shell",
-        title: "Ghost in the Shell",
-        url: "tt0113568",
-      },
-      {
-        id: "akira",
-        title: "Akira",
-        url: "tt0094625",
-      },
-      {
-        id: "dr-strange",
-        title: "Doctor Strange",
-        url: "tt1211837",
-      },
-      {
-        id: "ironman",
-        title: "Iron Man",
-        url: "tt0371746",
-      },
-      {
-        id: "island",
-        title: "The Island",
-        url: "tt0399201",
-      },
-      {
-        id: "dejavu",
-        title: "Deja Vu",
-        url: "tt0453467",
-      },
-      {
-        id: "minority-report",
-        title: "Minority Report",
-        url: "tt0181689",
-      },
-      {
-        id: "i-legend",
-        title: "I Am Legend",
-        url: "tt0480249",
-      },
-      {
-        id: "wall-e",
-        title: "WALL·E",
-        url: "tt0910970",
-      },
-      {
-        id: "riddick",
-        title: "The Chronicles of Riddick",
-        url: "tt0296572",
-      },
-      {
-        id: "underworld",
-        title: "Underworld",
-        url: "tt0320691",
-      },
-      {
-        id: "man-earth",
-        title: "The Man from Earth",
-        url: "tt0756683",
-      },
-      {
-        id: "limitless",
-        title: "Limitless",
-        url: "tt1219289",
-      },
-      {
-        id: "cloud-atlas",
-        title: "Cloud Atlas",
-        url: "tt1371111",
-      },
-      {
-        id: "valerian",
-        title: "Valerian and the City of a Thousand Planets",
-        url: "tt2239822",
-      },
-      {
-        id: "wwoman",
-        title: "Wonder Woman",
-        url: "tt0451279",
-      },
-      {
-        id: "butterfly",
-        title: "The Butterfly Effect",
-        url: "tt0289879",
-      },
-      {
-        id: "sense8",
-        title: "Sense8",
-        url: "tt2431438",
-      },
-      {
-        id: "serenity",
-        title: "Serenity",
-        url: "tt0379786",
-      },
-      {
-        id: "arcane",
-        title: "Arcane",
-        url: "tt11126994",
-      },
-      {
-        id: "giver",
-        title: "The Giver",
-        url: "tt0435651",
-      },
-      {
-        id: "alita",
-        title: "Alita: Battle Angel",
-        url: "tt0437086",
-      },
-      {
-        id: "wargames",
-        title: "WarGames",
-        url: "tt0086567",
-      },
-      {
-        id: "alien",
-        title: "Alien",
-        url: "tt0078748",
-      },
-      {
-        id: "jupiter",
-        title: "Jupiter Ascending",
-        url: "tt1617661",
-      },
-      {
-        id: "avalon",
-        title: "Avalon",
-        url: "tt0267287",
-      },
-      {
-        id: "rp1",
-        title: "Ready Player One",
-        url: "tt1677720",
-      },
-      {
-        id: "existenz",
-        title: "Existenz",
-        url: "tt0120907",
-      },
-      {
-        id: "mandolorian",
-        title: "The Mandalorian",
-        url: "tt8111088",
-      },
-      {
-        id: "true-blood",
-        title: "True Blood",
-        url: "tt0844441",
-      },
-      {
-        id: "game-of-thrones",
-        title: "Game of Thrones",
-        url: "tt0944947",
-      },
-      {
-        id: "heroes",
-        title: "Heroes",
-        url: "tt0813715",
-      },
-      {
-        id: "dontlookup",
-        title: "Don't Look Up",
-        url: "tt11286314",
-      },
-      {
-        id: "foundation",
-        title: "Foundation",
-        url: "tt0804484",
-      },
-    ].map(hydrateURL)
-  ),
+  movies: shuffle([
+    {
+      id: "matrix",
+      title: "Matrix",
+      imdb: "tt0133093",
+    },
+    {
+      id: "dark-city",
+      title: "Dark City",
+      imdb: "tt0118929",
+    },
+    {
+      id: "gattaca",
+      title: "Gattaca",
+      imdb: "tt0119177",
+    },
+    {
+      id: "bladerunner",
+      title: "Blade Runner",
+      imdb: "tt0083658",
+    },
+    {
+      id: "vendetta",
+      title: "V for Vendetta",
+      imdb: "tt0434409",
+    },
+    {
+      id: "fifthelem",
+      title: "The Fifth Element",
+      imdb: "tt0119116",
+    },
+    {
+      id: "star-wars",
+      title: "Star Wars",
+      imdb: "tt1185834",
+    },
+    {
+      id: "avatar",
+      title: "Avatar",
+      imdb: "tt0499549",
+    },
+    { id: "dune", title: "Dune", imdb: "tt0087182/" },
+    {
+      id: "kpax",
+      title: "K-PAX",
+      imdb: "tt0272152",
+    },
+    {
+      id: "inception",
+      title: "Inception",
+      imdb: "tt1375666",
+    },
+    {
+      id: "stargate",
+      title: "Star Gate",
+      imdb: "tt0111282",
+    },
+    {
+      id: "enders",
+      title: "Ender's Game",
+      imdb: "tt1731141",
+    },
+    {
+      id: "guardian-galaxy",
+      title: "Guardian of the Galaxy",
+      imdb: "tt2015381",
+    },
+    {
+      id: "xmen",
+      title: "X-Men",
+      imdb: "tt0120903",
+    },
+    {
+      id: "johncarter",
+      title: "John Carter",
+      imdb: "tt0401729",
+    },
+    {
+      id: "abigail",
+      title: "Abigail",
+      imdb: "tt7025388",
+    },
+    {
+      id: "umbrella",
+      title: "Umbrella Academy",
+      imdb: "tt1312171",
+    },
+    { id: "tron", title: "TRON", imdb: "tt0084827/" },
+    {
+      id: "ghost-in-shell",
+      title: "Ghost in the Shell",
+      imdb: "tt0113568",
+    },
+    {
+      id: "akira",
+      title: "Akira",
+      imdb: "tt0094625",
+    },
+    {
+      id: "dr-strange",
+      title: "Doctor Strange",
+      imdb: "tt1211837",
+    },
+    {
+      id: "ironman",
+      title: "Iron Man",
+      imdb: "tt0371746",
+    },
+    {
+      id: "island",
+      title: "The Island",
+      imdb: "tt0399201",
+    },
+    {
+      id: "dejavu",
+      title: "Deja Vu",
+      imdb: "tt0453467",
+    },
+    {
+      id: "minority-report",
+      title: "Minority Report",
+      imdb: "tt0181689",
+    },
+    {
+      id: "i-legend",
+      title: "I Am Legend",
+      imdb: "tt0480249",
+    },
+    {
+      id: "wall-e",
+      title: "WALL·E",
+      imdb: "tt0910970",
+    },
+    {
+      id: "riddick",
+      title: "The Chronicles of Riddick",
+      imdb: "tt0296572",
+    },
+    {
+      id: "underworld",
+      title: "Underworld",
+      imdb: "tt0320691",
+    },
+    {
+      id: "man-earth",
+      title: "The Man from Earth",
+      imdb: "tt0756683",
+    },
+    {
+      id: "limitless",
+      title: "Limitless",
+      imdb: "tt1219289",
+    },
+    {
+      id: "cloud-atlas",
+      title: "Cloud Atlas",
+      imdb: "tt1371111",
+    },
+    {
+      id: "valerian",
+      title: "Valerian and the City of a Thousand Planets",
+      imdb: "tt2239822",
+    },
+    {
+      id: "wwoman",
+      title: "Wonder Woman",
+      imdb: "tt0451279",
+    },
+    {
+      id: "butterfly",
+      title: "The Butterfly Effect",
+      imdb: "tt0289879",
+    },
+    {
+      id: "sense8",
+      title: "Sense8",
+      imdb: "tt2431438",
+    },
+    {
+      id: "serenity",
+      title: "Serenity",
+      imdb: "tt0379786",
+    },
+    {
+      id: "arcane",
+      title: "Arcane",
+      imdb: "tt11126994",
+    },
+    {
+      id: "giver",
+      title: "The Giver",
+      imdb: "tt0435651",
+    },
+    {
+      id: "alita",
+      title: "Alita: Battle Angel",
+      imdb: "tt0437086",
+    },
+    {
+      id: "wargames",
+      title: "WarGames",
+      imdb: "tt0086567",
+    },
+    {
+      id: "alien",
+      title: "Alien",
+      imdb: "tt0078748",
+    },
+    {
+      id: "jupiter",
+      title: "Jupiter Ascending",
+      imdb: "tt1617661",
+    },
+    {
+      id: "avalon",
+      title: "Avalon",
+      imdb: "tt0267287",
+    },
+    {
+      id: "rp1",
+      title: "Ready Player One",
+      imdb: "tt1677720",
+    },
+    {
+      id: "existenz",
+      title: "Existenz",
+      imdb: "tt0120907",
+    },
+    {
+      id: "mandolorian",
+      title: "The Mandalorian",
+      imdb: "tt8111088",
+    },
+    {
+      id: "true-blood",
+      title: "True Blood",
+      imdb: "tt0844441",
+    },
+    {
+      id: "game-of-thrones",
+      title: "Game of Thrones",
+      imdb: "tt0944947",
+    },
+    {
+      id: "heroes",
+      title: "Heroes",
+      imdb: "tt0813715",
+    },
+    {
+      id: "dontlookup",
+      title: "Don't Look Up",
+      imdb: "tt11286314",
+    },
+    {
+      id: "foundation",
+      title: "Foundation",
+      imdb: "tt0804484",
+    },
+  ]),
   movies_fr: [
     {
       id: "fr-amelie",
       title: "Amelie",
       title_us: "",
-      url: "tt0211915",
+      imdb: "tt0211915",
     },
     {
       id: "fr-ridicule",
       title: "Ridicule",
-      url: "tt0117477",
+      imdb: "tt0117477",
     },
     {
       id: "fr-verte",
       title: "La belle verte",
       title_us: "",
-      url: "tt0115650",
+      imdb: "tt0115650",
     },
     {
       id: "fr-gazon",
       title: "Gazon maudit",
       title_us: "French Twist",
-      url: "tt0113149",
+      imdb: "tt0113149",
     },
     {
       id: "fr-dinner",
       title: "Le dîner de cons",
       title_us: "The Dinner Game",
-      url: "tt0119038",
+      imdb: "tt0119038",
     },
     {
       id: "fr-intouchable",
       title: "Intouchables",
       title_us: "The Intouchables",
-      url: "tt1675434",
+      imdb: "tt1675434",
     },
     {
       id: "fr-fleuve",
       title: "La vie est un long fleuve tranquille",
       title_us: "Life Is a Long Quiet River",
-      url: "tt0096386",
+      imdb: "tt0096386",
     },
     {
       id: "fr-feu",
       title: "La guerre du feu",
       title_us: "Quest for Fire",
-      url: "tt0082484",
+      imdb: "tt0082484",
     },
     {
       id: "fr-lost-children",
       title: "La cité des enfants perdus",
       title_us: "The city of lost children",
-      url: "tt0112682",
+      imdb: "tt0112682",
     },
-  ].map(hydrateURL),
+  ],
 };
 const pixMe = [
   "og-closeup",
@@ -894,11 +896,6 @@ let pixMeIdx = 0;
 const isMobile = typeof window.orientation !== "undefined";
 const e = (id) => document.getElementById(id);
 
-function shuffle(arr) {
-  var ln = arr.length,
-    rnd = Math.floor(Math.random() * ln);
-  return arr.slice(rnd, ln).concat(arr.slice(0, rnd));
-}
 function more(id) {
   const elem = e(id + "_x");
   elem.className = "";
@@ -908,7 +905,6 @@ function switchPix(elem) {
   pixMeIdx = pixMeIdx > pixMe.length - 2 ? 0 : pixMeIdx + 1;
   elem.src = "pix/olivier/" + pixMe[pixMeIdx] + ".jpg";
 }
-
 const linkCaptions = {
   comics: "Show more French graphic novels",
   comics_2: "Show even more graphic novels",
@@ -920,6 +916,7 @@ const pixDir = (id) => {
   }
   return id.startsWith("comic") ? "pix/comics/" : `pix/${id}/`;
 };
+const cLink = (m) => m.url || "http://www.imdb.com/title/" + m.imdb;
 
 function mosaic(id, more) {
   if (id === "comics_2") {
@@ -939,20 +936,13 @@ function mosaic(id, more) {
       if (m.title) {
         pix += `<div class="pixTitle">${m.title}</div>`;
       }
-      var h = '<div class="pixTitleHolder">';
-      if (m.url) {
-        h +=
-          `<a href="${m.url}" aria-label="${m.title}"` +
-          (id != "recipes" ? ' target="_blank" rel="noopener"' : "") +
-          (m.css ? ' class="' + m.css + '"' : "") +
-          ">" +
-          pix +
-          "</a>";
-      } else {
-        h += pix;
-      }
-      h += "</div>";
-      return h;
+      return (
+        `<div class="pixTitleHolder"><a href="${cLink(m)}" aria-label="${
+          m.title
+        }"` +
+        (id != "recipes" ? ' target="_blank" rel="noopener"' : "") +
+        `>${pix}</a></div>`
+      );
     },
     mm;
 
@@ -968,7 +958,6 @@ function mosaic(id, more) {
   if (more === 1 && id === "comics") {
     mm.push(linkMore(id + "_2", 0));
   }
-  mm.push('<div class="clearer"></div>');
   return mm.join("");
 }
 const linkMore = (id, preview) =>
@@ -978,7 +967,7 @@ const linkMore = (id, preview) =>
 function setMosaic(id) {
   e(id + "2").innerHTML = mosaic(id);
 }
-function setupPage() {
+function setupHomePage() {
   const pixAreas = [
     "code",
     "comics",
