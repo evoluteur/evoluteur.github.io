@@ -878,7 +878,6 @@ const mediaList = {
 const pixMe = [
   "og-closeup",
   "og-2023",
-  "og-2020",
   "og-2019",
   "og-2018",
   "og-2017",
@@ -889,14 +888,25 @@ let pixMeIdx = 0;
 const isMobile = typeof window.orientation !== "undefined";
 const $ = (id) => document.getElementById(id);
 
+function otherMe(direction) {
+  const pix = $("og-pix");
+  const maxIdx = pixMe.length - 1;
+  if (direction === "+") {
+    pixMeIdx++;
+  } else {
+    pixMeIdx--;
+  }
+  if (pixMeIdx < 0) {
+    pixMeIdx = maxIdx;
+  } else if (pixMeIdx > maxIdx) {
+    pixMeIdx = 0;
+  }
+  pix.src = "pix/olivier/" + pixMe[pixMeIdx] + ".jpg";
+}
 function more(id) {
   const elem = $(id + "_x");
   elem.className = "";
   elem.innerHTML = mosaic(id, true);
-}
-function switchPix(elem) {
-  pixMeIdx = pixMeIdx > pixMe.length - 2 ? 0 : pixMeIdx + 1;
-  elem.src = "pix/olivier/" + pixMe[pixMeIdx] + ".jpg";
 }
 const linkCaptions = {
   comics: "Show more French graphic novels",
