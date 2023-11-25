@@ -2,20 +2,12 @@
  	https://evoluteur.github.io/
  	(c) 2023 Olivier Giulieri
  */
-const sectionTitles = {
-  code: "Code",
-  comics: "Graphic Novels",
-  recipes: "Cooking",
-  movies: "Movies",
-  inspiration: "Inspiration",
-  meditation: "Meditation",
-  art: "Have a nice day",
-};
 const shuffle = (arr) => {
   const ln = arr.length,
     rnd = Math.floor(Math.random() * ln);
   return arr.slice(rnd, ln).concat(arr.slice(0, rnd));
 };
+
 const mediaList = {
   code: [
     // {
@@ -443,21 +435,16 @@ const mediaList = {
       url: "https://www.amazon.com/Frank-Miller-300/dp/8877597631",
     },
   ]),
-  comics_euro_us: shuffle([
-    {
-      id: "edena",
-      title: "Edena",
-      url: "https://amzn.to/3fe1x3j",
-    },
+  comics_euro_us: [
     {
       id: "incal",
       title: "The Incal",
       url: "https://amzn.to/34sw5s9",
     },
     {
-      id: "incalb",
-      title: "Before The Incal",
-      url: "https://amzn.to/2Thr0Av",
+      id: "lama",
+      title: "The White Lama",
+      url: "https://amzn.to/3vkbxOc",
     },
     {
       id: "4power",
@@ -470,16 +457,22 @@ const mediaList = {
       url: "https://amzn.to/3vjsYy9",
     },
     {
-      id: "lama",
-      title: "The White Lama",
-      url: "https://amzn.to/3vkbxOc",
-    } /*
-		{
+      id: "incalb",
+      title: "Before The Incal",
+      url: "https://amzn.to/2Thr0Av",
+    },
+    {
+      id: "edena",
+      title: "Edena",
+      url: "https://amzn.to/3fe1x3j",
+    },
+    /*	{
 			id: "imperfectfuture",
 			title: "Tales of an Imperfect Future",
 			url: "https://www.amazon.com/Tales-Imperfect-Future-Alfonso-Font/dp/1616554940"
-		},*/,
-  ]),
+		},*/
+    ,
+  ],
   inspiration: [
     {
       id: "mandelbrot-1",
@@ -503,7 +496,7 @@ const mediaList = {
     },
     {
       id: "romanesco",
-      title: "Romanesco Broccoli",
+      title: "Romanesco broccoli",
       url: "https://www.gardenbetty.com/romanesco-broccoli-a-fibonacci-fractal/",
     },
     {
@@ -894,10 +887,10 @@ const pixMe = [
 ];
 let pixMeIdx = 0;
 const isMobile = typeof window.orientation !== "undefined";
-const e = (id) => document.getElementById(id);
+const $ = (id) => document.getElementById(id);
 
 function more(id) {
-  const elem = e(id + "_x");
+  const elem = $(id + "_x");
   elem.className = "";
   elem.innerHTML = mosaic(id, true);
 }
@@ -965,32 +958,37 @@ const linkMore = (id, preview) =>
   `<a class="linkMore" href="javascript:more('${id}',${preview})"> + ${linkCaptions[id]}&nbsp;</a><br><br></span>`;
 
 function setMosaic(id) {
-  e(id + "2").innerHTML = mosaic(id);
+  $(id + "2").innerHTML = mosaic(id);
 }
+
+const pixAreas = [
+  "code",
+  "comics",
+  "comics_us",
+  "comics_euro_us",
+  "recipes",
+  "movies",
+  "movies_fr",
+  "inspiration",
+  "art",
+  "meditation",
+];
+const brTitles = [
+  { id: "code", br: "Code" },
+  { id: "comics", br: "Graphic Novels" },
+  { id: "recipes", br: "Cooking" },
+  { id: "movies", br: "Movies" },
+  { id: "inspiration", br: "Inspiration" },
+  { id: "meditation", br: "Meditation" },
+];
+
+const setBraille = (id, txt) => ($(id + "-braille").innerHTML = braille(txt));
+
 function setupHomePage() {
-  const pixAreas = [
-    "code",
-    "comics",
-    "comics_us",
-    "comics_euro_us",
-    "recipes",
-    "movies",
-    "movies_fr",
-    "inspiration",
-    "art",
-    "meditation",
-  ];
-  const fn = isMobile
-    ? setMosaic
-    : (id) => {
-        if (sectionTitles[id]) {
-          document.getElementById(id + "-braille").innerHTML = braille(
-            sectionTitles[id]
-          );
-        }
-        setMosaic(id);
-      };
-  pixAreas.forEach(fn);
+  pixAreas.forEach(setMosaic);
+  if (!isMobile) {
+    brTitles.forEach((b) => setBraille(b.id, b.br));
+  }
 }
 
 const braille = (message) => {

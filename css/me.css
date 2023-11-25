@@ -633,6 +633,7 @@ p.clearer {
     height: 117px;
     background-color: transparent;
     white-space: nowrap;
+    text-decoration: none !important;
     > img {
       border-radius: 10px;
       margin-right: 10px;
