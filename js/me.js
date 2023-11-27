@@ -990,6 +990,18 @@ const brTitles = [
   { id: "movies", br: "Movies" },
   { id: "inspiration", br: "Inspiration" },
   { id: "meditation", br: "Meditation" },
+  {
+    id: "learn",
+    br: "Congratulations!\nYou are now familiar with the Braille alphabet.",
+  },
+  {
+    id: "alphabet",
+    br: "abcdefghij\nklmnopqrst\nuvwxyz",
+  },
+  {
+    id: "easy",
+    br: "Reading with your fingers is much harder.",
+  },
 ];
 
 const setBraille = (id, txt) => ($(id + "-braille").innerHTML = braille(txt));
@@ -1037,7 +1049,7 @@ const braille = (message) => {
           prevCharNum = true;
           break;
         case "\n":
-          h += "<br><br>";
+          h += "<br>";
           nbCharsInLine = -1;
           prevCharNum = false;
           break;
