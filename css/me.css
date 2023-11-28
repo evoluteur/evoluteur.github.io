@@ -108,21 +108,31 @@ img.pixShadow,
   font-style: italic;
   margin: 0 20px;
 }
-.sociallinks img {
-  opacity: 0.6;
-  margin: 7px 7px 0;
-  height: 32px;
-  width: 32px;
-  filter: grayscale(100%);
-  transition: opacity 0.5s;
-}
-.sociallinks img:hover {
-  opacity: 1;
-  filter: none;
-}
-.sociallinks a {
-  border: 0;
-  background-color: transparent;
+.sociallinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  > a {
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    > img {
+      display: inline-block;
+      opacity: 0.7;
+      margin: 7px 7px 0;
+      height: 32px;
+      width: 32px;
+      filter: grayscale(100%);
+      transition: height 0.3s, width 0.3s, opacity 0.5s;
+      &:hover {
+        height: 48px !important;
+        width: 48px;
+        opacity: 1;
+        filter: none;
+      }
+    }
+  }
 }
 .arrow {
   margin: 10px;
@@ -175,11 +185,11 @@ img.pixShadow,
 .pixTitleHolder {
   position: relative;
   display: inline-block;
-}
-.pixTitleHolder > a {
-  display: inline-block;
-  background-color: transparent !important;
-  border-bottom: none;
+  > a {
+    display: inline-block;
+    background-color: transparent !important;
+    border-bottom: none;
+  }
 }
 .pixTitleHolder .pix-title {
   text-align: center;
@@ -734,9 +744,13 @@ p.clearer {
     z-index: 5;
   }
 }
+#meditation {
+  position: relative;
+}
 #meditation2 {
   text-align: left;
 }
+
 @media only screen and (max-width: 1100px) {
   .japancircle {
     top: 80px;
@@ -824,9 +838,6 @@ p.clearer {
       margin: 10px;
     }
   }
-}
-#meditation {
-  position: relative;
 }
 
 @media only screen and (max-width: 640px) {
