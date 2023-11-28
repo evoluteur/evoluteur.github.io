@@ -990,6 +990,7 @@ const brTitles = [
   { id: "movies", br: "Movies" },
   { id: "inspiration", br: "Inspiration" },
   { id: "meditation", br: "Meditation" },
+  { id: "name", br: "your name" },
   {
     id: "learn",
     br: "Congratulations!\nYou are now familiar with the Braille alphabet.",
@@ -1012,6 +1013,8 @@ function setupHomePage() {
     brTitles.forEach((b) => setBraille(b.id, b.br));
   }
 }
+
+const yourBrName = (elem) => setBraille("name", elem.value);
 
 const braille = (message) => {
   let h = "";
