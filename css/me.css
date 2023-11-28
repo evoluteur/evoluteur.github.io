@@ -78,6 +78,9 @@ img.pixShadow,
     transition: top 0.6s, left 0.6s;
   }
 }
+.pixGroup {
+  text-align: center;
+}
 .comicsPix img {
   height: 140px;
   width: 110px;
@@ -676,6 +679,8 @@ p.clearer {
 }
 
 .mtf {
+  width: 100%;
+  text-align: center;
   margin: 20px 0;
 }
 .quote {
@@ -729,7 +734,9 @@ p.clearer {
     z-index: 5;
   }
 }
-
+#meditation2 {
+  text-align: left;
+}
 @media only screen and (max-width: 1100px) {
   .japancircle {
     top: 80px;
@@ -834,6 +841,12 @@ p.clearer {
 }
 
 @media only screen and (max-width: 480px) {
+  #recipes2 > div > a > img,
+  #recipes_learning2 > div > a > img,
+  #inspiration2 img {
+    width: 90vw;
+    height: auto;
+  }
   .no-mob {
     display: none;
   }

@@ -928,10 +928,18 @@ function mosaic(id, more) {
   } else {
     more = more ? 1 : 0;
   }
-  var preview = id === "movies" || id === "comics" ? 8 : 10,
-    ext = id === "code" ? ".png" : ".jpg",
-    arrList = mediaList[id],
-    ml = id === "comics" && more ? 24 : arrList.length,
+  const preview = id === "movies" || id === "comics" ? 8 : 10;
+  const ext = id === "code" ? ".png" : ".jpg";
+  let arrList = mediaList[id];
+  if (isMobile) {
+    if (id == "comics_euro_us") {
+      arrList = arrList.slice(0, 2);
+    }
+    if (id == "inspiration") {
+      arrList = arrList.slice(0, 3);
+    }
+  }
+  let ml = id === "comics" && more ? 24 : arrList.length,
     arrListP = more ? arrList.slice(preview, ml) : arrList.slice(0, preview),
     pixPath = pixDir(id),
     imageLink = function (m) {
@@ -1009,7 +1017,9 @@ const setBraille = (id, txt) => ($(id + "-braille").innerHTML = braille(txt));
 
 function setupHomePage() {
   pixAreas.forEach(setMosaic);
-  if (!isMobile) {
+  if (isMobile) {
+    setBraille("name", "your name");
+  } else {
     brTitles.forEach((b) => setBraille(b.id, b.br));
   }
 }
