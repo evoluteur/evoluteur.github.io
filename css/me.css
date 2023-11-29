@@ -858,9 +858,6 @@ p.clearer {
     width: 90vw;
     height: auto;
   }
-  .no-mob {
-    display: none;
-  }
   .pixGroup {
     overflow-x: hidden;
   }
@@ -954,8 +951,10 @@ p.clearer {
     min-width: 200px;
     max-width: 220px;
   }
-  a {
-    background-color: #5594f4 !important;
+  .cards {
+    & a {
+      background-color: #5594f4 !important;
+    }
   }
 }
 .handlebar-pixs {
