@@ -634,6 +634,15 @@ p.clearer {
     width: 100%;
   }
 }
+#congrats-braille:hover {
+  > .br > span {
+    opacity: 1;
+    top: -24px;
+  }
+  .br.br-cap > span {
+    display: none;
+  }
+}
 .me {
   float: left;
   background-color: #9c27b0;
