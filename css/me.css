@@ -160,7 +160,6 @@ img.pixShadow,
   float: right;
   display: flex;
   justify-content: center;
-  text-align: center;
   margin: 0 5px 10px 0;
 }
 .avatar {
@@ -606,6 +605,10 @@ p.clearer {
   left: 460px;
   height: 240px;
   width: 240px;
+  transition: transform 2s ease-in-out;
+  &:hover {
+    transform: rotate(480deg);
+  }
 }
 .jcircle {
   position: absolute;
@@ -615,18 +618,6 @@ p.clearer {
   height: 180px;
   width: 180px;
   background-color: cornflowerblue;
-}
-.japancircle,
-.jcircle {
-  background-image: url("../pix/bg2.gif");
-}
-.japancircle {
-  transition: transform 2s ease-in-out;
-  &:hover {
-    transform: rotate(480deg);
-  }
-}
-.jcircle {
   transition: all 0.5s ease-in-out;
   &:hover {
     border-radius: 5px;
@@ -634,14 +625,9 @@ p.clearer {
     width: 100%;
   }
 }
-#congrats-braille:hover {
-  > .br > span {
-    opacity: 1;
-    top: -24px;
-  }
-  .br.br-cap > span {
-    display: none;
-  }
+.japancircle,
+.jcircle {
+  background-image: url("../pix/bg2.gif");
 }
 .me {
   float: left;
@@ -690,7 +676,7 @@ p.clearer {
 }
 .congrats {
   text-align: left;
-  margin: 120px 0 80px 50px;
+  margin: 120px 20px 80px 50px;
 }
 .j-center {
   display: flex;
@@ -728,7 +714,12 @@ p.clearer {
 .evo-box {
   margin: 25px 0 30px;
   height: 125px;
-  overflow-x: hidden;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   > a {
     display: block;
     height: 117px;
@@ -759,6 +750,15 @@ p.clearer {
 #meditation2 {
   text-align: left;
 }
+#congrats-braille:hover {
+  > .br > span {
+    opacity: 1;
+    top: -30px;
+  }
+  .br.br-cap > span {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 1100px) {
   .japancircle {
@@ -788,7 +788,7 @@ p.clearer {
   }
   #you {
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     width: calc(100% - 100px);
     > div {
       margin-left: 0 !important;
