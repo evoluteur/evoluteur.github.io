@@ -311,6 +311,7 @@ div.content {
   padding: 10px 20px 30px 80px;
 }
 td.content {
+  position: relative;
   padding: 10px 20px 50px 40px;
 }
 section.c0 {
@@ -449,6 +450,43 @@ section.c0 {
   color: #9c27b0;
 }
 
+.cab {
+  position: absolute;
+  transform: translateX(-600px);
+  z-index: 100;
+  animation: cab-ride 7s infinite linear;
+}
+@keyframes cab-ride {
+  0% {
+    transform: translateX(-600px);
+  }
+  40% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 600px));
+  }
+}
+
+.dragon {
+  position: absolute;
+  top: 0;
+  right: -500px;
+  transform: scale(0.5);
+  z-index: 710;
+  animation: dragon-charge 7s infinite linear 4s;
+}
+@keyframes dragon-charge {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(2) translate(calc(-100vw - 500px), 300px);
+  }
+  100% {
+    transform: scale(2) translate(-130vw, 300px);
+  }
+}
 .nav {
   color: white;
   background-color: #1a1a1a;

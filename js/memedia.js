@@ -34,7 +34,7 @@ const mediaList = {
     {
       id: "isomorphic-table-cards",
       title: "Table/Cards animation",
-      url: "http://evoluteur.github.io/isomorphic-table-cards",
+      url: "https://evoluteur.github.io/d3-table-cards/",
     },
     {
       id: "many-bubbles",
