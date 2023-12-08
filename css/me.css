@@ -453,7 +453,7 @@ section.c0 {
   position: absolute;
   transform: translateX(-600px);
   z-index: 100;
-  animation: cab-ride 7s infinite linear;
+  animation: cab-ride 10s infinite linear;
 }
 @keyframes cab-ride {
   0% {
@@ -473,17 +473,17 @@ section.c0 {
   right: -500px;
   transform: scale(0.5);
   z-index: 710;
-  animation: dragon-charge 7s infinite linear 4s;
+  animation: dragon-charge 8s infinite linear 2s;
 }
 @keyframes dragon-charge {
   0% {
     transform: scale(0.5);
   }
-  50% {
+  80% {
     transform: scale(2) translate(calc(-100vw - 500px), 300px);
   }
   100% {
-    transform: scale(2) translate(-130vw, 300px);
+    transform: scale(2) translate(calc(-100vw - 500px), 300px);
   }
 }
 .nav {
