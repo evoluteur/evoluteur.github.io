@@ -63,8 +63,8 @@ td {
     padding-right: 50px;
   }
 }
-img {
-  max-width: calc(100% - 20px);
+.git-graph {
+  max-width: calc(80% - 20px);
 }
 img.pixShadow,
 .pixShadow > img,
@@ -124,10 +124,9 @@ img.pixShadow,
       height: 32px;
       width: 32px;
       filter: grayscale(100%);
-      transition: height 0.3s, width 0.3s, opacity 0.5s;
+      transition: transform 0.3s, opacity 0.3s;
       &:hover {
-        height: 48px !important;
-        width: 48px;
+        transform: scale(1.4);
         opacity: 1;
         filter: none;
       }
@@ -750,23 +749,16 @@ p.clearer {
   }
 }
 .evo-box {
+  display: block;
   margin: 25px 0 30px;
-  height: 125px;
-  overflow-x: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  text-align: center;
   > a {
     display: block;
-    height: 117px;
     background-color: transparent;
-    white-space: nowrap;
     text-decoration: none !important;
     > img {
       border-radius: 10px;
-      margin-right: 10px;
+      margin: 0 10px 10px 0;
     }
   }
 }
