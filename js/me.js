@@ -81,7 +81,7 @@ function mosaic(id, more) {
   const preview = id === "movies" || id === "comics" ? 8 : 10;
   const ext = id === "code" ? ".png" : ".jpg";
   const arrList = mediaList[id];
-  let ml = id === "comics" && more ? 24 : arrList.length,
+  let ml = id === "comics" && more ? 30 : arrList.length,
     arrListP = more ? arrList.slice(preview, ml) : arrList.slice(0, preview),
     pixPath = pixDir(id),
     imageLink = function (m) {

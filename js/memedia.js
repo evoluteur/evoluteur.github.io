@@ -548,11 +548,15 @@ const mediaList = {
       url: "https://www.google.com/search?tbm=isch&q=jung+red+book",
     },
     {
+      id: "moebius",
+      title: "Moebius",
+      url: "https://www.iamag.co/the-art-of-moebius/#jp-carousel-121215",
+    },
+    {
       id: "klimt",
       title: "Gustav Klimt",
       url: "https://www.google.com/search?tbm=isch&q=klimt",
     },
-    { id: "moebius", title: "Moebius", url: "https://www.moebius.fr/" },
   ],
   meditation: [
     {
