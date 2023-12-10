@@ -33,7 +33,12 @@ const brTitles = [
     br: "abcdefghij\nklmnopqrst\nuvwxyz",
   },
 ];
-
+const pixFormat = {
+  code: ".png",
+  recipes: ".webp",
+  inspiration: ".webp",
+  meditation: ".webp",
+};
 let pixMeIdx = 0;
 const isMobile = typeof window.orientation !== "undefined";
 const $ = (id) => document.getElementById(id);
@@ -51,7 +56,7 @@ function otherMe(direction) {
   } else if (pixMeIdx > maxIdx) {
     pixMeIdx = 0;
   }
-  pix.src = "pix/olivier/" + pixMe[pixMeIdx] + ".jpg";
+  pix.src = "pix/olivier/" + pixMe[pixMeIdx] + ".webp";
 }
 function more(id) {
   const elem = $(id + "_x");
@@ -79,13 +84,13 @@ function mosaic(id, more) {
     more = more ? 1 : 0;
   }
   const preview = id === "movies" || id === "comics" ? 8 : 10;
-  const ext = id === "code" ? ".png" : ".jpg";
+  const ext = pixFormat[id] || ".jpg";
   const arrList = mediaList[id];
   let ml = id === "comics" && more ? 30 : arrList.length,
     arrListP = more ? arrList.slice(preview, ml) : arrList.slice(0, preview),
     pixPath = pixDir(id),
     imageLink = function (m) {
-      var pix = `<img src="${pixPath + m.id + ext}" alt="${m.title}" />`;
+      let pix = `<img src="${pixPath + m.id + ext}" alt="${m.title}" />`;
       if (m.title) {
         pix += `<div class="pixTitle">${m.title}</div>`;
       }
@@ -114,8 +119,7 @@ function mosaic(id, more) {
   return mm.join("");
 }
 const linkMore = (id, preview) =>
-  `<span id="${id}_x" class="block">` +
-  `<a class="linkMore" href="javascript:more('${id}',${preview})"> + ${linkCaptions[id]}&nbsp;</a><br><br></span>`;
+  `<span id="${id}_x" class="block"><a class="linkMore" href="javascript:more('${id}',${preview})"> + ${linkCaptions[id]}&nbsp;</a><br><br></span>`;
 
 function setMosaic(id) {
   $(id + "2").innerHTML = mosaic(id);
@@ -245,11 +249,11 @@ const braille = (message) => {
 };
 
 function playOm() {
-  var omSound = $("om-sound");
+  const omSound = $("om-sound");
   omSound.play();
 }
 function stopOm() {
-  var omSound = $("om-sound");
+  const omSound = $("om-sound");
   omSound.pause();
   omSound.currentTime = 0;
 }

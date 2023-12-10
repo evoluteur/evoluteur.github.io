@@ -14,7 +14,7 @@ Disallow: /pix/comics
 Disallow: /pix/fractals
 Disallow: /pix/meditation
 Disallow: /pix/movies
-Disallow: /pix/moveis_fr
+Disallow: /pix/movies_fr
 Disallow: /pix/olivier
 Disallow: /pix/social
 

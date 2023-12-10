@@ -712,10 +712,6 @@ p.clearer {
   margin-left: 5vw;
   font-size: 25px;
 }
-.cards > div {
-  float: left;
-  margin: 10px 20px 0 0;
-}
 .congrats {
   text-align: left;
   margin: 120px 20px 80px 60px;
@@ -997,15 +993,23 @@ p.clearer {
 }
 .sitemap {
   .card-home {
-    padding: 50px !important;
+    padding: 50px 20px 50px 80px !important;
     border-radius: 50% !important;
-    min-width: 200px;
-    max-width: 220px;
+    width: 250px;
+    height: 250px;
+    flex-grow: 0;
   }
-  .cards {
-    & a {
-      background-color: #5594f4 !important;
-    }
+  .cards a {
+    background-color: #5594f4 !important;
+    text-decoration: none !important;
+  }
+  .cube {
+    text-align: center;
+    border: 0 !important;
+    background-color: transparent !important;
+  }
+  .cab {
+    top: 250px;
   }
 }
 .handlebar-pixs {
