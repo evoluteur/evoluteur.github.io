@@ -1,0 +1,25 @@
+.sitemap {
+  .card-home {
+    padding: 50px 20px 50px 80px !important;
+    border-radius: 50% !important;
+    width: 250px;
+    height: 250px;
+    flex-grow: 0;
+  }
+  .cards a {
+    background-color: #5594f4 !important;
+    text-decoration: none !important;
+  }
+  .cube {
+    text-align: center;
+    border: 0 !important;
+    background-color: transparent;
+    > img {
+      width: 300px;
+      height: 314px;
+    }
+  }
+  .cab {
+    top: 250px;
+  }
+}
