@@ -119,7 +119,7 @@ function mosaic(id, more) {
   return mm.join("");
 }
 const linkMore = (id, preview) =>
-  `<span id="${id}_x" class="block"><a class="linkMore" href="javascript:more('${id}',${preview})"> + ${linkCaptions[id]}&nbsp;</a><br><br></span>`;
+  `<span id="${id}_x" class="block"><button class="linkMore" onclick="javascript:more('${id}',${preview})">${linkCaptions[id]}</button></span>`;
 
 function setMosaic(id) {
   $(id + "2").innerHTML = mosaic(id);

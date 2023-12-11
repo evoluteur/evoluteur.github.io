@@ -38,8 +38,17 @@
 }
 .linkMore {
   font-size: 0.9em;
-  font-style: italic;
   margin: 0 20px;
+  color: white;
+  background-color: #0288d1;
+  border: solid 1px #3a8cdf;
+  padding: 7px 10px;
+  border-radius: 10px;
+  &:hover {
+    background-color: #5594f4;
+    border-color: white;
+    cursor: pointer;
+  }
 }
 .sociallinks {
   display: flex;
