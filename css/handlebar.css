@@ -1,0 +1,20 @@
+.handlebar-pixs {
+  > img {
+    margin: 10px 20px;
+    border-radius: 50%;
+  }
+}
+.mud-pixs {
+  & a {
+    display: block;
+    /* background: #2b88d2;   */
+    background: #5594f4;
+    padding: 30px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  & > img {
+    margin: 10px 20px;
+    border-radius: 20px;
+  }
+}
