@@ -42,7 +42,7 @@
   color: white;
   background-color: #0288d1;
   border: solid 1px #3a8cdf;
-  padding: 7px 10px;
+  padding: 7px 12px;
   border-radius: 10px;
   &:hover {
     background-color: #5594f4;
@@ -84,6 +84,7 @@
 .avatar {
   > div > img {
     width: 300px;
+    max-width: calc(100vw - 100px);
     border-radius: 50%;
   }
 }
@@ -706,6 +707,7 @@ section.c0 {
   body {
     font-size: 15pt;
   }
+  .cab,
   .dragon,
   .c7-dots {
     display: none;
