@@ -686,6 +686,7 @@ section.c0 {
     padding: 10px 20px;
     border-radius: 30px;
     width: calc(100% - 100px);
+    height: auto;
     > div {
       margin-left: 0 !important;
     }
@@ -751,6 +752,9 @@ section.c0 {
   }
   .congrats {
     margin-left: 40px;
+  }
+  .name-box {
+    width: 90px;
   }
 }
 
