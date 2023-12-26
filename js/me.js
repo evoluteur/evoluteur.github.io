@@ -69,6 +69,7 @@ const linkCaptions = {
   comics: "Show more French graphic novels",
   comics_2: "Show even more graphic novels",
   movies: "Show more sci-fi movies",
+  movies_fr: "Show more French movies",
 };
 const pixDir = (id) => {
   if (id === "inspiration") {
@@ -85,7 +86,12 @@ function mosaic(id, more) {
   } else {
     more = more ? 1 : 0;
   }
-  const preview = id === "movies" || id === "comics" ? 8 : 10;
+  const previewCount = {
+    movies: 8,
+    movies_fr: 5,
+    comics: 8,
+  };
+  const preview = previewCount[id] || 10;
   const ext = pixFormat[id] || ".jpg";
   const arrList = mediaList[id];
   let ml = id === "comics" && more ? 30 : arrList.length,
