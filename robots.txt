@@ -12,6 +12,7 @@ Disallow: /js/
 Disallow: /pix/art
 Disallow: /pix/comics
 Disallow: /pix/fractals
+Disallow: /pix/moebius
 Disallow: /pix/meditation
 Disallow: /pix/movies
 Disallow: /pix/movies_fr

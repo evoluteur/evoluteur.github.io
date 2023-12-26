@@ -584,7 +584,12 @@ section.c0 {
   display: flex;
   justify-content: center;
 }
-
+.quartz {
+  margin-left: 40%;
+}
+.try-new {
+  font-size: 26px;
+}
 .mtf {
   width: 100%;
   text-align: center;
