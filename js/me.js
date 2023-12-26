@@ -13,6 +13,7 @@ const pixAreas = [
   "movies_fr",
   "inspiration",
   "art",
+  "omg-art",
   "meditation",
 ];
 const brTitles = [
@@ -38,6 +39,7 @@ const pixFormat = {
   recipes: ".webp",
   inspiration: ".webp",
   meditation: ".webp",
+  "omg-art": ".webp",
 };
 let pixMeIdx = 0;
 const isMobile = typeof window.orientation !== "undefined";
@@ -98,7 +100,9 @@ function mosaic(id, more) {
         `<div class="pixTitleHolder"><a href="${cLink(m)}" aria-label="${
           m.title
         }"` +
-        (id != "recipes" ? ' target="_blank" rel="noopener"' : "") +
+        (id !== "recipes" && id !== "omg-art"
+          ? ' target="_blank" rel="noopener"'
+          : "") +
         `>${pix}</a></div>`
       );
     },

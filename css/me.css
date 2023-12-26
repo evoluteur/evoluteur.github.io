@@ -47,7 +47,10 @@ a:hover {
 footer {
   color: #b5ccf7;
   font-size: 0.8em;
-  margin: 10px 20px;
+  margin: 50px 30px 10px 50px;
+  > a {
+    white-space: nowrap;
+  }
 }
 .grey {
   color: silver;
@@ -70,7 +73,7 @@ td {
   }
 }
 .c00 {
-  padding: 0 10px 10px 20px;
+  padding: 0 30px 10px 50px;
 }
 .cards {
   display: flex;
@@ -97,7 +100,9 @@ td {
     }
   }
 }
-
+.center {
+  text-align: center;
+}
 @media only screen and (min-width: 768px) {
   .nav {
     position: sticky;
@@ -182,5 +187,70 @@ p.clearer {
   }
   @page {
     margin: 1cm 1cm;
+  }
+}
+
+.heart {
+  color: var(--color-text-secondary);
+  font-size: 20px;
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  text-align: center;
+  transition: color 0.5s, margin-left 0.5s;
+}
+.evo-footer {
+  padding: 30px 0 10px;
+}
+.evo-footer:hover .heart {
+  color: #bf360c;
+  -webkit-animation: beat 0.35s infinite alternate;
+  -moz-animation: beat 0.35s infinite alternate;
+  -ms-animation: beat 0.35s infinite alternate;
+  -o-animation: beat 0.35s infinite alternate;
+  animation: beat 0.35s infinite alternate;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  margin-left: 5px;
+}
+
+@keyframes beat {
+  to {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@-moz-keyframes beat {
+  to {
+    -moz-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@-webkit-keyframes beat {
+  to {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@-ms-keyframes beat {
+  to {
+    -ms-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@-o-keyframes beat {
+  to {
+    -o-transform: scale(2);
+    transform: scale(2);
   }
 }

@@ -12,7 +12,7 @@
   }
 }
 .git-graph {
-  max-width: calc(80% - 20px);
+  max-width: calc(90% - 20px);
 }
 .comicsPix img {
   height: 140px;
@@ -108,17 +108,17 @@
   cursor: pointer;
   width: 0;
   height: 0;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 }
 .arrow-right {
-  border-left: 30px solid #b5ccf7;
+  border-left: 20px solid #b5ccf7;
   &:hover {
     border-left-color: white;
   }
 }
 .arrow-left {
-  border-right: 30px solid #b5ccf7;
+  border-right: 20px solid #b5ccf7;
   &:hover {
     border-right-color: white;
   }
@@ -306,7 +306,6 @@ section.c0 {
       height: 18px;
       width: 18px;
       border: solid 1px #0288d1;
-      transition: top 0.3s, left 0.3s, height 0.3s, width 0.3s;
     }
   }
 }
@@ -631,6 +630,13 @@ section.c0 {
 }
 #inspiration2 img {
   width: 187px;
+}
+#omg-art2 {
+  min-height: 220px;
+}
+#omg-art2 img {
+  height: 200px;
+  width: auto;
 }
 #comics_euro_us2 {
   margin-top: 0 !important;

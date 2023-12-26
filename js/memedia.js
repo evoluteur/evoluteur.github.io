@@ -558,6 +558,28 @@ const mediaList = {
       url: "https://www.google.com/search?tbm=isch&q=klimt",
     },
   ],
+  "omg-art": [
+    {
+      id: "book-carving-small-2",
+      title: "Book carving 12/2023",
+      url: "fun/book-carving-the-childrens-book-of-virtues.html",
+    },
+    {
+      id: "book-carving-small-1",
+      title: "Book carving 01/2018",
+      url: "fun/book-carving-the-grand-tour.html",
+    },
+    {
+      id: "chakras-charm",
+      title: "7 Chakras charm",
+      url: "fun/chakra-design.html",
+    },
+    // {
+    //   id: "chakras-earrings",
+    //   title: "7 Chakras earrings",
+    //   url: "fun/chakra-design.html",
+    // },
+  ],
   meditation: [
     {
       id: "chakras",
