@@ -85,6 +85,8 @@
     width: 300px;
     max-width: calc(100vw - 100px);
     border-radius: 50%;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease-out 0.1s;
   }
 }
 .avatar-pix {
@@ -93,6 +95,9 @@
   &:hover {
     .arrow {
       opacity: 1;
+    }
+    img {
+      border-color: white;
     }
   }
   > div {
@@ -812,7 +817,8 @@ section.c0 {
   .sTitle {
     position: relative;
   }
-  .c7-dots,
+  .dragon,
+  .cab,
   .brTitle,
   .japancircle,
   .dear {
