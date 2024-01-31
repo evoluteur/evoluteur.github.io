@@ -1,6 +1,6 @@
 /*
   https://evoluteur.github.io/
-  (c) 2023 Olivier Giulieri
+  (c) 2024 Olivier Giulieri
  */
 
 .home {
@@ -65,7 +65,7 @@
       height: 32px;
       width: 32px;
       filter: grayscale(100%);
-      transition: all 0.3s;
+      transition: all 0.2s;
       &:hover {
         transform: scale(1.4);
         opacity: 1;

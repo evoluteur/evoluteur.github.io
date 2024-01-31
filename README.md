@@ -6,4 +6,4 @@ This is my home page at [evoluteur.github.io](http://evoluteur.github.io).
 
 Coding, Cooking, Graphic Novels, Movies...
 
-(c) 2023 Olivier Giulieri
+(c) 2024 Olivier Giulieri
