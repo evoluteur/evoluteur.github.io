@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://evoluteur.github.io/</loc>
-    <lastmod>2023-11-24T12:12:00+00:00</lastmod>
+    <lastmod>2024-02-01T12:12:00+00:00</lastmod>
     <priority>1</priority>
   </url>
   <url>
@@ -94,14 +94,19 @@
   </url>
 
   <url>
-    <loc>https://evoluteur.github.io/meet-the-fans/</loc>
-    <lastmod>2022-08-05T07:39:11+00:00</lastmod>
-    <priority>0.7</priority>
+    <loc>https://evoluteur.github.io/healing-frequencies/</loc>
+    <lastmod>2024-02-07T12:12:00+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/motivational-numerology/</loc>
     <lastmod>2023-09-05T12:12:00+00:00</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/meet-the-fans/</loc>
+    <lastmod>2022-08-05T07:39:11+00:00</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/structured-filter/</loc>
