@@ -572,14 +572,12 @@ section.c0 {
 .dear {
   color: #0288d1;
   text-align: center;
-  top: 40px;
-  left: 370px;
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
   background-color: #ffb74d;
-  line-height: 40px;
+  line-height: 28px;
   margin-left: 5vw;
-  font-size: 25px;
+  font-size: 17px;
 }
 .congrats {
   text-align: left;
@@ -841,6 +839,9 @@ section.c0 {
     br {
       display: none;
     }
+  }
+  .pixTitleHolder > a > img {
+    border: 1px solid grey;
   }
 }
 
