@@ -30,6 +30,7 @@
 }
 .moviePix img {
   height: 140px;
+  width: 95px;
 }
 .block {
   display: block;
@@ -656,6 +657,9 @@ section.c0 {
 }
 #meditation {
   position: relative;
+  .quartz {
+    margin-top: 40px;
+  }
 }
 #meditation2 {
   text-align: left;
