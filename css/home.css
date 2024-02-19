@@ -571,7 +571,7 @@ section.c0 {
   color: white;
 }
 .dear {
-  color: #0288d1;
+  color: black;
   text-align: center;
   height: 80px;
   width: 80px;
@@ -582,7 +582,7 @@ section.c0 {
 }
 .congrats {
   text-align: left;
-  margin: 120px 20px 80px 60px;
+  margin: 80px 20px 80px 60px;
 }
 .j-center {
   display: flex;
@@ -680,11 +680,13 @@ section.c0 {
     width: 160px;
     height: 160px;
   }
+}
+
+@media only screen and (max-width: 950px) {
   .dear {
     display: none;
   }
 }
-
 @media only screen and (max-width: 850px) {
   .evolPix img {
     height: none;

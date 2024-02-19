@@ -7,8 +7,6 @@
 #    not conflict with the First or Second Law.
 
 User-agent: *
-Disallow: /css/
-Disallow: /js/
 Disallow: /pix/art
 Disallow: /pix/comics
 Disallow: /pix/fractals
@@ -17,6 +15,5 @@ Disallow: /pix/meditation
 Disallow: /pix/movies
 Disallow: /pix/movies_fr
 Disallow: /pix/olivier
-Disallow: /pix/social
 
 Sitemap: https://evoluteur.github.io/sitemap.xml
