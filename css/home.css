@@ -215,7 +215,6 @@ section {
   position: relative;
   border-left: solid 6px transparent;
   padding-left: 10px;
-  line-height: 30px;
 }
 table {
   width: 100%;
@@ -714,9 +713,6 @@ section.c0 {
     max-width: 680px;
     text-align: center;
   }
-  .cols2 {
-    flex-direction: column-reverse;
-  }
   .sTitle {
     font-size: 40px;
     padding-left: 22px;
@@ -774,6 +770,9 @@ section.c0 {
   }
   .name-box {
     width: 90px;
+  }
+  .cols2 {
+    flex-direction: column-reverse;
   }
 }
 
