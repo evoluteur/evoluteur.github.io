@@ -105,12 +105,12 @@
 
   <url>
     <loc>https://evoluteur.github.io/healing-frequencies/</loc>
-    <lastmod>2024-12-07T12:12:00+00:00</lastmod>
+    <lastmod>2024-02-28T12:12:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/healing-frequencies/healing-frequencies-scale.html</loc>
-    <lastmod>2024-14-07T12:12:00+00:00</lastmod>
+    <lastmod>2024-02-287T12:12:00+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
@@ -193,7 +193,7 @@
   <url>
     <loc>https://evoluteur.github.io/evodemo/</loc>
     <lastmod>2023-11-20T12:12:00+00:00</lastmod>
-    <priority>.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/d3-table-cards/</loc>
@@ -208,12 +208,12 @@
   <url>
     <loc>https://evoluteur.github.io/kaggle-look-alike/</loc>
     <lastmod>2020-08-05T07:39:11+00:00</lastmod>
-    <priority>0.6</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/bouncing-ball/</loc>
     <lastmod>2020-10-14T07:39:11+00:00</lastmod>
-    <priority>0.1</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/react-crud-icons/</loc>
@@ -234,6 +234,11 @@
     <loc>https://evoluteur.github.io/braille-text/</loc>
     <lastmod>2023-09-17T12:12:00+00:00</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/github-project-cards/</loc>
+    <lastmod>2024-03-07T01:01:11+00:00</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/madeleinology/</loc>

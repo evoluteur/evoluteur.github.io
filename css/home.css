@@ -442,7 +442,7 @@ section.c0 {
 .num {
   position: relative;
   color: white;
-  padding: 5px;
+  padding: 4px 5px 6px;
   display: inline-block;
   border-radius: 50%;
   border: 1px solid white;
