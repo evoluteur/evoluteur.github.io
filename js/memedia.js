@@ -28,7 +28,7 @@ const mediaList = {
     // },
     {
       id: "motivational-numerology",
-      title: "Motivational Numerology",
+      title: "Motivational numerology",
       url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
@@ -53,7 +53,7 @@ const mediaList = {
     },
     {
       id: "colorpicker",
-      title: "Color-picker",
+      title: "Color picker",
       url: "http://evoluteur.github.io/colorpicker/",
     },
     {
@@ -503,7 +503,7 @@ const mediaList = {
     {
       id: "snowflake",
       title: "Snowflake",
-      url: "http://gizmodo.com/this-physicists-designer-snowflakes-are-dazzling-1748893157",
+      url: "http://www.snowcrystals.com/photos/photos.html",
     },
     {
       id: "romanesco",
