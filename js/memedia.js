@@ -21,6 +21,11 @@ const shuffle = (arr) => {
 
 const mediaList = {
   code: [
+    {
+      id: "jackedgpt",
+      title: "JackedGPT",
+      url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
+    },
     // {
     //   id: "meet-the-fans",
     //   title: "Meet the Fans",
