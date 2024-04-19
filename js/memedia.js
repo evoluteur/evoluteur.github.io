@@ -62,14 +62,14 @@ const mediaList = {
       url: "http://evoluteur.github.io/colorpicker/",
     },
     {
+      id: "braille-tools",
+      title: "Braille tools",
+      url: "https://evoluteur.github.io/braille-tools/",
+    },
+    {
       id: "madeleine-data-science",
       title: "Madeleinology",
       url: "http://evoluteur.github.io/madeleinology/ingredients-top4.html",
-    },
-    {
-      id: "braille-tools",
-      title: "Braille tools",
-      url: "https://evoluteur.github.io/braille-tools/index.html",
     },
   ],
   recipes: [
