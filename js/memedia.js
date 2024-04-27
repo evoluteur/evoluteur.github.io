@@ -26,11 +26,11 @@ const mediaList = {
       title: "JackedGPT",
       url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
     },
-    // {
-    //   id: "meet-the-fans",
-    //   title: "Meet the Fans",
-    //   url: "https://evoluteur.github.io/meet-the-fans/index.html",
-    // },
+    {
+      id: "meet-the-fans",
+      title: "Meet the Fans",
+      url: "https://evoluteur.github.io/meet-the-fans/",
+    },
     {
       id: "motivational-numerology",
       title: "Motivational numerology",
@@ -52,14 +52,14 @@ const mediaList = {
       url: "http://evoluteur.github.io/d3-dual-range-slider/",
     },
     {
-      id: "structured-filter",
-      title: "Structured filter",
-      url: "http://evoluteur.github.io/structured-filter/",
-    },
-    {
       id: "colorpicker",
       title: "Color picker",
       url: "http://evoluteur.github.io/colorpicker/",
+    },
+    {
+      id: "structured-filter",
+      title: "Structured filter",
+      url: "http://evoluteur.github.io/structured-filter/",
     },
     {
       id: "braille-tools",
