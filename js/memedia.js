@@ -69,7 +69,7 @@ const mediaList = {
     {
       id: "madeleinology",
       title: "Madeleinology",
-      url: "http://evoluteur.github.io/madeleinology/ingredients-top4.html",
+      url: "http://evoluteur.github.io/madeleinology/",
     },
   ],
   recipes: [
