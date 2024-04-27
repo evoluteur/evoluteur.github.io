@@ -67,7 +67,7 @@ const mediaList = {
       url: "https://evoluteur.github.io/braille-tools/",
     },
     {
-      id: "madeleine-data-science",
+      id: "madeleinology",
       title: "Madeleinology",
       url: "http://evoluteur.github.io/madeleinology/ingredients-top4.html",
     },
