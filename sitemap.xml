@@ -4,7 +4,7 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://evoluteur.github.io/</loc>
-    <lastmod>2024-02-01T01:01:05+00:00</lastmod>
+    <lastmod>2024-04-01T01:01:05+00:00</lastmod>
     <priority>1</priority>
     <image:image>
       <image:loc>https://evoluteur.github.io/pix/recipes/creme-brulee.webp</image:loc>
@@ -137,7 +137,7 @@
   </url>
   <url>
     <loc>https://evoluteur.github.io/healing-frequencies/healing-frequencies-scale.html</loc>
-    <lastmod>2024-03-197T01:01:05+00:00</lastmod>
+    <lastmod>2024-03-19T01:01:05+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 
