@@ -2,8 +2,8 @@
 
 This is my home page at [evoluteur.github.io](http://evoluteur.github.io).
 
-![Evoluteur](https://raw.githubusercontent.com/evoluteur/evoluteur.github.io/master/pix/evoluteur-web.gif)
+![Evoluteur](./pix/evoluteur-web.png)
 
-Coding, Cooking, Graphic Novels, Movies...
+Coding, Cooking, Graphic Novels, Movies, Meditation...
 
 (c) 2024 Olivier Giulieri
