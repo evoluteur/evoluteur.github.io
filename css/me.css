@@ -124,7 +124,7 @@ img.pixShadow,
   border-radius: 10px;
 }
 .pixGroup a:hover > img {
-  transform: scale(1.03);
+  transform: scale(1.08);
   transition: transform 0.3s;
 }
 .pixGroup {
@@ -146,8 +146,8 @@ img.pixShadow,
 .pixTitle {
   z-index: 700;
   position: absolute;
-  left: 20px;
-  top: -10px;
+  left: 15px;
+  top: -14px;
   font-weight: 400;
   padding: 0 5px;
   opacity: 0;
