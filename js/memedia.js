@@ -619,6 +619,11 @@ const mediaList = {
       imdb: "tt0119177",
     },
     {
+      id: "altered-carbon",
+      title: "Altered Carbon",
+      imdb: "tt2261227",
+    },
+    {
       id: "bladerunner",
       title: "Blade Runner",
       imdb: "tt0083658",
