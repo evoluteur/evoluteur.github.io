@@ -725,8 +725,7 @@ section.c0 {
     font-size: 15pt;
   }
   .cab,
-  .dragon,
-  .c7-dots {
+  .dragon {
     display: none;
   }
   table {
@@ -784,6 +783,11 @@ section.c0 {
   }
   .home td:first-child,
   .jcircle {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .c7-dots {
     display: none;
   }
 }

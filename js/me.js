@@ -66,7 +66,7 @@ function more(id) {
   elem.innerHTML = mosaic(id, true);
 }
 const linkCaptions = {
-  comics: "Show more French graphic novels",
+  comics: "Show more graphic novels",
   comics_2: "Show even more graphic novels",
   movies: "Show more sci-fi movies",
   movies_fr: "Show more French movies",
