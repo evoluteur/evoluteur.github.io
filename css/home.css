@@ -602,6 +602,9 @@ section.c0 {
 .quote {
   display: block;
   margin-top: 10px;
+  > q {
+    font-style: italic;
+  }
 }
 .om {
   position: absolute;
