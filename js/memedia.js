@@ -660,6 +660,11 @@ const mediaList = {
       imdb: "tt1375666",
     },
     {
+      id: "fallout",
+      title: "Fallout",
+      imdb: "tt12637874",
+    },
+    {
       id: "stargate",
       title: "Star Gate",
       imdb: "tt0111282",
