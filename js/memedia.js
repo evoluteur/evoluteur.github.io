@@ -751,6 +751,16 @@ const mediaList = {
       imdb: "tt0296572",
     },
     {
+      id: "the-power",
+      title: "The Power",
+      imdb: "tt10369484",
+    },
+    {
+      id: "boys",
+      title: "The Boys",
+      imdb: "tt1190634",
+    },
+    {
       id: "underworld",
       title: "Underworld",
       imdb: "tt0320691",
