@@ -32,9 +32,19 @@ const mediaList = {
       url: "https://evoluteur.github.io/meet-the-fans/",
     },
     {
+      id: "time-management",
+      title: "Time Management",
+      url: "https://evoluteur.github.io/time-management/",
+    },
+    {
       id: "motivational-numerology",
       title: "Motivational numerology",
       url: "https://evoluteur.github.io/motivational-numerology/",
+    },
+    {
+      id: "healing-frequencies",
+      title: "Healing frequencies",
+      url: "http://evoluteur.github.io/healing-frequencies",
     },
     {
       id: "isomorphic-table-cards",
