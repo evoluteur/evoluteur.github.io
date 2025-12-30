@@ -116,11 +116,13 @@ function mosaic(id, more) {
 
   if (more === 2) {
     arrListP = arrList.slice(ml, arrList.length);
+  } else if (id === "code") {
+    arrListP = arrList;
   } else {
     arrListP = more ? arrList.slice(preview, ml) : arrList.slice(0, preview);
   }
   mm = arrListP.map(imageLink);
-  if ((arrList.length > preview) & !more) {
+  if (arrList.length > preview && !more && id !== "code") {
     mm.push(linkMore(id, preview));
   }
   if (more === 1 && id === "comics") {
