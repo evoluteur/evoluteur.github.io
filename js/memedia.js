@@ -47,6 +47,11 @@ const mediaList = {
       url: "http://evoluteur.github.io/evolutility-ui-jquery/demo/index.html#comics/bubbles",
     },
     {
+      id: "van-tharp-marble-game",
+      title: "Van Tharp's Marble Game",
+      url: "http://evoluteur.github.io/van-tharp-marble-game",
+    },
+    {
       id: "d3-dual-range-slider",
       title: "D3 dual range slider",
       url: "http://evoluteur.github.io/d3-dual-range-slider/",

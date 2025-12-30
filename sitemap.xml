@@ -235,7 +235,7 @@
   <url>
     <loc>https://evoluteur.github.io/kaggle-look-alike/</loc>
     <lastmod>2020-08-05T07:39:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/bouncing-ball/</loc>
@@ -362,4 +362,20 @@
     <lastmod>2025-04-29T06:38:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://evoluteur.github.io/time-management-test/</loc>
+    <lastmod>2025-12-14T06:38:05+00:00</lastmod>
+    <priority>0.6</priority
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/scuba-diving-log-book/</loc>
+    <lastmod>2025-12-12T06:38:05+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/van-tharp-marble-game/</loc>
+    <lastmod>2025-12-30T06:38:05+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
