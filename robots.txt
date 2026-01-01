@@ -9,6 +9,7 @@
 User-agent: *
 Disallow: /pix/art
 Disallow: /pix/comics
+Disallow: /pix/fractals
 Disallow: /pix/movies
 Disallow: /pix/movies_fr
 Disallow: /pix/olivier

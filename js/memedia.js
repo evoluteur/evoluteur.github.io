@@ -1,6 +1,6 @@
 /*
  	https://evoluteur.github.io/
- 	(c) 2025 Olivier Giulieri
+ 	(c) 2026 Olivier Giulieri
  */
 
 const pixMe = [
@@ -23,7 +23,7 @@ const mediaList = {
   code: [
     {
       id: "jackedgpt",
-      title: "JackedGPT",
+      title: "Jacked-GPT",
       url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
     },
     {
@@ -33,7 +33,7 @@ const mediaList = {
     },
     {
       id: "time-management",
-      title: "Time Management",
+      title: "Time management",
       url: "https://evoluteur.github.io/time-management/",
     },
     {
@@ -58,7 +58,7 @@ const mediaList = {
     },
     {
       id: "van-tharp-marble-game",
-      title: "Van Tharp's Marble Game",
+      title: "Van Tharp's marble game",
       url: "http://evoluteur.github.io/van-tharp-marble-game",
     },
     {

@@ -17,4 +17,4 @@ Stuff I like:
 <a href="https://evoluteur.github.io/#meditation">Meditation</a>,
 <a href="https://evoluteur.github.io/fun/handpan.html">Handpan</a>...
 
-(c) 2025 Olivier Giulieri
+(c) 2026 Olivier Giulieri

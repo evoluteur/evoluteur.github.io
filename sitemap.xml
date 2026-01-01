@@ -225,12 +225,12 @@
   <url>
     <loc>https://evoluteur.github.io/d3-table-cards/</loc>
     <lastmod>2020-10-03T07:39:05+00:00</lastmod>
-    <priority>0.6</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/d3-dual-range-slider/</loc>
     <lastmod>2018-05-28T07:39:05+00:00</lastmod>
-    <priority>0.4</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/kaggle-look-alike/</loc>
@@ -245,7 +245,7 @@
   <url>
     <loc>https://evoluteur.github.io/react-crud-icons/</loc>
     <lastmod>2023-08-03T07:39:05+00:00</lastmod>
-    <priority>0.82</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/colorpicker/</loc>
@@ -255,7 +255,7 @@
   <url>
     <loc>https://evoluteur.github.io/colorpicker/documentation.html</loc>
     <lastmod>2024-03-16T07:39:05+00:00</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/braille-tools/</loc>
@@ -370,7 +370,7 @@
   <url>
     <loc>https://evoluteur.github.io/scuba-diving-log-book/</loc>
     <lastmod>2025-12-12T06:38:05+00:00</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/van-tharp-marble-game/</loc>

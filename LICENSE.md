@@ -1,7 +1,7 @@
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
- Copyright (C) 2025 Olivier Giulieri
+ Copyright (C) 2026 Olivier Giulieri
 
                             Preamble
 
