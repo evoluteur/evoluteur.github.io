@@ -5,7 +5,7 @@
 
 const pixMe = [
   "og-closeup",
-  "og-2023",
+  "og",
   "og-2019",
   "og-2018",
   "og-2017",
@@ -22,14 +22,14 @@ const shuffle = (arr) => {
 const mediaList = {
   code: [
     {
-      id: "jackedgpt",
-      title: "Jacked-GPT",
-      url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
-    },
-    {
       id: "meet-the-fans",
       title: "Meet the Fans",
       url: "https://evoluteur.github.io/meet-the-fans/",
+    },
+    {
+      id: "jackedgpt",
+      title: "Jacked-GPT",
+      url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
     },
     {
       id: "time-management",
@@ -81,11 +81,11 @@ const mediaList = {
       title: "Braille tools",
       url: "https://evoluteur.github.io/braille-tools/",
     },
-    {
-      id: "madeleinology",
-      title: "Madeleinology",
-      url: "http://evoluteur.github.io/madeleinology/",
-    },
+    // {
+    //   id: "madeleinology",
+    //   title: "Madeleinology",
+    //   url: "http://evoluteur.github.io/madeleinology/",
+    // },
   ],
   recipes: [
     {
