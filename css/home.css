@@ -47,6 +47,7 @@
   border: solid 1px #3a8cdf;
   padding: 7px 12px;
   border-radius: 10px;
+  transition: all 0.3s ease-out;
   &:hover {
     background-color: #5594f4;
     border-color: white;
