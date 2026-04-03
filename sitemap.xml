@@ -4,7 +4,7 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://evoluteur.github.io/</loc>
-    <lastmod>2024-04-01T01:01:05+00:00</lastmod>
+    <lastmod>2026-04-01T01:01:05+00:00</lastmod>
     <priority>1</priority>
     <image:image>
       <image:loc>https://evoluteur.github.io/pix/olivier-giulieri.webp</image:loc>
@@ -218,7 +218,7 @@
   <url>
     <loc>https://evoluteur.github.io/isomorphic-table-cards/</loc>
     <lastmod>2024-03-20T07:39:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/evodemo/</loc>
@@ -238,7 +238,7 @@
   <url>
     <loc>https://evoluteur.github.io/kaggle-look-alike/</loc>
     <lastmod>2020-08-05T07:39:05+00:00</lastmod>
-    <priority>0.4</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/bouncing-ball/</loc>
@@ -273,7 +273,7 @@
   <url>
     <loc>https://evoluteur.github.io/github-projects-cards/</loc>
     <lastmod>2024-03-07T01:01:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.3</priority>
   </url>
 
   <url>
@@ -368,7 +368,7 @@
   <url>
     <loc>https://evoluteur.github.io/time-management-test/</loc>
     <lastmod>2026-02-20T06:38:05+00:00</lastmod>
-    <priority>0.3</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/scuba-diving-log-book/</loc>
