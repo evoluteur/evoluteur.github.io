@@ -27,14 +27,19 @@ const mediaList = {
       url: "https://evoluteur.github.io/meet-the-fans/",
     },
     {
+      id: "time-management",
+      title: "Time management",
+      url: "https://evoluteur.github.io/time-management/",
+    },
+    {
       id: "jackedgpt",
       title: "Jacked-GPT",
       url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
     },
     {
-      id: "time-management",
-      title: "Time management",
-      url: "https://evoluteur.github.io/time-management/",
+      id: "isomorphic-table-cards",
+      title: "Table/Cards animation",
+      url: "https://evoluteur.github.io/isomorphic-table-cards/",
     },
     {
       id: "motivational-numerology",
@@ -45,11 +50,6 @@ const mediaList = {
       id: "healing-frequencies",
       title: "Healing frequencies",
       url: "http://evoluteur.github.io/healing-frequencies",
-    },
-    {
-      id: "isomorphic-table-cards",
-      title: "Table/Cards animation",
-      url: "https://evoluteur.github.io/isomorphic-table-cards/",
     },
     {
       id: "many-bubbles",
@@ -429,11 +429,6 @@ const mediaList = {
       id: "saga1",
       title: "Saga",
       url: "https://amzn.to/3bUfGR4",
-    },
-    {
-      id: "androitsheep1",
-      title: "Do androids dream of electronic sheeps",
-      url: "https://amzn.to/3wuXZzx",
     },
     {
       id: "ronin",
