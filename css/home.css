@@ -155,7 +155,9 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  transition: padding-left 0.4s, font-size 0.4s;
+  transition:
+    padding-left 0.4s,
+    font-size 0.4s;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -494,7 +496,9 @@ section.c0 {
   display: inline-block;
   border-radius: 50%;
   padding: 40px;
-  transition: height 0.3s, width 0.3s;
+  transition:
+    height 0.3s,
+    width 0.3s;
 }
 .hello-dear {
   display: inline-block;
@@ -547,8 +551,8 @@ section.c0 {
 .me {
   float: left;
   background-color: #9c27b0;
-  width: 520px;
-  height: 520px;
+  width: 525px;
+  height: 525px;
   margin-bottom: 40px;
   > div {
     margin: 100px;
@@ -958,7 +962,9 @@ section.c0 {
     font-size: 20px;
     top: 0;
     left: 10px;
-    transition: top 0.3s, opacity 0.3s;
+    transition:
+      top 0.3s,
+      opacity 0.3s;
   }
   &:hover > span {
     opacity: 1;
@@ -1105,7 +1111,10 @@ section.c0 {
   .br {
     margin-right: 30px;
     > span {
-      transition: top 0.3s, left 0.3s, opacity 0.3s;
+      transition:
+        top 0.3s,
+        left 0.3s,
+        opacity 0.3s;
     }
   }
   &:hover {
