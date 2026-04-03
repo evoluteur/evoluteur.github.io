@@ -573,8 +573,10 @@ section.c0 {
   margin-left: 10px;
 }
 .helloworld {
-  padding: 2vw;
-  font-size: 3vw;
+  margin-top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
   transition: font-size 0.3s;
   color: white;
 }
