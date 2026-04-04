@@ -840,15 +840,23 @@ section.c0 {
   .sTitle {
     position: relative;
   }
+  .pixTitle {
+    opacity: 1;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .dragon,
   .cab,
   .brTitle,
   .japancircle,
-  .dear {
+  .dear,
+  .linkMore {
     display: none;
   }
   #you,
   .me {
+    color: black;
     background-color: white;
     height: auto;
     width: 100%;
