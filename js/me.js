@@ -58,7 +58,7 @@ function otherMe(direction) {
   } else if (pixMeIdx > maxIdx) {
     pixMeIdx = 0;
   }
-  pix.src = "pix/olivier/" + pixMe[pixMeIdx] + ".webp";
+  pix.src = `pix/olivier/${pixMe[pixMeIdx]}.webp`;
 }
 function more(id) {
   const elem = $(id + "_x");
