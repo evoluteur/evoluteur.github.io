@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <script
@@ -82,6 +82,9 @@
       .right404 > p {
         right: 30px;
       }
+      .strikethrough {
+        text-decoration: line-through;
+      }
       @media only screen and (max-width: 700px) {
         .circles404 {
           display: none;
@@ -116,7 +119,10 @@
           </div>
         </div>
         <div class="right404">
-          <p>You can't type</p>
+          <p>
+            <span class="strikethrough">You can't type</span><br />
+            Sorry, my bad
+          </p>
         </div>
       </div>
 
