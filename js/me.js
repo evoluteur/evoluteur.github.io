@@ -42,7 +42,7 @@ const pixFormat = {
   "omg-art": ".webp",
 };
 let pixMeIdx = 0;
-const isMobile = typeof window.orientation !== "undefined";
+const isMobile = navigator.maxTouchPoints > 0;
 const $ = (id) => document.getElementById(id);
 
 function otherMe(direction) {
@@ -95,7 +95,7 @@ function mosaic(id, more) {
   const ext = pixFormat[id] || ".jpg";
   const arrList = mediaList[id];
   let ml = id === "comics" && more ? 30 : arrList.length,
-    arrListP = more ? arrList.slice(preview, ml) : arrList.slice(0, preview),
+    arrListP,
     pixPath = pixDir(id),
     imageLink = function (m) {
       let pix = `<img src="${pixPath + m.id + ext}" alt="${m.title}" />`;
@@ -131,7 +131,7 @@ function mosaic(id, more) {
   return mm.join("");
 }
 const linkMore = (id, preview) =>
-  `<span id="${id}_x" class="block"><button class="linkMore" onclick="javascript:more('${id}',${preview})">${linkCaptions[id]}</button></span>`;
+  `<span id="${id}_x" class="block"><button class="linkMore" onclick="more('${id}',${preview})">${linkCaptions[id]}</button></span>`;
 
 function setMosaic(id) {
   $(id + "2").innerHTML = mosaic(id);
@@ -146,7 +146,20 @@ function setupHomePage() {
   } else {
     brTitles.forEach((b) => setBraille(b.id, b.br));
   }
+  document.querySelector(".arrow-left")?.addEventListener("click", () => otherMe("-"));
+  document.querySelector(".arrow-right")?.addEventListener("click", () => otherMe("+"));
+  const omImg = document.querySelector(".om");
+  if (omImg) {
+    omImg.addEventListener("mouseover", playOm);
+    omImg.addEventListener("mouseout", stopOm);
+  }
+  const nameBox = document.querySelector(".name-box");
+  if (nameBox) {
+    nameBox.addEventListener("keyup", (e) => yourBrName(e.target));
+  }
 }
+
+document.addEventListener("DOMContentLoaded", setupHomePage);
 
 const yourBrName = (elem) => setBraille("name", elem.value);
 
@@ -187,7 +200,6 @@ const braille = (message) => {
           break;
         case "\n":
           h += "<br>";
-          nbCharsInLine = -1;
           prevCharNum = false;
           break;
         case ".":

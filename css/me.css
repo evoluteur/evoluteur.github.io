@@ -3,6 +3,16 @@
   (c) 2026 Olivier Giulieri
  */
 
+:root {
+  --c1: #e57373;
+  --c2: #ffb74d;
+  --c3: #ffd54f;
+  --c4: #81c784;
+  --c5: #4dd0e1;
+  --c6: #324399;
+  --c7: #9c27b0;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -188,7 +198,7 @@ p.clearer {
   body {
     color: #1a1a1a !important;
   }
-  body > table {
+  .row-section {
     page-break-before: always;
   }
   @page {
@@ -203,7 +213,7 @@ p.clearer {
   color: var(--color-text-secondary);
   font-size: 20px;
   position: relative;
-  top: 4px;
+  top: 2px;
   display: inline-block;
   text-align: center;
   transition:
@@ -215,53 +225,13 @@ p.clearer {
 }
 .evo-footer:hover .heart {
   color: #bf360c;
-  -webkit-animation: beat 0.35s infinite alternate;
-  -moz-animation: beat 0.35s infinite alternate;
-  -ms-animation: beat 0.35s infinite alternate;
-  -o-animation: beat 0.35s infinite alternate;
-  animation: beat 0.35s infinite alternate;
-  -webkit-transform-origin: center;
-  -moz-transform-origin: center;
-  -o-transform-origin: center;
-  -ms-transform-origin: center;
+  animation: beat 0.45s infinite alternate;
   transform-origin: center;
   margin-left: 5px;
 }
 
 @keyframes beat {
   to {
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-  }
-}
-
-@-moz-keyframes beat {
-  to {
-    -moz-transform: scale(2);
-    transform: scale(2);
-  }
-}
-
-@-webkit-keyframes beat {
-  to {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-  }
-}
-
-@-ms-keyframes beat {
-  to {
-    -ms-transform: scale(2);
-    transform: scale(2);
-  }
-}
-
-@-o-keyframes beat {
-  to {
-    -o-transform: scale(2);
-    transform: scale(2);
+    transform: scale(1.6);
   }
 }

@@ -16,7 +16,6 @@
     <link rel="canonical" href="https://evoluteur.github.io/" />
     <title>Meet Olivier Giulieri</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#bbdefb" />
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -26,8 +25,8 @@
     />
     <link href="css/me.css" rel="stylesheet" />
     <link href="css/home.css" rel="stylesheet" />
-    <script src="js/memedia.js"></script>
-    <script src="js/me.js"></script>
+    <script src="js/memedia.js" defer></script>
+    <script src="js/me.js" defer></script>
     <link rel="manifest" href="manifest.json" />
     <meta
       name="keywords"
@@ -59,24 +58,29 @@
       content="https://evoluteur.github.io/pix/evoluteur-web.png"
     />
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Olivier Giulieri",
-      "url": "https://evoluteur.github.io/",
-      "image": "https://evoluteur.github.io/pix/olivier/og-closeup.webp",
-      "sameAs": [
-        "https://github.com/evoluteur",
-        "https://linkedin.com/in/giulieri/",
-        "https://npmjs.com/~evoluteur"
-      ],
-      "jobTitle": "Software Engineer",
-      "description": "UI/UX developer, open-source contributor, French engineer living in the San Francisco Bay Area."
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Olivier Giulieri",
+        "url": "https://evoluteur.github.io/",
+        "image": "https://evoluteur.github.io/pix/olivier/og-closeup.webp",
+        "sameAs": [
+          "https://github.com/evoluteur",
+          "https://linkedin.com/in/giulieri/",
+          "https://npmjs.com/~evoluteur"
+        ],
+        "jobTitle": "Software Engineer",
+        "description": "UI/UX developer, open-source contributor, French engineer living in the San Francisco Bay Area."
+      }
     </script>
   </head>
 
-  <body onload="setupHomePage()" class="home">
+  <body class="home">
+    <noscript
+      ><p style="text-align: center; padding: 2em">
+        This site requires JavaScript to display its content.
+      </p></noscript
+    >
     <section id="hello" class="c0">
       <div class="content">
         <nav class="c7-dots no-print">
@@ -117,21 +121,33 @@
         <aside class="avatar-holder">
           <div class="avatar">
             <div class="avatar-pix">
-              <div class="arrow arrow-left" onclick="otherMe('-')"></div>
+              <div class="arrow arrow-left"></div>
               <img id="og-pix" src="pix/olivier/og-closeup.webp" alt="Photo" />
-              <div class="arrow arrow-right" onclick="otherMe('+')"></div>
+              <div class="arrow arrow-right"></div>
             </div>
             <div class="sociallinks">
-              <a target="_blank" href="https://github.com/evoluteur"
+              <a
+                target="_blank"
+                href="https://github.com/evoluteur"
+                rel="noopener noreferrer"
                 ><img src="pix/social/git.gif" alt="GitHub"
               /></a>
-              <a target="_blank" href="https://linkedin.com/in/giulieri/"
+              <a
+                target="_blank"
+                href="https://linkedin.com/in/giulieri/"
+                rel="noopener noreferrer"
                 ><img src="pix/social/in.gif" alt="LinkedIn"
               /></a>
-              <a target="_blank" href="https://npmjs.com/~evoluteur"
+              <a
+                target="_blank"
+                href="https://npmjs.com/~evoluteur"
+                rel="noopener noreferrer"
                 ><img src="pix/social/npm.gif" alt="NPM"
               /></a>
-              <a target="_blank" href="https://facebook.com/ikeepmyname4myself"
+              <a
+                target="_blank"
+                href="https://facebook.com/ikeepmyname4myself"
+                rel="noopener noreferrer"
                 ><img src="pix/social/fb.gif" alt="FaceBook"
               /></a>
             </div>
@@ -179,382 +195,361 @@
       </header>
     </section>
 
-    <table>
-      <tr id="code" class="c6">
-        <td><span class="sTitle">Code</span></td>
-        <td class="content">
-          <div id="code-braille" class="brTitle">Code</div>
-          <p>
-            I like to code (mostly using Javascript/Typescript and CSS,
-            occasionally wrangling SQL). It started as a hobby, then it became
-            my profession. I usually build user interfaces for startups.
-          </p>
+    <section id="code" class="c6 row-section">
+      <div class="row-label"><span class="sTitle">Code</span></div>
+      <div class="content">
+        <div id="code-braille" class="brTitle">Code</div>
+        <p>
+          I like to code (mostly using Javascript/Typescript and CSS,
+          occasionally wrangling SQL). It started as a hobby, then it became my
+          profession. I usually build user interfaces for startups.
+        </p>
 
-          <p>Below are a few side projects and experiments of mine.</p>
+        <p>Below are a few side projects and experiments of mine.</p>
 
-          <div id="code2" class="pixGroup evolPix"></div>
+        <div id="code2" class="pixGroup evolPix"></div>
 
-          <p>
-            These projects are open-source on
-            <a
-              href="https://github.com/evoluteur"
-              class="extlink"
-              target="gh"
-              rel="noopener"
-              >GitHub</a
-            >. If you use one of them, feel free to
-            <a
-              href="https://github.com/sponsors/evoluteur"
-              class="extlink"
-              target="gh"
-              rel="noopener"
-              >become a Sponsor</a
-            >.
-          </p>
+        <p>
+          These projects are open-source on
+          <a
+            href="https://github.com/evoluteur"
+            class="extlink"
+            target="gh"
+            rel="noopener"
+            >GitHub</a
+          >. If you use one of them, feel free to
+          <a
+            href="https://github.com/sponsors/evoluteur"
+            class="extlink"
+            target="gh"
+            rel="noopener"
+            >become a Sponsor</a
+          >.
+        </p>
 
-          <p>
-            As they got stars and forks, a network emerged, so I made another
-            little project to
-            <a
-              class="extlink"
-              target="_blank"
-              rel="noopener"
-              href="https://evoluteur.github.io/meet-the-fans/"
-              >visualize it</a
-            >.<br />
-            <a
+        <p>
+          As my projects got stars and forks on GitHub, a network emerged, so I
+          made another little project to
+          <a
+            class="extlink"
+            target="_blank"
+            rel="noopener"
+            href="https://evoluteur.github.io/meet-the-fans/"
+            >visualize it</a
+          >.<br />
+          <a
+            class="pix"
+            target="_blank"
+            rel="noopener"
+            href="https://evoluteur.github.io/meet-the-fans/"
+          >
+            <div class="pixGroup pixTitleHolder mtf">
+              <img
+                class="git-graph"
+                src="pix/code/github-network-graph.webp"
+                alt="GitHub projects network graph"
+              />
+            </div>
+          </a>
+        </p>
+
+        <p>
+          I am passionate about model-driven architecture (usually found in
+          no-code/low-code platforms, code generators, and complex data
+          visualizations), and more specifically model-driven UIs.
+        </p>
+
+        <p>
+          Working on a model-driven project is basically doing the automation of
+          my own craft. I find it especially rewarding because, beyond the
+          efficiency, it provides a unique feedback loop that helps me better
+          understand structures and patterns in UX, in software architecture,
+          and in my own thinking.
+        </p>
+
+        <p>
+          Naturally, for many years, my biggest side project was a model-driven
+          framework (<a
+            class="extlink"
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/evoluteur/evolutility-ui-react"
+            >front</a
+          >
+          and
+          <a
+            class="extlink"
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/evoluteur/evolutility-server-node"
+            >back</a
+          >
+          ends) to build applications with models rather than code. It generates
+          UI views (list, cards, edit, browse, dashboard...) and API end-points
+          at run-time to display and mutate objects of different data structures
+          based on a single model per entity. I called it "Evolutility", which
+          in Biology, means "the ability to change form, volume, and structure
+          as a result of nutrition". TLTR,
+          <a
+            class="extlink"
+            target="_blank"
+            rel="noopener"
+            href="https://codeproject.com/Articles/28636/Minimalist-Meta-Model-for-CRUD-Applications"
+            >my thoughts on the topic</a
+          >.
+        </p>
+
+        <div class="evo-box pixGroup">
+          <a
+            href="https://evoluteur.github.io/evodemo/#/demos/comics/cards"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
               class="pix"
-              target="_blank"
-              rel="noopener"
-              href="https://evoluteur.github.io/meet-the-fans/"
+              src="pix/evolutility/many-list.png"
+              alt="Evolutility list view"
+            />
+            <img
+              class="pix"
+              src="pix/evolutility/many-cards.png"
+              alt="Evolutility cards view"
+            />
+            <img
+              class="pix"
+              src="pix/evolutility/one-edit.png"
+              alt="Evolutility edit view"
+            />
+          </a>
+        </div>
+        <p>
+          My favorite
+          <a href="quotes/quotes-software.html">quote about programming</a>
+          is:
+          <span class="quote"
+            ><q
+              >"Smart data structures and dumb code works a lot better than the
+              other way around."</q
             >
-              <div class="pixGroup pixTitleHolder mtf">
-                <img
-                  class="git-graph"
-                  src="pix/code/github-network-graph.webp"
-                  alt="GitHub projects network graph"
-                />
-              </div>
-            </a>
-          </p>
+            - Eric S. Raymond.</span
+          >
+        </p>
+      </div>
+    </section>
 
-          <p>
-            I am passionate about model-driven architecture (usually found in
-            no-code/low-code platforms, code generators, and complex data
-            visualizations), and more specifically model-driven UIs.
-          </p>
+    <section id="inspiration" class="c5 row-section">
+      <div class="row-label"><span class="sTitle">Inspiration</span></div>
+      <div class="content">
+        <div id="inspiration-braille" class="brTitle">Inspiration</div>
+        <p id="fractals">
+          I like to look at
+          <a
+            class="extlink"
+            target="_blank"
+            rel="noopener"
+            href="https://google.com/search?q=fractals&source=lnms&tbm=isch"
+            >fractals</a
+          >
+          (the point where mathematics transforms into visual art) and think
+          about their strange properties like self-similarity and fractional
+          dimensions. To me, fractals are a reminder that complex beauty often
+          emerges from simple, recursive rules (a concept that resonates deeply
+          with my work in code and model-driven systems). Plus, they happen to
+          look great on
+          <a
+            class="extlink"
+            target="_blank"
+            rel="noopener"
+            href="https://www.redbubble.com/people/evoluteur/shop?artistUserName=evoluteur&asc=u&collections=4047474&iaCode=all-departments&sortOrder=relevant"
+            >T-shirts</a
+          >, which is just a bonus for a math-inspired wardrobe.
+        </p>
 
-          <p>
-            Working on a model-driven project is basically doing the automation
-            of my own craft. I find it especially rewarding because, beyond the
-            efficiency, it provides a unique feedback loop that helps me better
-            understand structures and patterns in UX, in software architecture,
-            and in my own thinking.
-          </p>
+        <div id="inspiration2" class="pixGroup smallPix"></div>
 
-          <p>
-            Naturally, for many years, my biggest side project was a
-            model-driven framework (<a
-              class="extlink"
-              target="_blank"
-              rel="noopener"
-              href="https://github.com/evoluteur/evolutility-ui-react"
-              >front</a
-            >
-            and
-            <a
-              class="extlink"
-              target="_blank"
-              rel="noopener"
-              href="https://github.com/evoluteur/evolutility-server-node"
-              >back</a
-            >
-            ends) to build applications with models rather than code. It
-            generates UI views (list, cards, edit, browse, dashboard...) and API
-            end-points at run-time to display and mutate objects of different
-            data structures based on a single model per entity. I called it
-            "Evolutility", which in Biology, means "the ability to change form,
-            volume, and structure as a result of nutrition". TLTR,
-            <a
-              class="extlink"
-              target="_blank"
-              rel="noopener"
-              href="https://codeproject.com/Articles/28636/Minimalist-Meta-Model-for-CRUD-Applications"
-              >my thoughts on the topic</a
-            >.
-          </p>
+        <p id="art">
+          I also like visual art made by humans... and it often contains
+          fractals or the
+          <a
+            href="https://en.wikipedia.org/wiki/Golden_ratio"
+            class="extlink"
+            target="_blank"
+            rel="noopener"
+            >golden ratio</a
+          >.
+        </p>
 
-          <div class="evo-box pixGroup">
-            <a
-              href="https://evoluteur.github.io/evodemo/#/demos/comics/cards"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                class="pix"
-                src="pix/evolutility/many-list.png"
-                alt="Evolutility list view"
-              />
-              <img
-                class="pix"
-                src="pix/evolutility/many-cards.png"
-                alt="Evolutility cards view"
-              />
-              <img
-                class="pix"
-                src="pix/evolutility/one-edit.png"
-                alt="Evolutility edit view"
-              />
-            </a>
-          </div>
-          <p>
-            My favorite
-            <a href="quotes/quotes-software.html">quote about programming</a>
-            is:
-            <span class="quote"
-              ><q
-                >"Smart data structures and dumb code works a lot better than
-                the other way around."</q
-              >
-              - Eric S. Raymond.</span
-            >
-          </p>
-        </td>
-      </tr>
-    </table>
+        <div id="art2" class="pixGroup smallPix"></div>
 
-    <table>
-      <tr id="inspiration" class="c5">
-        <td><span class="sTitle">Inspiration</span></td>
-        <td class="content">
-          <div id="inspiration-braille" class="brTitle">Inspiration</div>
-          <p id="fractals">
-            I like to look at
-            <a
-              class="extlink"
-              target="_blank"
-              rel="noopener"
-              href="https://google.com/search?q=fractals&source=lnms&tbm=isch"
-              >fractals</a
-            >
-            (the point where mathematics transforms into visual art) and think
-            about their strange properties like self-similarity and fractional
-            dimensions. To me, fractals are a reminder that complex beauty often
-            emerges from simple, recursive rules (a concept that resonates
-            deeply with my work in code and model-driven systems). Plus, they
-            happen to look great on
-            <a
-              class="extlink"
-              target="_blank"
-              rel="noopener"
-              href="https://www.redbubble.com/people/evoluteur/shop?artistUserName=evoluteur&asc=u&collections=4047474&iaCode=all-departments&sortOrder=relevant"
-              >T-shirts</a
-            >, which is just a bonus for a math-inspired wardrobe.
-          </p>
+        <p>
+          I don't paint, but I occasionally do fun and artsy things like making
+          <a href="fun/book-carvings.html">book carvings</a> or
+          <a href="fun/chakra-design.html">chakra balancing jewelry</a>.
+        </p>
 
-          <div id="inspiration2" class="pixGroup smallPix"></div>
+        <div>
+          <div id="omg-art2" class="pixGroup evolPix"></div>
+        </div>
 
-          <p id="art">
-            I also like visual art made by humans... and it often contains
-            fractals or the
-            <a
-              href="https://en.wikipedia.org/wiki/Golden_ratio"
-              class="extlink"
-              target="_blank"
-              rel="noopener"
-              >golden ratio</a
-            >.
-          </p>
+        <p>
+          For a time, I committed to a
+          <a href="fun/handlebar.html">"Daliesque" handlebar mustache</a> to
+          ensure I looked the part of the artist I feel I am at heart.
+        </p>
 
-          <div id="art2" class="pixGroup smallPix"></div>
-
-          <p>
-            I don't paint, but I occasionally do fun and artsy things like
-            making <a href="fun/book-carvings.html">book carvings</a> or
-            <a href="fun/chakra-design.html">chakra balancing jewelry</a>.
-          </p>
-
+        <div id="go-game"></div>
+        <div class="cols2">
           <div>
-            <div id="omg-art2" class="pixGroup evolPix"></div>
-          </div>
-
-          <p>
-            For a time, I committed to a
-            <a href="fun/handlebar.html">"Daliesque" handlebar mustache</a> to
-            ensure I looked the part of the artist I feel I am at heart.
-          </p>
-
-          <div id="go-game"></div>
-          <div class="cols2">
-            <div>
-              My favorite game is the
-              <a
-                href="https://en.wikipedia.org/wiki/History_of_Go"
-                class="extlink"
-                target="go"
-                rel="noopener"
-                >game of Go</a
-              >. I mostly
-              <a
-                href="https://online-go.com/play"
-                class="extlink"
-                target="go"
-                rel="noopener"
-                >play online</a
-              >
-              against AIs. With very few rules, and a lot of possible moves at
-              each turn, Go is more of an art than a calculation game (which
-              made it the ultimate puzzle for computer scientists until
-              <a
-                class="extlink"
-                target="_blank"
-                rel="noopener"
-                href="https://deepmind.com/research/highlighted-research/alphago"
-                >AlphaGo</a
-              >). Also, because you can win by "building" more territory than
-              your opponent, it doesn't have to be as aggressive as Chess.
-            </div>
-            <img src="pix/goban.webp" class="goban" alt="" />
-          </div>
-        </td>
-      </tr>
-    </table>
-
-    <table>
-      <tr id="recipes" class="c4">
-        <td><span class="sTitle">Cooking</span></td>
-        <td class="content">
-          <div id="recipes-braille" class="brTitle">Cooking</div>
-          <p>
-            I like to cook (and eat), especially desserts. My specialties are
-            <a href="recipes/desserts/creme-brulee.html">crèmes brûlées</a>,
-            <a href="recipes/desserts/pear-cream-tart.html">pear cream tart</a>,
-            and <a href="recipes/desserts/madeleines.html">madeleines</a>.
-          </p>
-
-          <div id="recipes2" class="pixGroup evolPix"></div>
-
-          <p>
-            I enjoy tweaking recipes by changing ingredients or quantities. My
-            most extreme makeover was going from the classic
-            <a href="recipes/desserts/madeleines.html">sweet madeleines</a> to
+            My favorite game is the
             <a
-              href="recipes/savory/salty-madeleines.html"
-              aria-label="savory madeleines recipe"
-              >savory madeleines</a
-            >
-            with duck prosciutto.
-          </p>
-
-          <p>
-            I'm learning to make
-            <a href="recipes/desserts/canneles.html" aria-label="recipe"
-              >cannelés</a
-            >. My first batches already taste really good, but it may take a few
-            more trials before I can get them perfectly crispy on the outside
-            and soft on the inside. Getting the texture right is quite a
-            <a
-              href="https://www.instagram.com/reel/Cw48rFsyDV5/?igshid=MTc4MmM1YmI2Ng"
+              href="https://en.wikipedia.org/wiki/History_of_Go"
               class="extlink"
-              target="canneles"
+              target="go"
               rel="noopener"
-              >challenge</a
-            >.
-          </p>
-          <div id="recipes_learning2" class="pixGroup evolPix">
-            <div class="pixTitleHolder">
-              <a href="recipes/desserts/canneles.html"
-                ><img src="pix/recipes/canneles.webp" alt="cannelés picture" />
-                <div class="pixTitle">Cannelés</div></a
-              >
-            </div>
+              >game of Go</a
+            >. I mostly
+            <a
+              href="https://online-go.com/play"
+              class="extlink"
+              target="go"
+              rel="noopener"
+              >play online</a
+            >
+            against AIs. With very few rules, and a lot of possible moves at
+            each turn, Go is more of an art than a calculation game (which made
+            it the ultimate puzzle for computer scientists until
+            <a
+              class="extlink"
+              target="_blank"
+              rel="noopener"
+              href="https://deepmind.com/research/highlighted-research/alphago"
+              >AlphaGo</a
+            >). Also, because you can win by "building" more territory than your
+            opponent, it doesn't have to be as aggressive as Chess.
+          </div>
+          <img src="pix/goban.webp" class="goban" alt="" />
+        </div>
+      </div>
+    </section>
 
-            <div class="jcircle"></div>
+    <section id="recipes" class="c4 row-section">
+      <div class="row-label"><span class="sTitle">Cooking</span></div>
+      <div class="content">
+        <div id="recipes-braille" class="brTitle">Cooking</div>
+        <p>
+          I like to cook (and eat), especially desserts. My specialties are
+          <a href="recipes/desserts/creme-brulee.html">crèmes brûlées</a>,
+          <a href="recipes/desserts/pear-cream-tart.html">pear cream tart</a>,
+          and <a href="recipes/desserts/madeleines.html">madeleines</a>.
+        </p>
+
+        <div id="recipes2" class="pixGroup evolPix"></div>
+
+        <p>
+          I enjoy tweaking recipes by changing ingredients or quantities. My
+          most extreme makeover was going from the classic
+          <a href="recipes/desserts/madeleines.html">sweet madeleines</a> to
+          <a
+            href="recipes/savory/salty-madeleines.html"
+            aria-label="savory madeleines recipe"
+            >savory madeleines</a
+          >
+          with duck prosciutto.
+        </p>
+
+        <p>
+          I'm learning to make
+          <a href="recipes/desserts/canneles.html" aria-label="recipe"
+            >cannelés</a
+          >. My first batches already taste really good, but it may take a few
+          more trials before I can get them perfectly crispy on the outside and
+          soft on the inside. Getting the texture right is quite a
+          <a
+            href="https://www.instagram.com/reel/Cw48rFsyDV5/?igshid=MTc4MmM1YmI2Ng"
+            class="extlink"
+            target="canneles"
+            rel="noopener"
+            >challenge</a
+          >.
+        </p>
+        <div id="recipes_learning2" class="pixGroup evolPix">
+          <div class="pixTitleHolder">
+            <a href="recipes/desserts/canneles.html"
+              ><img src="pix/recipes/canneles.webp" alt="cannelés picture" />
+              <div class="pixTitle">Cannelés</div></a
+            >
           </div>
 
-          <p></p>
-        </td>
-      </tr>
-    </table>
+          <div class="jcircle"></div>
+        </div>
+      </div>
+    </section>
 
-    <table>
-      <tr id="comics" class="c3">
-        <td><span class="sTitle">Graphic Novels</span></td>
-        <td class="content">
-          <div id="comics-braille" class="brTitle">Graphic Novels</div>
-          <img class="cab" src="pix/moebius/cab.webp" alt="" loading="lazy" />
+    <section id="comics" class="c3 row-section">
+      <div class="row-label"><span class="sTitle">Graphic Novels</span></div>
+      <div class="content">
+        <div id="comics-braille" class="brTitle">Graphic Novels</div>
+        <img class="cab" src="pix/moebius/cab.webp" alt="" loading="lazy" />
 
-          <p>
-            I like to read and collect graphic novels, mostly sci-fi and
-            fantasy, usually in French.
-          </p>
-          <div id="comics2" class="pixGroup comicsPix"></div>
+        <p>
+          I like to read and collect graphic novels, mostly sci-fi and fantasy,
+          usually in French.
+        </p>
+        <div id="comics2" class="pixGroup comicsPix"></div>
 
-          <p>... and sometimes in English.</p>
-          <div id="comics_us2" class="pixGroup comicsPix"></div>
-        </td>
-      </tr>
-    </table>
+        <p>... and sometimes in English.</p>
+        <div id="comics_us2" class="pixGroup comicsPix"></div>
+      </div>
+    </section>
 
-    <table>
-      <tr id="movies" class="c2">
-        <td><span class="sTitle">Movies</span></td>
-        <td class="content">
-          <div id="movies-braille" class="brTitle">Movies</div>
-          <img class="dragon" src="pix/avatar.webp" alt="" loading="lazy" />
-          <p>I like to watch sci-fi movies and anime, but I do not own a TV.</p>
-          <div id="movies2" class="pixGroup moviePix"></div>
-          <p>Of course, I also enjoy French movies.</p>
-          <div id="movies_fr2" class="pixGroup moviePix"></div>
-        </td>
-      </tr>
-    </table>
+    <section id="movies" class="c2 row-section">
+      <div class="row-label"><span class="sTitle">Movies</span></div>
+      <div class="content">
+        <div id="movies-braille" class="brTitle">Movies</div>
+        <img class="dragon" src="pix/avatar.webp" alt="" loading="lazy" />
+        <p>I like to watch sci-fi movies and anime, but I do not own a TV.</p>
+        <div id="movies2" class="pixGroup moviePix"></div>
+        <p>Of course, I also enjoy French movies.</p>
+        <div id="movies_fr2" class="pixGroup moviePix"></div>
+      </div>
+    </section>
 
-    <table>
-      <tr id="meditation" class="c1">
-        <td><span class="sTitle">Meditation</span></td>
-        <td class="content">
+    <section id="meditation" class="c1 row-section">
+      <div class="row-label"><span class="sTitle">Meditation</span></div>
+      <div class="content">
+        <img src="pix/meditation/om.png" class="om" alt="" loading="lazy" />
+        <div id="meditation-braille" class="brTitle">Meditation</div>
+        <p>
+          I like to <a href="fun/meditation.html">meditate</a>. It keeps me sane
+          and helps me grow.
+        </p>
+        <div id="meditation2" class="pixGroup chakraPix"></div>
+        <p>
+          I'm also (very slowly) learning to play the
+          <a href="fun/handpan.html">handpan</a> and using tuning forks or my
+          computer to experiment with
+          <a
+            href="https://evoluteur.github.io/healing-frequencies/"
+            class="extlink"
+            target="num"
+            rel="noopener"
+            >healing frequencies</a
+          >.
+        </p>
+
+        <p>
           <img
-            src="pix/meditation/om.png"
-            class="om"
-            onmouseover="playOm()"
-            onmouseout="stopOm()"
+            class="quartz"
+            src="pix/moebius/quartz.webp"
             alt=""
             loading="lazy"
           />
-          <div id="meditation-braille" class="brTitle">Meditation</div>
-          <p>
-            I like to <a href="fun/meditation.html">meditate</a>. It keeps me
-            sane and helps me grow.
-          </p>
-          <div id="meditation2" class="pixGroup chakraPix"></div>
-          <p>
-            I'm also (very slowly) learning to play the
-            <a href="fun/handpan.html">handpan</a> and using tuning forks or my
-            computer to experiment with
-            <a
-              href="https://evoluteur.github.io/healing-frequencies/"
-              class="extlink"
-              target="num"
-              rel="noopener"
-              >healing frequencies</a
-            >.
-          </p>
-
-          <p>
-            <img
-              class="quartz"
-              src="pix/moebius/quartz.webp"
-              alt=""
-              loading="lazy"
-            />
-          </p>
-        </td>
-      </tr>
-    </table>
+        </p>
+      </div>
+    </section>
 
     <div class="congrats">
-      <div className="br-congrats">
+      <div class="br-congrats">
         <div id="congrats-braille" class="brTitle"></div>
       </div>
       <div id="learn-braille" class="brTitle"></div>
@@ -573,11 +568,7 @@
 
         <div class="no-print">
           See
-          <input
-            value="your name"
-            onkeyup="yourBrName(this)"
-            class="name-box"
-          />
+          <input value="your name" class="name-box" />
           in Braille.
           <div id="name-braille"></div>
         </div>
@@ -619,6 +610,6 @@
       &#169; 2026 Olivier Giulieri - <a href="sitemap.html">Site map</a>
     </footer>
 
-    <audio id="om-sound" src="pix/meditation/om.ogg"></audio>
+    <audio id="om-sound" src="pix/meditation/om.ogg" preload="none"></audio>
   </body>
 </html>
