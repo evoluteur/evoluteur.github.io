@@ -4,6 +4,7 @@
  */
 
 .home {
+  padding-left: 14px;
   & .row-label {
     width: 70px;
     flex-shrink: 0;
@@ -143,9 +144,6 @@
   transform: rotate(90deg);
 }
 .sTitle {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 25px;
   padding-top: 10px;
   padding-left: 30px;
   font-size: 50px;
@@ -221,6 +219,10 @@ section:not(.row-section) {
   border-left: solid 6px transparent;
   padding-left: 10px;
 }
+.row-label {
+  position: sticky;
+  top: 5px;
+}
 .row-section {
   display: flex;
   align-items: flex-start;
@@ -243,26 +245,26 @@ section.c0 {
   z-index: 50;
 }
 
-.c1 > .row-label {
-  border-color: var(--c1);
+.c1.row-section {
+  border-left: 5px solid var(--c1);
 }
-.c2 > .row-label {
-  border-color: var(--c2);
+.c2.row-section {
+  border-left: 5px solid var(--c2);
 }
-.c3 > .row-label {
-  border-color: var(--c3);
+.c3.row-section {
+  border-left: 5px solid var(--c3);
 }
-.c4 > .row-label {
-  border-color: var(--c4);
+.c4.row-section {
+  border-left: 5px solid var(--c4);
 }
-.c5 > .row-label {
-  border-color: var(--c5);
+.c5.row-section {
+  border-left: 5px solid var(--c5);
 }
-.c6 > .row-label {
-  border-color: var(--c6);
+.c6.row-section {
+  border-left: 5px solid var(--c6);
 }
-.c7 > .row-label {
-  border-color: var(--c7);
+.c7.row-section {
+  border-left: 5px solid var(--c7);
 }
 
 .c7-dots {
