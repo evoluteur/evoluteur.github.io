@@ -4,7 +4,7 @@
  */
 
 .home {
-  padding-left: 14px;
+  padding-left: 8px;
   & .row-label {
     width: 70px;
     flex-shrink: 0;
