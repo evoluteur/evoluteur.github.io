@@ -22,7 +22,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Marcellus", serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.4em;
@@ -37,6 +37,7 @@ h4 {
 }
 h1 {
   font-size: 2.5rem;
+  padding: 0.5em 0 1em 0;
 }
 a,
 a:visited {
