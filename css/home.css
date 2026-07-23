@@ -706,9 +706,6 @@ section.c0 {
   }
 }
 @media only screen and (max-width: 850px) {
-  .evolPix img {
-    height: auto;
-  }
   #egg {
     border-radius: 50px;
     margin-left: 30px;

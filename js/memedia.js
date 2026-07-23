@@ -28,7 +28,7 @@ const mediaList = {
     },
     {
       id: "time-management",
-      title: "Time management",
+      title: "Time Management",
       url: "https://evoluteur.github.io/time-management/",
     },
     {
@@ -43,42 +43,42 @@ const mediaList = {
     },
     {
       id: "motivational-numerology",
-      title: "Motivational numerology",
+      title: "Motivational Numerology",
       url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
       id: "healing-frequencies",
-      title: "Healing frequencies",
+      title: "Healing Frequencies",
       url: "http://evoluteur.github.io/healing-frequencies",
     },
     {
       id: "many-bubbles",
-      title: "Evolutility bubbles view",
+      title: "Evolutility Bubbles View",
       url: "http://evoluteur.github.io/evolutility-ui-jquery/demo/index.html#comics/bubbles",
     },
     {
       id: "van-tharp-marble-game",
-      title: "Van Tharp's marble game",
+      title: "Van Tharp's Marble Game",
       url: "http://evoluteur.github.io/van-tharp-marble-game",
     },
     {
       id: "d3-dual-range-slider",
-      title: "D3 dual range slider",
+      title: "D3 Dual Range Slider",
       url: "http://evoluteur.github.io/d3-dual-range-slider/",
     },
     {
       id: "colorpicker",
-      title: "Color picker",
+      title: "Color Picker",
       url: "http://evoluteur.github.io/colorpicker/",
     },
     {
       id: "structured-filter",
-      title: "Structured filter",
-      url: "http://evoluteur.github.io/structured-filter/",
+      title: "Structured Filter React",
+      url: "http://evoluteur.github.io/structured-filter-react/",
     },
     {
       id: "braille-tools",
-      title: "Braille tools",
+      title: "Braille Tools",
       url: "https://evoluteur.github.io/braille-tools/",
     },
     // {
@@ -90,12 +90,12 @@ const mediaList = {
   recipes: [
     {
       id: "creme-brulee",
-      title: "Crèmes brûlées",
+      title: "Crèmes Brûlées",
       url: "recipes/desserts/creme-brulee.html",
     },
     {
       id: "pear-tart",
-      title: "Pear cream tart",
+      title: "Pear Cream Tart",
       url: "recipes/desserts/pear-cream-tart.html",
     },
     {
