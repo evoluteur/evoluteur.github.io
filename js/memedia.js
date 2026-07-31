@@ -27,6 +27,16 @@ const mediaList = {
       url: "https://evoluteur.github.io/meet-the-fans/",
     },
     {
+      id: "react-morph-charts",
+      title: "React Morph Charts",
+      url: "https://evoluteur.github.io/react-morph-charts/",
+    },
+    {
+      id: "react-morph-table-cards",
+      title: "React Morph Table/Cards",
+      url: "https://evoluteur.github.io/react-morph-table-cards/",
+    },
+    {
       id: "time-management",
       title: "Time Management",
       url: "https://evoluteur.github.io/time-management/",
@@ -36,11 +46,11 @@ const mediaList = {
       title: "Jacked-GPT",
       url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
     },
-    {
-      id: "isomorphic-table-cards",
-      title: "Table/Cards animation",
-      url: "https://evoluteur.github.io/isomorphic-table-cards/",
-    },
+    // {
+    //   id: "isomorphic-table-cards",
+    //   title: "Table/Cards animation",
+    //   url: "https://evoluteur.github.io/isomorphic-table-cards/",
+    // },
     {
       id: "motivational-numerology",
       title: "Motivational Numerology",
