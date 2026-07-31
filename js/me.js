@@ -98,7 +98,7 @@ function mosaic(id, more) {
     arrListP,
     pixPath = pixDir(id),
     imageLink = function (m) {
-      let pix = `<img src="${pixPath + m.id + ext}" alt="${m.title}" />`;
+      let pix = `<img src="${pixPath + m.id + ext}" alt="${m.title}" loading="lazy" />`;
       if (m.title) {
         pix += `<div class="pixTitle">${m.title}</div>`;
       }

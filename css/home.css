@@ -91,6 +91,7 @@
   > div > img {
     height: 300px;
     width: 300px;
+    min-width: 300px;
     max-width: calc(100vw - 100px);
     border-radius: 50%;
     border: 3px solid transparent;
@@ -144,6 +145,7 @@
   transform: rotate(90deg);
 }
 .sTitle {
+  margin: 0;
   padding-top: 10px;
   padding-left: 30px;
   font-size: 50px;
