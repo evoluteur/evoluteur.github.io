@@ -27,6 +27,16 @@ const mediaList = {
       url: "https://evoluteur.github.io/meet-the-fans/",
     },
     {
+      id: "healing-frequencies",
+      title: "Healing Frequencies",
+      url: "http://evoluteur.github.io/healing-frequencies",
+    },
+    {
+      id: "motivational-numerology",
+      title: "Motivational Numerology",
+      url: "https://evoluteur.github.io/motivational-numerology/",
+    },
+    {
       id: "react-morph-charts",
       title: "React Morph Charts",
       url: "https://evoluteur.github.io/react-morph-charts/",
@@ -51,16 +61,6 @@ const mediaList = {
     //   title: "Table/Cards animation",
     //   url: "https://evoluteur.github.io/isomorphic-table-cards/",
     // },
-    {
-      id: "motivational-numerology",
-      title: "Motivational Numerology",
-      url: "https://evoluteur.github.io/motivational-numerology/",
-    },
-    {
-      id: "healing-frequencies",
-      title: "Healing Frequencies",
-      url: "http://evoluteur.github.io/healing-frequencies",
-    },
     {
       id: "many-bubbles",
       title: "Evolutility Bubbles View",
@@ -169,7 +169,7 @@ const mediaList = {
     },
     {
       id: "4pouvoir1",
-      title: "Le Quatrieme Pouvoir",
+      title: "Le Quatrième Pouvoir",
       url: "http://www.bedetheque.com/serie-592-BD-Quatrieme-pouvoir.html",
     },
     {
@@ -179,12 +179,12 @@ const mediaList = {
     },
     {
       id: "ivressefantom1",
-      title: "L'Ivresse des Fantomes",
+      title: "L'Ivresse des Fantômes",
       url: "http://www.bedetheque.com/serie-15118-BD-Ivresse-des-fantomes.html",
     },
     {
       id: "carmenmc1",
-      title: "Carmen Mc-Callum",
+      title: "Carmen Mc Callum",
       url: "http://www.bedetheque.com/serie-70-BD-Carmen-Mc-Callum.html",
     },
     {
@@ -194,7 +194,7 @@ const mediaList = {
     },
     {
       id: "zarkass1",
-      title: "Piege sur Zarkass",
+      title: "Piège sur Zarkass",
       url: "http://www.bedetheque.com/serie-36598-BD-Piege-sur-Zarkass.html",
     },
     {
@@ -204,7 +204,7 @@ const mediaList = {
     },
     {
       id: "ocean-amour",
-      title: "Un Ocean d'Amour",
+      title: "Un Océan d'Amour",
       url: "http://www.bedetheque.com/serie-44836-BD-Un-ocean-d-amour.html",
     },
     {
@@ -214,7 +214,7 @@ const mediaList = {
     },
     {
       id: "legendesoublie1",
-      title: "Legendes des Contrees Oubliees",
+      title: "Légendes des Contrées Oubliées",
       url: "http://www.bedetheque.com/serie-2-BD-Legendes-des-contrees-oubliees.html",
     },
     {
@@ -244,12 +244,12 @@ const mediaList = {
     },
     {
       id: "chimere1",
-      title: "Chimeres 1887",
+      title: "Chimères 1887",
       url: "http://www.bedetheque.com/serie-29524-BD-Chimeres-1887.html",
     },
     {
       id: "fleaudieux1",
-      title: "Le Fleau des Dieux",
+      title: "Le Fléau des Dieux",
       url: "http://www.bedetheque.com/serie-526-BD-Fleau-des-dieux.html",
     },
     {
@@ -259,7 +259,7 @@ const mediaList = {
     },
     {
       id: "oms",
-      title: "OMS en serie",
+      title: "OMS en série",
       url: "http://www.bedetheque.com/serie-35557-BD-OmS-en-serie.html",
     },
     {
@@ -279,7 +279,7 @@ const mediaList = {
     },
     {
       id: "vampire-benares1",
-      title: "Le Vampire de Benares",
+      title: "Le Vampire de Bénarès",
       url: "http://www.bedetheque.com/serie-28231-BD-Vampire-de-Benares.html",
     },
     {
@@ -319,7 +319,7 @@ const mediaList = {
     },
     {
       id: "metabaron1",
-      title: "Les Meta-Barons",
+      title: "Les Méta-Barons",
       url: "http://www.bedetheque.com/serie-5124-BD-Meta-barons.html",
     },
     {
@@ -339,7 +339,7 @@ const mediaList = {
     },
     {
       id: "meteors",
-      title: "Meteors",
+      title: "Météors",
       url: "http://www.bedetheque.com/serie-17452-BD-Meteors.html",
     },
     {
@@ -400,7 +400,7 @@ const mediaList = {
     },
     {
       id: "valerian",
-      title: "Valerian",
+      title: "Valérian",
       url: "https://www.bedetheque.com/serie-174-BD-Valerian.html",
     },
     {
@@ -410,22 +410,22 @@ const mediaList = {
     },
     {
       id: "sortileges",
-      title: "Sortileges",
+      title: "Sortilèges",
       url: "https://www.bedetheque.com/serie-34923-BD-Sortileges-Dufaux-Munuera.html",
     },
     {
       id: "saisoncoul",
-      title: "La Saison de la Couloeuvre",
+      title: "La Saison de la Couleuvre",
       url: "https://www.bedetheque.com/serie-16372-BD-Saison-de-la-Couloeuvre.html",
     },
     {
       id: "salammbo",
-      title: "Salammbo",
+      title: "Salammbô",
       url: "https://smile.amazon.com/Salammbo-Gustave-Flaubert/dp/1785866648",
     },
     {
       id: "prisonnier-etoiles",
-      title: "Le Prisonnier des etoiles",
+      title: "Le Prisonnier des étoiles",
       url: "https://www.bedetheque.com/serie-2862-BD-Prisonnier-des-etoiles.html",
     },
     {
@@ -554,7 +554,7 @@ const mediaList = {
     },
     {
       id: "vangogh",
-      title: "Vincent Van Gogh",
+      title: "Vincent van Gogh",
       url: "https://www.google.com/search?q=van+gogh&newwindow=1&source=lnms&tbm=isch",
     },
     {
@@ -691,7 +691,7 @@ const mediaList = {
     },
     {
       id: "stargate",
-      title: "Star Gate",
+      title: "Stargate",
       imdb: "tt0111282",
     },
     {
@@ -701,7 +701,7 @@ const mediaList = {
     },
     {
       id: "guardian-galaxy",
-      title: "Guardian of the Galaxy",
+      title: "Guardians of the Galaxy",
       imdb: "tt2015381",
     },
     {
@@ -752,7 +752,7 @@ const mediaList = {
     },
     {
       id: "dejavu",
-      title: "Deja Vu",
+      title: "Déjà Vu",
       imdb: "tt0453467",
     },
     {
@@ -872,7 +872,7 @@ const mediaList = {
     },
     {
       id: "existenz",
-      title: "Existenz",
+      title: "eXistenZ",
       imdb: "tt0120907",
     },
     {
@@ -909,7 +909,7 @@ const mediaList = {
   movies_fr: [
     {
       id: "amelie",
-      title: "Amelie",
+      title: "Amélie",
       title_us: "",
       imdb: "tt0211915",
     },
@@ -980,7 +980,7 @@ const mediaList = {
     },
     {
       id: "planete-sauvage",
-      title: "Planete Sauvage",
+      title: "La Planète Sauvage",
       title_us: "Fantastic Planet",
       imdb: "tt0070544",
     },
