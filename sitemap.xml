@@ -76,9 +76,19 @@
     <priority>0.1</priority>
   </url>
   <url>
+    <loc>https://evoluteur.github.io/quotes/quotes-spirituality.html</loc>
+    <lastmod>2026-07-31T08:00:05+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/quotes/quotes-imagination.html</loc>
+    <lastmod>2026-07-31T08:00:05+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://evoluteur.github.io/quotes/quotes-software.html</loc>
     <lastmod>2023-09-20T08:00:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/quotes/quotes-teams.html</loc>
