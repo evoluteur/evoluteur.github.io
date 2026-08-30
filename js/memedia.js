@@ -37,6 +37,11 @@ const mediaList = {
       url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
+      id: "sacred-geometry",
+      title: "Sacred Geometry",
+      url: "https://evoluteur.github.io/sacred-geometry/",
+    },
+    {
       id: "react-morph-charts",
       title: "React Morph Charts",
       url: "https://evoluteur.github.io/react-morph-charts/",
@@ -46,11 +51,11 @@ const mediaList = {
       title: "React Morph Table/Cards",
       url: "https://evoluteur.github.io/react-morph-table-cards/",
     },
-    {
-      id: "time-management",
-      title: "Time Management",
-      url: "https://evoluteur.github.io/time-management/",
-    },
+    // {
+    //   id: "time-management",
+    //   title: "Time Management",
+    //   url: "https://evoluteur.github.io/time-management/",
+    // },
     {
       id: "jackedgpt",
       title: "Jacked-GPT",
@@ -61,11 +66,11 @@ const mediaList = {
     //   title: "Table/Cards animation",
     //   url: "https://evoluteur.github.io/isomorphic-table-cards/",
     // },
-    {
-      id: "many-bubbles",
-      title: "Evolutility Bubbles View",
-      url: "http://evoluteur.github.io/evolutility-ui-jquery/demo/index.html#comics/bubbles",
-    },
+    // {
+    //   id: "many-bubbles",
+    //   title: "Evolutility Bubbles View",
+    //   url: "http://evoluteur.github.io/evolutility-ui-jquery/demo/index.html#comics/bubbles",
+    // },
     {
       id: "van-tharp-marble-game",
       title: "Van Tharp's Marble Game",

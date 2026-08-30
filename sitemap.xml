@@ -43,6 +43,9 @@
     <loc>https://evoluteur.github.io/recipes/desserts/creme-brulee.html</loc>
     <lastmod>2024-02-14T07:09:05+00:00</lastmod>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://evoluteur.github.io/pix/recipes/creme-brulee.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://evoluteur.github.io/recipes/desserts/pear-cream-tart.html</loc>
@@ -53,6 +56,9 @@
     <loc>https://evoluteur.github.io/recipes/desserts/madeleines.html</loc>
     <lastmod>2022-10-03T07:09:05+00:00</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://evoluteur.github.io/pix/recipes/madeleine.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://evoluteur.github.io/recipes/desserts/canneles.html</loc>
@@ -220,6 +226,7 @@
     <lastmod>2026-07-30T01:01:05+00:00</lastmod>
     <priority>0.1</priority>
   </url>
+
   <url>
     <loc>https://evoluteur.github.io/structured-filter-react/</loc>
     <lastmod>2026-07-19T07:39:05+00:00</lastmod>
@@ -230,6 +237,7 @@
     <lastmod>2026-07-19T07:39:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://evoluteur.github.io/isomorphic-table-cards/</loc>
     <lastmod>2024-03-20T07:39:05+00:00</lastmod>
@@ -323,21 +331,21 @@
   </url>
 
   <url>
-    <loc>https://evoluteur.github.io/madeleinology/</loc>
-    <lastmod>2024-04-26T06:38:05+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://evoluteur.github.io/madeleine-radars/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.3</priority>
     <image:image>
       <image:loc>https://evoluteur.github.io/madeleine-radars/screenshot.png</image:loc>
     </image:image>
   </url>
   <url>
+    <loc>https://evoluteur.github.io/madeleinology/</loc>
+    <lastmod>2026-08-03T06:38:05+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://evoluteur.github.io/madeleinology/madeleines-data-science.html</loc>
-    <lastmod>2019-06-27T06:38:05+00:00</lastmod>
+    <lastmod>2026-08-03T06:38:05+00:00</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
@@ -380,10 +388,11 @@
     <lastmod>2019-06-27T06:38:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://evoluteur.github.io/time-management/</loc>
     <lastmod>2025-04-29T06:38:05+00:00</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
     <image:image>
       <image:loc>https://evoluteur.github.io/time-management/img/time-management.png</image:loc>
     </image:image>
@@ -396,17 +405,42 @@
   <url>
     <loc>https://evoluteur.github.io/time-management-test/</loc>
     <lastmod>2026-02-20T06:38:05+00:00</lastmod>
-    <priority>0.75</priority>
+    <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://evoluteur.github.io/scuba-diving-log-book/</loc>
     <lastmod>2025-12-12T06:38:05+00:00</lastmod>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://evoluteur.github.io/van-tharp-marble-game/</loc>
     <lastmod>2025-12-30T06:38:05+00:00</lastmod>
     <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/sacred-geometry/</loc>
+    <lastmod>2026-08-30T06:38:05+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/sacred-geometry/gallery.html</loc>
+    <lastmod>2026-08-30T06:38:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+
+  <url>
+    <loc>https://evoluteur.github.io/binaural-beats/</loc>
+    <lastmod>2026-08-30T06:38:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/binaural-beats/brainwave-scale.html</loc>
+    <lastmod>2026-08-30T06:38:05+00:00</lastmod>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
