@@ -266,7 +266,7 @@
   <url>
     <loc>https://evoluteur.github.io/kaggle-look-alike/</loc>
     <lastmod>2020-08-05T07:39:05+00:00</lastmod>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/bouncing-ball/</loc>
@@ -276,8 +276,9 @@
   <url>
     <loc>https://evoluteur.github.io/react-crud-icons/</loc>
     <lastmod>2023-08-03T07:39:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
+
   <url>
     <loc>https://evoluteur.github.io/colorpicker/</loc>
     <lastmod>2024-03-16T07:39:05+00:00</lastmod>
@@ -288,6 +289,7 @@
     <lastmod>2024-03-16T07:39:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://evoluteur.github.io/braille-tools/</loc>
     <lastmod>2026-07-21T01:01:05+00:00</lastmod>
@@ -302,12 +304,12 @@
   <url>
     <loc>https://evoluteur.github.io/github-projects-cards/</loc>
     <lastmod>2024-03-07T01:01:05+00:00</lastmod>
-    <priority>0.3</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/npm-pulse/</loc>
     <lastmod>2026-08-30T06:38:05+00:00</lastmod>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/npm-pulse/chart.html</loc>
@@ -318,7 +320,7 @@
   <url>
     <loc>https://evoluteur.github.io/evolutility-ui-jquery/</loc>
     <lastmod>2024-03-16T07:39:05+00:00</lastmod>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/evolutility-ui-jquery/doc/</loc>
@@ -403,7 +405,7 @@
   <url>
     <loc>https://evoluteur.github.io/time-management/</loc>
     <lastmod>2025-04-29T06:38:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
     <image:image>
       <image:loc>https://evoluteur.github.io/time-management/img/time-management.png</image:loc>
     </image:image>
@@ -411,12 +413,12 @@
   <url>
     <loc>https://evoluteur.github.io/time-management/index-french.html</loc>
     <lastmod>2025-04-29T06:38:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/time-management-test/</loc>
     <lastmod>2026-02-20T06:38:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
 
   <url>
@@ -428,7 +430,7 @@
   <url>
     <loc>https://evoluteur.github.io/van-tharp-marble-game/</loc>
     <lastmod>2025-12-30T06:38:05+00:00</lastmod>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
@@ -456,7 +458,7 @@
   <url>
     <loc>https://evoluteur.github.io/binaural-beats/</loc>
     <lastmod>2026-08-30T06:38:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/binaural-beats/brainwave-scale.html</loc>

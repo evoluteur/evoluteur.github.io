@@ -37,6 +37,11 @@ const mediaList = {
       url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
+      id: "platonic-solids",
+      title: "Platonic Solids",
+      url: "https://evoluteur.github.io/platonic-solids/",
+    },
+    {
       id: "sacred-geometry",
       title: "Sacred Geometry",
       url: "https://evoluteur.github.io/sacred-geometry/",
@@ -56,11 +61,11 @@ const mediaList = {
     //   title: "Time Management",
     //   url: "https://evoluteur.github.io/time-management/",
     // },
-    {
-      id: "jackedgpt",
-      title: "Jacked-GPT",
-      url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
-    },
+    // {
+    //   id: "jackedgpt",
+    //   title: "Jacked-GPT",
+    //   url: "https://jackedgpt-8eaf6b49c971.herokuapp.com/",
+    // },
     // {
     //   id: "isomorphic-table-cards",
     //   title: "Table/Cards animation",
