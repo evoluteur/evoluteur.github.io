@@ -77,14 +77,14 @@ const mediaList = {
     //   url: "http://evoluteur.github.io/evolutility-ui-jquery/demo/index.html#comics/bubbles",
     // },
     {
-      id: "van-tharp-marble-game",
-      title: "Van Tharp's Marble Game",
-      url: "http://evoluteur.github.io/van-tharp-marble-game",
-    },
-    {
       id: "d3-dual-range-slider",
       title: "D3 Dual Range Slider",
       url: "http://evoluteur.github.io/d3-dual-range-slider/",
+    },
+    {
+      id: "braille-tools",
+      title: "Braille Tools",
+      url: "https://evoluteur.github.io/braille-tools/",
     },
     {
       id: "colorpicker",
@@ -97,9 +97,9 @@ const mediaList = {
       url: "http://evoluteur.github.io/structured-filter-react/",
     },
     {
-      id: "braille-tools",
-      title: "Braille Tools",
-      url: "https://evoluteur.github.io/braille-tools/",
+      id: "van-tharp-marble-game",
+      title: "Van Tharp's Marble Game",
+      url: "http://evoluteur.github.io/van-tharp-marble-game",
     },
     // {
     //   id: "madeleinology",
