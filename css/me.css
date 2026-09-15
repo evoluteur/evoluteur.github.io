@@ -109,6 +109,10 @@ td {
 .cards.handpan > div {
   max-width: 562px;
 }
+.cards.projects > div {
+  width: 320px;
+  min-width: 260px;
+}
 .cards.quotes {
   > div {
     width: 300px;

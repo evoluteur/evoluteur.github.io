@@ -27,6 +27,22 @@ const mediaList = {
       url: "https://evoluteur.github.io/meet-the-fans/",
     },
     {
+      id: "cymatics",
+      title: "Cymatics",
+      url: "https://evoluteur.github.io/cymatics/",
+    },
+    {
+      id: "platonic-solids",
+      title: "Platonic Solids",
+      url: "https://evoluteur.github.io/platonic-solids/",
+    },
+
+    // {
+    //   id: "sacred-geometry",
+    //   title: "Sacred Geometry",
+    //   url: "https://evoluteur.github.io/sacred-geometry/",
+    // },
+    {
       id: "healing-frequencies",
       title: "Healing Frequencies",
       url: "http://evoluteur.github.io/healing-frequencies",
@@ -35,16 +51,6 @@ const mediaList = {
       id: "motivational-numerology",
       title: "Motivational Numerology",
       url: "https://evoluteur.github.io/motivational-numerology/",
-    },
-    {
-      id: "platonic-solids",
-      title: "Platonic Solids",
-      url: "https://evoluteur.github.io/platonic-solids/",
-    },
-    {
-      id: "sacred-geometry",
-      title: "Sacred Geometry",
-      url: "https://evoluteur.github.io/sacred-geometry/",
     },
     {
       id: "react-morph-charts",
