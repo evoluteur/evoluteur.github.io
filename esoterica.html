@@ -31,18 +31,53 @@
     <link href="css/me.css" rel="stylesheet" />
     <link href="projects/projects.css" rel="stylesheet" />
     <style>
-      /* cards capped at 400px on this page (the shared .cards.projects rule is width 320px, min 260px) */
+      /* wider cards on this page (the shared .cards.projects rule is width 320px, min 260px),
+         with the text to the right of the picture */
       .cards.projects > div {
-        max-width: 400px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 20px;
+        align-items: center;
+        align-content: start;
+        box-sizing: border-box;
+        flex: 0 1 506px; /* same width for every card in every section (no growing) */
+        width: 506px;
+        max-width: 100%;
+      }
+      .cards.projects > div > h3 {
+        grid-column: 1 / -1;
+        font-size: 1.5rem; /* a little bigger than the default h3 */
+      }
+      /* no background behind the card titles (the global link rule adds one) */
+      .cards.projects > div > h3 a,
+      .cards.projects > div > h3 a:visited,
+      .cards.projects > div > h3 a:hover {
+        background-color: transparent;
+      }
+      .cards.projects > div > .card-pix {
+        grid-column: 1;
+        margin-bottom: 0;
+      }
+      .cards.projects > div > p {
+        grid-column: 2;
+        margin: 0;
+      }
+      @media only screen and (max-width: 540px) {
+        .cards.projects > div {
+          display: block;
+        }
+        .cards.projects > div > .card-pix {
+          margin-bottom: 12px;
+        }
       }
     </style>
     <meta
       name="keywords"
-      content="olivier, giulieri, esoterica, tarot, i ching, runes, numerology, healing frequencies, binaural beats, cymatics, singing bowls, mantra, sacred geometry, golden ratio, sri yantra, mandala, platonic solids, ogham, chakras"
+      content="olivier, giulieri, esoterica, numerology, healing frequencies, binaural beats, cymatics, sacred geometry, mandala, platonic solids, archimedean solids, solfeggio, chakras, brainwaves, chladni figures, flower of life"
     />
     <meta
       name="description"
-      content="Esoterica: tarot, I Ching, runes, ogham, numerology, healing frequencies, singing bowls, mantras, cymatics, sacred geometry and other mystic arts, as small free web apps."
+      content="Esoterica: numerology, healing frequencies, binaural beats, cymatics, sacred geometry, mandalas, Platonic and Archimedean solids and other mystic arts, as small free web apps."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -51,7 +86,7 @@
     />
     <meta
       property="og:description"
-      content="Tarot, I Ching, runes, ogham, numerology, healing frequencies, singing bowls, mantras, cymatics, sacred geometry and other mystic arts, as small free web apps."
+      content="Numerology, healing frequencies, binaural beats, cymatics, sacred geometry, mandalas, Platonic and Archimedean solids and other mystic arts, as small free web apps."
     />
     <meta
       property="og:url"
