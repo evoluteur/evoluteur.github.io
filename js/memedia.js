@@ -53,6 +53,11 @@ const mediaList = {
       url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
+      id: "mandala-maker",
+      title: "Mandala Maker",
+      url: "https://evoluteur.github.io/mandala-maker/",
+    },
+    {
       id: "react-morph-charts",
       title: "React Morph Charts",
       url: "https://evoluteur.github.io/react-morph-charts/",
