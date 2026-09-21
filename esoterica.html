@@ -54,6 +54,19 @@
       .cards.projects > div > h3 a:hover {
         background-color: transparent;
       }
+      /* the GitHub icon is a link too, but it gets no background (the global link
+         rule adds a blue one); kept here as well so it does not depend on
+         projects.css being fresh */
+      .cards.projects > div > .card-gh,
+      .cards.projects > div > .card-gh:visited,
+      .cards.projects > div > .card-gh:hover,
+      .cards.projects > div > .card-gh:focus {
+        position: absolute;
+        right: 14px;
+        bottom: 12px;
+        background: none;
+        color: white;
+      }
       .cards.projects > div > .card-pix {
         grid-column: 1;
         margin-bottom: 0;
