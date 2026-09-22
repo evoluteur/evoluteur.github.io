@@ -57,6 +57,11 @@ const mediaList = {
       url: "https://evoluteur.github.io/tibetan-singing-bowls/",
     },
     {
+      id: "healing-frequencies",
+      title: "Healing Frequencies",
+      url: "https://evoluteur.github.io/healing-frequencies",
+    },
+    {
       id: "react-morph-charts",
       title: "React Morph Charts",
       url: "https://evoluteur.github.io/react-morph-charts/",
