@@ -32,20 +32,14 @@ const mediaList = {
       url: "https://evoluteur.github.io/cymatics/",
     },
     {
+      id: "mandala-maker",
+      title: "Mandala Maker",
+      url: "https://evoluteur.github.io/mandala-maker/",
+    },
+    {
       id: "platonic-solids",
       title: "Platonic Solids",
       url: "https://evoluteur.github.io/platonic-solids/",
-    },
-
-    // {
-    //   id: "sacred-geometry",
-    //   title: "Sacred Geometry",
-    //   url: "https://evoluteur.github.io/sacred-geometry/",
-    // },
-    {
-      id: "healing-frequencies",
-      title: "Healing Frequencies",
-      url: "http://evoluteur.github.io/healing-frequencies",
     },
     {
       id: "motivational-numerology",
@@ -53,20 +47,25 @@ const mediaList = {
       url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
-      id: "mandala-maker",
-      title: "Mandala Maker",
-      url: "https://evoluteur.github.io/mandala-maker/",
+      id: "sacred-geometry",
+      title: "Sacred Geometry",
+      url: "https://evoluteur.github.io/sacred-geometry/#flower",
+    },
+    {
+      id: "tibetan-singing-bowls",
+      title: "Tibetan Singing Bowls",
+      url: "https://evoluteur.github.io/tibetan-singing-bowls/",
     },
     {
       id: "react-morph-charts",
       title: "React Morph Charts",
       url: "https://evoluteur.github.io/react-morph-charts/",
     },
-    {
-      id: "react-morph-table-cards",
-      title: "React Morph Table/Cards",
-      url: "https://evoluteur.github.io/react-morph-table-cards/",
-    },
+    // {
+    //   id: "react-morph-table-cards",
+    //   title: "React Morph Table/Cards",
+    //   url: "https://evoluteur.github.io/react-morph-table-cards/",
+    // },
     // {
     //   id: "time-management",
     //   title: "Time Management",
@@ -107,11 +106,11 @@ const mediaList = {
       title: "Structured Filter React",
       url: "http://evoluteur.github.io/structured-filter-react/",
     },
-    {
-      id: "van-tharp-marble-game",
-      title: "Van Tharp's Marble Game",
-      url: "http://evoluteur.github.io/van-tharp-marble-game",
-    },
+    // {
+    //   id: "van-tharp-marble-game",
+    //   title: "Van Tharp's Marble Game",
+    //   url: "http://evoluteur.github.io/van-tharp-marble-game",
+    // },
     // {
     //   id: "madeleinology",
     //   title: "Madeleinology",
