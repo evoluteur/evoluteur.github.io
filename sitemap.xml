@@ -552,4 +552,26 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://evoluteur.github.io/music-of-the-spheres/</loc>
+    <lastmod>2026-09-22T06:38:05+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/music-of-the-spheres/about.html</loc>
+    <lastmod>2026-09-22T06:38:05+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/harmonograph/</loc>
+    <lastmod>2026-09-22T07:38:05+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/harmonograph/about.html</loc>
+    <lastmod>2026-09-22T07:38:05+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
