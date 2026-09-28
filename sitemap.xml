@@ -170,12 +170,12 @@
 
   <url>
     <loc>https://evoluteur.github.io/healing-frequencies/</loc>
-    <lastmod>2026-07-31T01:01:05+00:00</lastmod>
+    <lastmod>2026-09-27T01:01:05+00:00</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/healing-frequencies/healing-frequencies-scale.html</loc>
-    <lastmod>2026-07-31T01:01:05+00:00</lastmod>
+    <lastmod>2026-09-2026-09-27T01:01:05+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 
@@ -584,4 +584,28 @@
     <lastmod>2026-09-22T08:38:05+00:00</lastmod>
     <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/maze-maker/</loc>
+    <lastmod>2026-09-25T08:38:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/maze-maker/about.html</loc>
+    <lastmod>2026-09-25T08:38:05+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/sunflower-golden-angle/</loc>
+    <lastmod>2026-09-27T08:38:05+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/moon-phase-calendar/</loc>
+    <lastmod>2026-09-27T08:38:05+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

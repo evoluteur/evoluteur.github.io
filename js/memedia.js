@@ -37,14 +37,14 @@ const mediaList = {
       url: "https://evoluteur.github.io/mandala-maker/",
     },
     {
+      id: "tibetan-singing-bowls",
+      title: "Tibetan Singing Bowls",
+      url: "https://evoluteur.github.io/tibetan-singing-bowls/",
+    },
+    {
       id: "platonic-solids",
       title: "Platonic Solids",
       url: "https://evoluteur.github.io/platonic-solids/",
-    },
-    {
-      id: "motivational-numerology",
-      title: "Motivational Numerology",
-      url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
       id: "sacred-geometry",
@@ -52,9 +52,9 @@ const mediaList = {
       url: "https://evoluteur.github.io/sacred-geometry/#flower",
     },
     {
-      id: "tibetan-singing-bowls",
-      title: "Tibetan Singing Bowls",
-      url: "https://evoluteur.github.io/tibetan-singing-bowls/",
+      id: "motivational-numerology",
+      title: "Motivational Numerology",
+      url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
       id: "healing-frequencies",
