@@ -81,14 +81,23 @@
           margin-bottom: 12px;
         }
       }
+      /* more room between sections (not above the first one) */
+      .c00 > h2:not(:first-of-type) {
+        margin-top: 64px;
+      }
+      /* one or two lines under each section title */
+      .section-intro {
+        margin: -4px 0 18px;
+        opacity: 0.9;
+      }
     </style>
     <meta
       name="keywords"
-      content="olivier, giulieri, esoterica, numerology, moon phases, lunar calendar, healing frequencies, cymatics, sacred geometry, mandala, platonic solids, archimedean solids, solfeggio, chakras, brainwaves, chladni figures, flower of life, tarot, i ching, labyrinth, music of the spheres, kepler, harmonograph, lissajous, enso, zen circle, mercury retrograde, astrology"
+      content="olivier, giulieri, esoterica, numerology, moon phases, lunar calendar, healing frequencies, cymatics, sacred geometry, mandala, platonic solids, archimedean solids, solfeggio, chakras, brainwaves, chladni figures, flower of life, tarot, i ching, labyrinth, kolam, celtic knot, rose window, gothic tracery, music of the spheres, kepler, harmonograph, lissajous, enso, zen circle, mercury retrograde, eclipse calendar, solar eclipse, lunar eclipse, astrology, islamic patterns, girih"
     />
     <meta
       name="description"
-      content="Esoterica: numerology, moon phases, healing frequencies, cymatics, the music of the spheres, sacred geometry, mandalas, labyrinths, the enso, tarot, the I Ching, Mercury retrograde, Platonic and Archimedean solids and other mystic arts, as small free web apps."
+      content="Esoterica: numerology, moon phases, healing frequencies, cymatics, the music of the spheres, sacred geometry, mandalas, labyrinths, the enso, kolams, Celtic knots, Islamic star patterns, rose windows, tarot, the I Ching, Mercury retrograde, eclipses, Platonic and Archimedean solids and other mystic arts, as small free web apps."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -127,6 +136,11 @@
       </p>
 
       <h2>Sound and energy</h2>
+      <p class="section-intro">
+        Tones and vibrations, and the patterns they make: healing frequencies,
+        singing bowls, sand dancing on a vibrating plate, the harmonies of the
+        planets and the pendulum drawings of the harmonograph.
+      </p>
       <div class="cards projects">
         <div class="gh">
           <h3>
@@ -341,6 +355,11 @@
       </div>
 
       <h2>Sacred geometry</h2>
+      <p class="section-intro">
+        The shapes found in nature and in temples: the Flower of Life, the
+        Platonic and Archimedean solids, the golden angle of the sunflower and
+        the Sri Yantra.
+      </p>
       <div class="cards projects">
         <div class="gh">
           <h3>
@@ -377,48 +396,6 @@
             rel="noopener"
             title="Sacred Geometry on GitHub"
             aria-label="Sacred Geometry on GitHub"
-            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-              /></svg
-          ></a>
-        </div>
-        <div class="gh">
-          <h3>
-            <a
-              class="extlink"
-              href="https://evoluteur.github.io/mandala-maker/"
-              target="_blank"
-              >Mandala Maker</a
-            >
-          </h3>
-          <a
-            class="card-pix"
-            href="https://evoluteur.github.io/mandala-maker/"
-            target="_blank"
-            rel="noopener"
-            tabindex="-1"
-            aria-hidden="true"
-          >
-            <img
-              src="pix/code/mandala-maker.png"
-              alt=""
-              loading="lazy"
-              onerror="this.parentNode.style.display = 'none'"
-            />
-          </a>
-          <p>
-            Draw with mirrored symmetry, choose from 2 to 24 folds, and save
-            your mandala as a PNG or an SVG.
-          </p>
-          <a
-            class="card-gh"
-            href="https://github.com/evoluteur/mandala-maker"
-            target="_blank"
-            rel="noopener"
-            title="Mandala Maker on GitHub"
-            aria-label="Mandala Maker on GitHub"
             ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
               <path
                 fill="currentColor"
@@ -594,6 +571,225 @@
               /></svg
           ></a>
         </div>
+      </div>
+
+      <h2>Sacred art</h2>
+      <p class="section-intro">
+        Designs drawn as a practice, by hand and often in a single line:
+        mandalas, labyrinths, the Zen circle, the kolams of South India, Celtic
+        knotwork, Islamic star patterns and Gothic rose windows.
+      </p>
+      <div class="cards projects">
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/mandala-maker/"
+              target="_blank"
+              >Mandala Maker</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/mandala-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/mandala-eso.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Draw with mirrored symmetry, choose from 2 to 24 folds, and save
+            your mandala as a PNG or an SVG.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/mandala-maker"
+            target="_blank"
+            rel="noopener"
+            title="Mandala Maker on GitHub"
+            aria-label="Mandala Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/kolam-maker/"
+              target="_blank"
+              >Kolam Maker</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/kolam-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/kolam-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            South Indian dot-grid designs where a single unbroken line loops
+            around every dot. Watch it being drawn, in one stroke.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/kolam-maker"
+            target="_blank"
+            rel="noopener"
+            title="Kolam Maker on GitHub"
+            aria-label="Kolam Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/rose-window-maker/"
+              target="_blank"
+              >Rose Window Maker</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/rose-window-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/rose-window-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Build Gothic tracery with compass and straightedge, step by step,
+            like a medieval mason.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/rose-window-maker"
+            target="_blank"
+            rel="noopener"
+            title="Rose Window Maker on GitHub"
+            aria-label="Rose Window Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/celtic-knot-maker/"
+              target="_blank"
+              >Celtic Knot Maker</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/celtic-knot-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/celtic-knot-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Paint breaks on a grid and the knotwork weaves itself, over and
+            under, with George Bain's method.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/celtic-knot-maker"
+            target="_blank"
+            rel="noopener"
+            title="Celtic Knot Maker on GitHub"
+            aria-label="Celtic Knot Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/islamic-patterns/"
+              target="_blank"
+              >Islamic Patterns</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/islamic-patterns/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/islamic-patterns.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Stars, rosettes and interlaced girih grown from tilings of polygons
+            with Hankin's method, saved as SVG or PNG.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/islamic-patterns"
+            target="_blank"
+            rel="noopener"
+            title="Islamic Patterns on GitHub"
+            aria-label="Islamic Patterns on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
         <div class="gh">
           <h3>
             <a
@@ -681,6 +877,10 @@
       </div>
 
       <h2>Divination</h2>
+      <p class="section-intro">
+        Ask a question and read the answer in numbers, runes, tarot cards or the
+        hexagrams of the I Ching.
+      </p>
       <div class="cards projects">
         <div class="gh">
           <h3>
@@ -717,48 +917,6 @@
             rel="noopener"
             title="Motivational Numerology on GitHub"
             aria-label="Motivational Numerology on GitHub"
-            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-              /></svg
-          ></a>
-        </div>
-        <div class="gh">
-          <h3>
-            <a
-              class="extlink"
-              href="https://evoluteur.github.io/rune-reading/"
-              target="_blank"
-              >Rune Reading</a
-            >
-          </h3>
-          <a
-            class="card-pix"
-            href="https://evoluteur.github.io/rune-reading/"
-            target="_blank"
-            rel="noopener"
-            tabindex="-1"
-            aria-hidden="true"
-          >
-            <img
-              src="pix/code/rune-reading.png"
-              alt=""
-              loading="lazy"
-              onerror="this.parentNode.style.display = 'none'"
-            />
-          </a>
-          <p>
-            Draw runes from the Elder Futhark and get their traditional
-            meanings.
-          </p>
-          <a
-            class="card-gh"
-            href="https://github.com/evoluteur/rune-reading"
-            target="_blank"
-            rel="noopener"
-            title="Rune Reading on GitHub"
-            aria-label="Rune Reading on GitHub"
             ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
               <path
                 fill="currentColor"
@@ -833,8 +991,8 @@
             />
           </a>
           <p>
-            Cast a hexagram with three coins and read its judgment, image
-            and changing lines from the Book of Changes.
+            Cast a hexagram with three coins and read its judgment, image and
+            changing lines from the Book of Changes.
           </p>
           <a
             class="card-gh"
@@ -854,37 +1012,37 @@
           <h3>
             <a
               class="extlink"
-              href="https://evoluteur.github.io/moon-phase-calendar/"
+              href="https://evoluteur.github.io/rune-reading/"
               target="_blank"
-              >Moon Phase Calendar</a
+              >Rune Reading</a
             >
           </h3>
           <a
             class="card-pix"
-            href="https://evoluteur.github.io/moon-phase-calendar/"
+            href="https://evoluteur.github.io/rune-reading/"
             target="_blank"
             rel="noopener"
             tabindex="-1"
             aria-hidden="true"
           >
             <img
-              src="pix/code/moon-phase-calendar.png"
+              src="pix/code/rune-reading.png"
               alt=""
               loading="lazy"
               onerror="this.parentNode.style.display = 'none'"
             />
           </a>
           <p>
-            Today's moon and month and year calendars of every phase, with
-            moon signs, full moon names and what each phase means.
+            Draw runes from the Elder Futhark and get their traditional
+            meanings.
           </p>
           <a
             class="card-gh"
-            href="https://github.com/evoluteur/moon-phase-calendar"
+            href="https://github.com/evoluteur/rune-reading"
             target="_blank"
             rel="noopener"
-            title="Moon Phase Calendar on GitHub"
-            aria-label="Moon Phase Calendar on GitHub"
+            title="Rune Reading on GitHub"
+            aria-label="Rune Reading on GitHub"
             ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
               <path
                 fill="currentColor"
@@ -892,6 +1050,14 @@
               /></svg
           ></a>
         </div>
+      </div>
+
+      <h2>Sky and calendars</h2>
+      <p class="section-intro">
+        Follow the cycles of the sky: the phases of the Moon, the retrogrades of
+        Mercury and the eclipses to come.
+      </p>
+      <div class="cards projects">
         <div class="gh">
           <h3>
             <a
@@ -934,17 +1100,103 @@
               /></svg
           ></a>
         </div>
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/moon-phase-calendar/"
+              target="_blank"
+              >Moon Phase Calendar</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/moon-phase-calendar/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/moon-phase-calendar.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Today's moon and month and year calendars of every phase, with moon
+            signs, full moon names and what each phase means.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/moon-phase-calendar"
+            target="_blank"
+            rel="noopener"
+            title="Moon Phase Calendar on GitHub"
+            aria-label="Moon Phase Calendar on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/eclipse-calendar/"
+              target="_blank"
+              >Eclipse Calendar</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/eclipse-calendar/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/eclipse-calendar.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            When is the next eclipse? Every solar and lunar eclipse from 1900 to
+            2100, where it is seen and what it looks like from your city.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/eclipse-calendar"
+            target="_blank"
+            rel="noopener"
+            title="Eclipse Calendar on GitHub"
+            aria-label="Eclipse Calendar on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
       </div>
 
       <p>
-        If you enjoy these free projects, feel free to
+        These projects are free and always will be. If they've brought you some
+        joy,
         <a
           href="https://github.com/sponsors/evoluteur"
           class="extlink"
           target="gh"
           rel="noopener"
-          >become a Sponsor</a
-        >.
+          >sponsoring me on GitHub</a
+        >
+        helps keep new ones coming.
       </p>
     </section>
 
