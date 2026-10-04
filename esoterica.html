@@ -60,10 +60,23 @@
       .cards.projects > div > .card-gh:hover,
       .cards.projects > div > .card-gh:focus {
         position: absolute;
+        top: 14px;
         right: 14px;
-        bottom: 12px;
+        bottom: auto;
         background: none;
         color: white;
+      }
+      /* the GitHub icon sits at the top right, next to the title */
+      .cards.projects > div.gh > h3 {
+        padding-right: 34px;
+      }
+      .cards.projects > div.gh > p {
+        padding-right: 0;
+      }
+      /* no GitHub star counts on this page (projects-stats.js still sorts the
+         cards by stars) */
+      .cards.projects > div > .card-stats {
+        display: none;
       }
       .cards.projects > div > .card-pix {
         grid-column: 1;
@@ -123,11 +136,6 @@
 
     <section class="c00">
       <h1 id="page-title">Esoterica</h1>
-
-      <p class="total-stars" hidden>
-        &#9733; <span data-total-stars></span> GitHub stars across these
-        projects
-      </p>
 
       <p>
         Small, free web apps in the mystic arts. Each one runs in your browser
