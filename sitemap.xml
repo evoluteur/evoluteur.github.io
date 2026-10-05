@@ -61,7 +61,7 @@
   <url>
     <loc>https://evoluteur.github.io/recipes/desserts/creme-brulee.html</loc>
     <lastmod>2024-02-14T07:09:05+00:00</lastmod>
-    <priority>0.9</priority>
+    <priority>0.91</priority>
     <image:image>
       <image:loc>https://evoluteur.github.io/pix/recipes/creme-brulee.webp</image:loc>
     </image:image>
@@ -92,7 +92,7 @@
   <url>
     <loc>https://evoluteur.github.io/sitemap.html</loc>
     <lastmod>2026-01-01T07:12:05+00:00</lastmod>
-    <priority>0.2</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
@@ -103,28 +103,28 @@
   <url>
     <loc>https://evoluteur.github.io/quotes/quotes-spirituality.html</loc>
     <lastmod>2026-07-31T08:00:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/quotes/quotes-imagination.html</loc>
     <lastmod>2026-07-31T08:00:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/quotes/quotes-software.html</loc>
     <lastmod>2023-09-20T08:00:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/quotes/quotes-teams.html</loc>
     <lastmod>2023-09-20T08:00:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
 
   <url>
     <loc>https://evoluteur.github.io/fun/book-carvings.html</loc>
     <lastmod>2024-03-12T07:09:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/fun/book-carving-the-childrens-book-of-virtues.html</loc>
@@ -150,7 +150,7 @@
   <url>
     <loc>https://evoluteur.github.io/fun/handlebar.html</loc>
     <lastmod>2023-10-20T07:05:05+00:00</lastmod>
-    <priority>0.2</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/fun/chakra-design.html</loc>
@@ -160,7 +160,7 @@
   <url>
     <loc>https://evoluteur.github.io/fun/neige.html</loc>
     <lastmod>2023-11-23T07:05:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/fun/meditation.html</loc>
@@ -176,7 +176,7 @@
   <url>
     <loc>https://evoluteur.github.io/healing-frequencies/healing-frequencies-scale.html</loc>
     <lastmod>2026-09-27T01:01:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
 
@@ -245,23 +245,23 @@
   <url>
     <loc>https://evoluteur.github.io/rune-reading/</loc>
     <lastmod>2026-09-20</lastmod>
-    <priority>1.0</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/rune-reading/runes/</loc>
     <lastmod>2026-09-20</lastmod>
-    <priority>0.9</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/rune-reading/about.html</loc>
     <lastmod>2026-09-20</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://evoluteur.github.io/meet-the-fans/</loc>
     <lastmod>2026-07-30T01:01:05+00:00</lastmod>
-    <priority>0.9</priority>
+    <priority>0.92</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/meet-the-fans/index-data.html</loc>
@@ -272,7 +272,7 @@
   <url>
     <loc>https://evoluteur.github.io/structured-filter-react/</loc>
     <lastmod>2026-07-19T07:39:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/structured-filter/</loc>
@@ -324,13 +324,13 @@
   <url>
     <loc>https://evoluteur.github.io/react-crud-icons/</loc>
     <lastmod>2023-08-03T07:39:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://evoluteur.github.io/colorpicker/</loc>
     <lastmod>2024-03-16T07:39:05+00:00</lastmod>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/colorpicker/documentation.html</loc>
@@ -352,7 +352,7 @@
   <url>
     <loc>https://evoluteur.github.io/github-projects-cards/</loc>
     <lastmod>2026-09-19T07:05:05+00:00</lastmod>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/github-projects-cards/dashboard.html</loc>
@@ -362,12 +362,12 @@
   <url>
     <loc>https://evoluteur.github.io/npm-pulse/</loc>
     <lastmod>2026-08-30T06:38:05+00:00</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/npm-pulse/dashboard.html</loc>
     <lastmod>2026-08-30T06:38:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
@@ -399,7 +399,7 @@
   <url>
     <loc>https://evoluteur.github.io/madeleine-radars/</loc>
     <lastmod>2026-07-30T00:00:00+00:00</lastmod>
-    <priority>0.3</priority>
+    <priority>0.1</priority>
     <image:image>
       <image:loc>https://evoluteur.github.io/madeleine-radars/screenshot.png</image:loc>
     </image:image>
@@ -422,7 +422,7 @@
   <url>
     <loc>https://evoluteur.github.io/madeleinology/ingredients-top4-d3-radar.html</loc>
     <lastmod>2024-04-27T06:38:05+00:00</lastmod>
-    <priority>0.1</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/madeleinology/ingredients-long-tail.html</loc>
@@ -452,13 +452,13 @@
   <url>
     <loc>https://evoluteur.github.io/madeleinology/madeleines-salty.html</loc>
     <lastmod>2019-06-27T06:38:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
 
   <url>
     <loc>https://evoluteur.github.io/time-management/</loc>
     <lastmod>2025-04-29T06:38:05+00:00</lastmod>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
     <image:image>
       <image:loc>https://evoluteur.github.io/time-management/img/time-management.png</image:loc>
     </image:image>
@@ -471,7 +471,7 @@
   <url>
     <loc>https://evoluteur.github.io/time-management-test/</loc>
     <lastmod>2026-02-20T06:38:05+00:00</lastmod>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
@@ -500,29 +500,29 @@
   <url>
     <loc>https://evoluteur.github.io/platonic-solids/</loc>
     <lastmod>2026-08-30T06:38:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/platonic-solids/nets.html</loc>
     <lastmod>2026-08-30T06:38:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://evoluteur.github.io/archimedean-solids/</loc>
     <lastmod>2026-09-11T06:38:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/archimedean-solids/nets.html</loc>
     <lastmod>2026-09-11T06:38:05+00:00</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://evoluteur.github.io/binaural-beats/</loc>
     <lastmod>2026-08-30T06:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/binaural-beats/brainwave-scale.html</loc>
@@ -538,7 +538,7 @@
   <url>
     <loc>https://evoluteur.github.io/tibetan-singing-bowls/about.html</loc>
     <lastmod>2026-09-21T06:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
@@ -549,7 +549,7 @@
   <url>
     <loc>https://evoluteur.github.io/sri-yantra/about.html</loc>
     <lastmod>2026-09-21T06:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
@@ -560,18 +560,18 @@
   <url>
     <loc>https://evoluteur.github.io/music-of-the-spheres/about.html</loc>
     <lastmod>2026-09-22T06:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://evoluteur.github.io/harmonograph-maker/</loc>
     <lastmod>2026-09-22T07:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/harmonograph-maker/about.html</loc>
     <lastmod>2026-09-22T07:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.4</priority>
   </url>
 
   <url>
@@ -582,7 +582,7 @@
   <url>
     <loc>https://evoluteur.github.io/labyrinth-maker/about.html</loc>
     <lastmod>2026-09-22T08:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
@@ -593,19 +593,13 @@
   <url>
     <loc>https://evoluteur.github.io/maze-maker/about.html</loc>
     <lastmod>2026-09-25T08:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://evoluteur.github.io/sunflower-golden-angle/</loc>
     <lastmod>2026-09-27T08:38:05+00:00</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://evoluteur.github.io/moon-phase-calendar/</loc>
-    <lastmod>2026-09-27T08:38:05+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
@@ -615,25 +609,8 @@
   </url>
 
   <url>
-    <loc>https://evoluteur.github.io/mercury-retrograde/</loc>
-    <lastmod>2026-09-30T04:00:00+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://evoluteur.github.io/mercury-retrograde/calendar.html</loc>
-    <lastmod>2026-09-30T04:00:00+00:00</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://evoluteur.github.io/zen-garden/</loc>
     <lastmod>2026-09-30T04:00:00+00:00</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://evoluteur.github.io/eclipse-calendar/</loc>
-    <lastmod>2026-10-02T04:00:00+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
@@ -652,7 +629,7 @@
   <url>
     <loc>https://evoluteur.github.io/celtic-knot-maker/</loc>
     <lastmod>2026-10-02T04:00:00+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
@@ -665,6 +642,41 @@
     <loc>https://evoluteur.github.io/sashiko-maker/</loc>
     <lastmod>2026-10-03T04:00:00+00:00</lastmod>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/reaction-diffusion/</loc>
+    <lastmod>2026-10-04T04:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/snowflake-grower/</loc>
+    <lastmod>2026-10-04T04:00:00+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/mercury-retrograde/</loc>
+    <lastmod>2026-09-30T04:00:00+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/mercury-retrograde/calendar.html</loc>
+    <lastmod>2026-09-30T04:00:00+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/moon-phase-calendar/</loc>
+    <lastmod>2026-09-27T08:38:05+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/eclipse-calendar/</loc>
+    <lastmod>2026-10-02T04:00:00+00:00</lastmod>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
