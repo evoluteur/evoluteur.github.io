@@ -259,6 +259,22 @@
   </url>
 
   <url>
+    <loc>https://evoluteur.github.io/tibetan-mo-reading/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/tibetan-mo-reading/mo/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/tibetan-mo-reading/about.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://evoluteur.github.io/meet-the-fans/</loc>
     <lastmod>2026-07-30T01:01:05+00:00</lastmod>
     <priority>0.92</priority>
@@ -407,7 +423,7 @@
   <url>
     <loc>https://evoluteur.github.io/madeleinology/</loc>
     <lastmod>2026-08-03T06:38:05+00:00</lastmod>
-    <priority>0.5</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/madeleinology/madeleines-data-science.html</loc>
@@ -432,7 +448,7 @@
   <url>
     <loc>https://evoluteur.github.io/madeleinology/madeleine-cupcake-trend.html</loc>
     <lastmod>2026-03-11T06:38:05+00:00</lastmod>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/madeleinology/madeleine-correlation.html</loc>
@@ -611,7 +627,7 @@
   <url>
     <loc>https://evoluteur.github.io/zen-garden/</loc>
     <lastmod>2026-09-30T04:00:00+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
 
   <url>
@@ -641,7 +657,7 @@
   <url>
     <loc>https://evoluteur.github.io/sashiko-maker/</loc>
     <lastmod>2026-10-03T04:00:00+00:00</lastmod>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
 
   <url>
@@ -677,6 +693,18 @@
     <loc>https://evoluteur.github.io/eclipse-calendar/</loc>
     <lastmod>2026-10-02T04:00:00+00:00</lastmod>
     <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/meteor-shower-calendar/</loc>
+    <lastmod>2026-10-08T04:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://evoluteur.github.io/spiral-gallery/</loc>
+    <lastmod>2026-10-08T04:00:00+00:00</lastmod>
+    <priority>0.65</priority>
   </url>
 
 </urlset>
