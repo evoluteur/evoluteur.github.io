@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-063933E3C2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-063933E3C2");
+    </script>
+    <link rel="canonical" href="https://evoluteur.github.io/generative-art-full.html" />
+    <title>Generative Art - Olivier's patterns grown from math, code and tradition</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#bbdefb" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link href="css/me.css" rel="stylesheet" />
+    <style>
+      /* wider cards on this page (the shared .cards.projects rule is width 320px, min 260px),
+         with the text to the right of the picture */
+      .cards.projects > div {
+        /* semi-transparent, like the notes of Sunflower Golden Angle */
+        background-color: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 20px;
+        align-items: center;
+        align-content: start;
+        box-sizing: border-box;
+        flex: 0 1 506px; /* same width for every card in every section (no growing) */
+        width: 506px;
+        max-width: 100%;
+      }
+      .cards.projects > div > h3 {
+        grid-column: 1 / -1;
+        font-size: 1.5rem; /* a little bigger than the default h3 */
+        margin-top: 0.25em; /* the browser default (1em) left too much space above */
+      }
+      /* no background behind the card titles (the global link rule adds one) */
+      .cards.projects > div > h3 a,
+      .cards.projects > div > h3 a:visited,
+      .cards.projects > div > h3 a:hover {
+        background-color: transparent;
+      }
+      /* card pictures: title, then picture, then text */
+      .cards.projects .card-pix {
+        display: block;
+        margin: 4px 0 12px;
+        background: none;
+      }
+      .cards.projects .card-pix img {
+        display: block;
+        height: 159px;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: left center;
+      }
+      /* GitHub icon at the top right of each card, next to the title; it is a
+         link too, but gets no background (the global link rule adds a blue one) */
+      .cards.projects > div {
+        position: relative;
+      }
+      .cards.projects > div.gh > h3 {
+        padding-right: 34px;
+      }
+      .cards.projects > div > .card-gh,
+      .cards.projects > div > .card-gh:visited {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        display: block;
+        width: 22px;
+        height: 22px;
+        background: none;
+        color: white;
+        opacity: 0.8;
+      }
+      .cards.projects > div > .card-gh:hover,
+      .cards.projects > div > .card-gh:focus {
+        background: none;
+        color: white;
+        opacity: 1;
+      }
+      .cards.projects > div > .card-gh svg {
+        display: block;
+      }
+      .cards.projects > div > .card-pix {
+        grid-column: 1;
+        margin-bottom: 0;
+      }
+      .cards.projects > div > p {
+        grid-column: 2;
+        margin: 0;
+      }
+      @media only screen and (max-width: 540px) {
+        .cards.projects > div {
+          display: block;
+        }
+        .cards.projects > div > .card-pix {
+          margin-bottom: 12px;
+        }
+      }
+      /* more room between sections (not above the first one) */
+      .c00 > h2:not(:first-of-type) {
+        margin-top: 64px;
+      }
+      /* one or two lines under each section title */
+      .section-intro {
+        margin: -4px 0 18px;
+        opacity: 0.9;
+      }
+      /* no picture: the text takes the whole width */
+      .cards.projects > div.nopix > p {
+        grid-column: 1 / -1;
+      }
+      .articles li {
+        margin-bottom: 8px;
+      }
+    </style>
+    <meta
+      name="keywords"
+      content="olivier, giulieri, generative art, reaction-diffusion, turing patterns, snowflake, cellular automaton, fractals, mandelbrot, maze generator, labyrinth, harmonograph, lissajous, cymatics, chladni figures, golden angle, spirals, islamic patterns, girih, kolam, kumiko, sashiko, celtic knot, rose window, sacred geometry, flower of life, mandala, sri yantra, enso, zen garden"
+    />
+    <meta
+      name="description"
+      content="Generative Art: flow fields, strange attractors, Turing patterns, snowflakes, fractals, mazes and labyrinths, harmonographs, Islamic patterns, kolams, Celtic knots, mandalas and sacred geometry, drawn live in the browser."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Generative Art - Olivier's patterns grown from math, code and tradition" />
+    <meta property="og:description" content="Generative Art: flow fields, strange attractors, Turing patterns, snowflakes, fractals, mazes and labyrinths, harmonographs, Islamic patterns, kolams, Celtic knots, mandalas and sacred geometry, drawn live in the browser." />
+    <meta property="og:url" content="https://evoluteur.github.io/generative-art-full.html" />
+    <meta
+      property="og:image"
+      content="https://evoluteur.github.io/pix/evoluteur-web.png"
+    />
+      <script src="js/theme.js"></script>
+</head>
+
+  <body>
+    <nav class="nav"><a href="index.html">Evoluteur</a> > Generative Art</nav>
+
+    <section class="c00">
+      <h1 id="page-title">Generative Art</h1>
+
+      <p>
+        Patterns that grow from a few rules, whether the rules come from chemistry, physics, algorithms or centuries of craft. Everything is computed live in your browser: tune the parameters, watch it change, and download the result.
+      </p>
+
+      <h2>Simulations</h2>
+      <p class="section-intro">
+        Nature's patterns from simple rules: vibrating sand, ice, currents, chaos, chemistry, fractals and the sunflower.
+      </p>
+      <div class="cards projects">
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/cymatics/" target="_blank">Cymatics</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/cymatics/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/cymatics.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Play a frequency and watch the sand settle into its Chladni figure, on a plate or a drumhead.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/cymatics"
+            target="_blank"
+            rel="noopener"
+            title="Cymatics on GitHub"
+            aria-label="Cymatics on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/snowflake-grower/" target="_blank">Snowflake Grower</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/snowflake-grower/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/snowflake-grower.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Grow snow crystals on a hexagonal grid with Reiter's cellular automaton: set the humidity and frost to get dendrites, ferns, plates or lace.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/snowflake-grower"
+            target="_blank"
+            rel="noopener"
+            title="Snowflake Grower on GitHub"
+            aria-label="Snowflake Grower on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/flow-fields/" target="_blank">Flow Fields</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/flow-fields/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/flow-field.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Thousands of particles follow Perlin noise and draw its invisible currents, like ink in water.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/flow-fields"
+            target="_blank"
+            rel="noopener"
+            title="Flow Fields on GitHub"
+            aria-label="Flow Fields on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/strange-attractors/" target="_blank">Strange Attractors</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/strange-attractors/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/strange-attractors.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Draw the Lorenz butterfly and other strange attractors from tens of millions of points of their chaotic orbits, as glowing long exposures.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/strange-attractors"
+            target="_blank"
+            rel="noopener"
+            title="Strange Attractors on GitHub"
+            aria-label="Strange Attractors on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/reaction-diffusion/" target="_blank">Reaction-Diffusion</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/reaction-diffusion/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/reaction-diffusion.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Grow Turing patterns (spots, stripes, coral, worms, waves) from the Gray-Scott model in real time, paint with chemicals and download the pattern.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/reaction-diffusion"
+            target="_blank"
+            rel="noopener"
+            title="Reaction-Diffusion on GitHub"
+            aria-label="Reaction-Diffusion on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/infinite-coastlines/" target="_blank">Infinite Coastlines</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/infinite-coastlines/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/infinite-coastlines.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            An interactive guide to the coastline paradox and fractal dimension: shrinking rulers, the Koch snowflake and the Mandelbrot set.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/infinite-coastlines"
+            target="_blank"
+            rel="noopener"
+            title="Infinite Coastlines on GitHub"
+            aria-label="Infinite Coastlines on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/sunflower-golden-angle/" target="_blank">Sunflower Golden Angle</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/sunflower-golden-angle/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/sunflower-golden-angle.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Grow a sunflower from the golden angle, nudge it a tenth of a degree to see spokes appear, and count its Fibonacci spirals.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/sunflower-golden-angle"
+            target="_blank"
+            rel="noopener"
+            title="Sunflower Golden Angle on GitHub"
+            aria-label="Sunflower Golden Angle on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+
+      <h2>Curves and mazes</h2>
+      <p class="section-intro">
+        Paths drawn by algorithms and pendulums.
+      </p>
+      <div class="cards projects">
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/maze-maker/" target="_blank">Maze Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/maze-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/maze-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Square, circular, triangular and heart-shaped mazes from seven algorithms, to solve with the keyboard or a finger and export as SVG or PNG.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/maze-maker"
+            target="_blank"
+            rel="noopener"
+            title="Maze Maker on GitHub"
+            aria-label="Maze Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/labyrinth-maker/" target="_blank">Labyrinth Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/labyrinth-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/labyrinth-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Draw the Cretan labyrinth, a Troy Town or your own design from its path sequence, then walk it to the center.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/labyrinth-maker"
+            target="_blank"
+            rel="noopener"
+            title="Labyrinth Maker on GitHub"
+            aria-label="Labyrinth Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/harmonograph-maker/" target="_blank">Harmonograph Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/harmonograph-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/harmonograph-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Musical intervals drawn by pendulums: harmonograph spirals and Lissajous curves for the octave.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/harmonograph-maker"
+            target="_blank"
+            rel="noopener"
+            title="Harmonograph Maker on GitHub"
+            aria-label="Harmonograph Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/spiral-gallery/" target="_blank">Spiral Gallery</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/spiral-gallery/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/spiral-gallery.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            The logarithmic, Archimedean, Fermat and Fibonacci spirals side by side, with the nautilus, the ram's horn and the galaxy.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/spiral-gallery"
+            target="_blank"
+            rel="noopener"
+            title="Spiral Gallery on GitHub"
+            aria-label="Spiral Gallery on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+
+      <h2>Patterns from traditions</h2>
+      <p class="section-intro">
+        The rules of artisans, from Islamic tilings to Japanese lattices, rebuilt as generators.
+      </p>
+      <div class="cards projects">
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/islamic-patterns/" target="_blank">Islamic Patterns</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/islamic-patterns/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/islamic-patterns.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Stars, rosettes and interlaced girih grown from tilings of polygons with Hankin's method, saved as SVG or PNG.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/islamic-patterns"
+            target="_blank"
+            rel="noopener"
+            title="Islamic Patterns on GitHub"
+            aria-label="Islamic Patterns on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/kolam-maker/" target="_blank">Kolam Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/kolam-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/kolam-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            South Indian dot-grid designs where a single unbroken line loops around every dot. Watch it being drawn, in one stroke.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/kolam-maker"
+            target="_blank"
+            rel="noopener"
+            title="Kolam Maker on GitHub"
+            aria-label="Kolam Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/celtic-knot-maker/" target="_blank">Celtic Knot Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/celtic-knot-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/celtic-knot-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Paint breaks on a grid and the knotwork weaves itself, over and under, with George Bain's method.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/celtic-knot-maker"
+            target="_blank"
+            rel="noopener"
+            title="Celtic Knot Maker on GitHub"
+            aria-label="Celtic Knot Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/rose-window-maker/" target="_blank">Rose Window Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/rose-window-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/rose-window-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Build Gothic tracery with compass and straightedge, step by step, like a medieval mason.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/rose-window-maker"
+            target="_blank"
+            rel="noopener"
+            title="Rose Window Maker on GitHub"
+            aria-label="Rose Window Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/kumiko-maker/" target="_blank">Kumiko Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/kumiko-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/kumiko-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            The Japanese wooden lattice: asanoha, goma and kikkō patterns, assembled piece by piece in a square, hexagonal or round frame.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/kumiko-maker"
+            target="_blank"
+            rel="noopener"
+            title="Kumiko Maker on GitHub"
+            aria-label="Kumiko Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/sashiko-maker/" target="_blank">Sashiko Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/sashiko-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/sashiko-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Japanese running-stitch patterns, white thread on indigo: seigaiha waves, asanoha, shippō and more, stitched out line by line.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/sashiko-maker"
+            target="_blank"
+            rel="noopener"
+            title="Sashiko Maker on GitHub"
+            aria-label="Sashiko Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+
+      <h2>Sacred geometry and Zen</h2>
+      <p class="section-intro">
+        Circles, triangles and symmetry, drawn to scale or by hand.
+      </p>
+      <div class="cards projects">
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/sacred-geometry/" target="_blank">Sacred Geometry</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/sacred-geometry/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/sacred-geometry.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Draw and export the Vesica Piscis, Seed of Life, Flower of Life, Metatron's Cube and the Golden Spiral.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/sacred-geometry"
+            target="_blank"
+            rel="noopener"
+            title="Sacred Geometry on GitHub"
+            aria-label="Sacred Geometry on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/mandala-maker/" target="_blank">Mandala Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/mandala-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/mandala-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Draw with mirrored symmetry, choose from 2 to 24 folds, and save your mandala as a PNG or an SVG.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/mandala-maker"
+            target="_blank"
+            rel="noopener"
+            title="Mandala Maker on GitHub"
+            aria-label="Mandala Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/sri-yantra/" target="_blank">Sri Yantra</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/sri-yantra/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/sri-yantra.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            The nine interlocking triangles with lotus petals and gates, drawn to scale, colorable and exportable as SVG or PNG.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/sri-yantra"
+            target="_blank"
+            rel="noopener"
+            title="Sri Yantra on GitHub"
+            aria-label="Sri Yantra on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/enso-maker/" target="_blank">Enso Maker</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/enso-maker/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/enso-maker.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Paint the Zen circle in one breath: a generative ensō with dry-brush streaks on rice paper, or draw your own.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/enso-maker"
+            target="_blank"
+            rel="noopener"
+            title="Enso Maker on GitHub"
+            aria-label="Enso Maker on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a class="extlink" href="https://evoluteur.github.io/zen-garden/" target="_blank">Zen Garden</a>
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/zen-garden/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/zen-garden.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            A Zen rock garden: rake the sand, place and move the stones, and let the ripples form around them.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/zen-garden"
+            target="_blank"
+            rel="noopener"
+            title="Zen Garden on GitHub"
+            aria-label="Zen Garden on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+
+      <p>
+        For the moon, tarot, singing bowls and more, see <a href="esoterica.html">Esoterica</a>. These projects are free and always will be. If they've brought you some joy,
+        <a
+          href="https://github.com/sponsors/evoluteur"
+          class="extlink"
+          target="gh"
+          rel="noopener"
+          >sponsoring me on GitHub</a
+        >
+        helps keep new ones coming.
+      </p>
+    </section>
+
+    <script>
+      // Shift-click the title to toggle between the live site and the local file
+      document.getElementById("page-title").addEventListener("click", (e) => {
+        if (!e.shiftKey) return;
+        const live = "https://evoluteur.github.io/generative-art-full.html";
+        const local =
+          "file:///Users/olivier/Code/evoluteur.github.io/generative-art-full.html";
+        location.href = location.protocol === "file:" ? live : local;
+      });
+
+      // When viewed locally, point project links to the local repos
+      const isLocal =
+        location.protocol === "file:" ||
+        ["localhost", "127.0.0.1"].includes(location.hostname);
+      if (isLocal) {
+        const re = /^https:\/\/evoluteur\.github\.io\/([^/]+)\/$/;
+        document.querySelectorAll("a[href]").forEach((a) => {
+          const m = a.getAttribute("href").match(re);
+          if (m) {
+            a.href = `file:///Users/olivier/Code/${m[1]}/index.html`;
+          }
+        });
+      }
+    </script>
+
+    <footer>
+      &#169; 2026 Olivier Giulieri - <a href="sitemap.html">Site map</a>
+    </footer>
+  </body>
+</html>
