@@ -1,0 +1,200 @@
+/*
+  https://evoluteur.github.io/
+  (c) 2026 Olivier Giulieri
+
+  me.css was made for the blue theme (the default, nothing loaded with it).
+  These rules adapt the site to the dark and light themes of omg-themes,
+  loaded by js/theme.js, and style the theme toggle.
+*/
+
+/* ---------------------------------------------------------------- the toggle */
+
+.nav {
+  padding-right: 110px;
+}
+@media only screen and (max-width: 767px) {
+  .nav {
+    position: relative;
+  }
+}
+#omg-theme-picker {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  line-height: 0;
+}
+/* pages without a top bar (the home page): just the icons, top right */
+#omg-theme-picker.floating {
+  position: fixed;
+  top: 10px;
+  transform: none;
+  z-index: 900;
+}
+#omg-theme-picker > a,
+#omg-theme-picker > a:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #92cddc;
+  background-color: transparent !important;
+}
+/* without the black bar behind them, icons in the page's own colors */
+#omg-theme-picker.floating > a {
+  color: white;
+}
+html[data-theme="light"] #omg-theme-picker.floating > a {
+  color: #52617a;
+}
+#omg-theme-picker > a:hover,
+#omg-theme-picker > a.selected {
+  color: #ff9900 !important;
+  text-decoration: none;
+}
+@media print {
+  #omg-theme-picker {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------------------------- dark and light */
+
+/* keep the site's own type: the omg themes switch it to Overpass */
+html[data-theme="dark"] body,
+html[data-theme="light"] body {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+/* the site's links have a blue background, made for the blue theme only */
+html[data-theme="dark"] a,
+html[data-theme="dark"] a:visited,
+html[data-theme="dark"] a:hover,
+html[data-theme="light"] a,
+html[data-theme="light"] a:visited,
+html[data-theme="light"] a:hover {
+  background-color: transparent;
+}
+
+/* the top bar stays black: its links keep their light blue (the themes'
+   a:visited rule, loaded after me.css, turned visited ones navy) */
+html[data-theme="dark"] .nav > a,
+html[data-theme="dark"] .nav > a:visited,
+html[data-theme="light"] .nav > a,
+html[data-theme="light"] .nav > a:visited {
+  color: #92cddc;
+  background-color: #1a1a1a !important;
+}
+html[data-theme="dark"] .nav > a:hover,
+html[data-theme="light"] .nav > a:hover {
+  color: #ff9900;
+}
+
+/* headings: the body's line-height (1.4em = 28px) is inherited as a fixed size,
+   too short for big text: in dark, the gradient text (background-clip: text)
+   lost the bottom of its descenders (the "g" of "Widgets") */
+html[data-theme="dark"] h2,
+html[data-theme="light"] h2 {
+  line-height: 1.3;
+}
+
+/* cards: the theme's colors instead of the blue ones */
+html[data-theme="dark"] .cards > div,
+html[data-theme="light"] .cards > div {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+}
+
+/* home page: the vertical section titles keep their own colors (--c1 to --c7)
+   instead of the dark theme's white-to-orange gradient on every h2 */
+html[data-theme="dark"] .sTitle {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+/* the section title shown when hovering a dot of the left menu: on the blue
+   background (#2b88d2) only in the blue theme, on the page's color otherwise */
+html[data-theme="dark"] .c7-dots > a:hover > .dTitle > span {
+  background-color: #1a212d;
+}
+html[data-theme="light"] .c7-dots > a:hover > .dTitle > span {
+  background-color: #fdfdff;
+}
+/* Code's navy (--c6) can't be read on the dark background: same hue, lighter */
+html[data-theme="dark"] .c6 .sTitle {
+  color: #7986cb;
+}
+
+/* ---------------------------------------------------------------- light */
+
+html[data-theme="light"] body {
+  color: #1a212d;
+  /* light.css paints the body over the left bar (bg0.png) drawn on html */
+  background-color: transparent;
+}
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4 {
+  color: #1a212d;
+  -webkit-text-fill-color: currentColor;
+  background: none;
+}
+html[data-theme="light"] footer {
+  color: #52617a;
+}
+html[data-theme="light"] footer:hover {
+  color: #1a212d;
+}
+
+/* ---------------------------------------------------------------- page specifics */
+
+/* site map: its links have a blue background (!important in sitemap.css) */
+html[data-theme="dark"] .sitemap .cards a,
+html[data-theme="light"] .sitemap .cards a {
+  background-color: transparent !important;
+}
+/* the letters shown over the braille alphabet on hover are black
+   (!important in home.css): light on the dark theme */
+html[data-theme="dark"] #alphabet-braille {
+  color: #e6ecf5 !important;
+}
+/* the GitHub network graph (transparent, light lines) on black in light mode */
+html[data-theme="light"] .git-graph {
+  background-color: black;
+  padding: 10px;
+  box-sizing: border-box; /* the padding stays within its max-width */
+}
+/* braille, drawn with white dots (braille-white.gif): dark dots on white */
+html[data-theme="light"] .br {
+  filter: invert(1) brightness(0.35);
+}
+/* quotes: the author's name is bisque */
+html[data-theme="light"] .cards.quotes > div > div {
+  color: #8a5a00;
+}
+/* favorite graphic novels: author and pages in light colors */
+html[data-theme="light"] .cards.comics-favs .author {
+  color: #7a5a1e;
+}
+html[data-theme="light"] .cards.comics-favs .pages {
+  color: #52617a;
+}
+
+/* the dark theme fills every svg in beige: give the toggle's icons back their
+   own color (the selected one in orange) and the spiral its outline only */
+#omg-theme-picker svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+#omg-theme-picker svg[fill="none"] {
+  fill: none;
+}
