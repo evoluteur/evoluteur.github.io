@@ -37,9 +37,9 @@ const mediaList = {
       url: "https://evoluteur.github.io/mandala-maker/",
     },
     {
-      id: "tibetan-singing-bowls",
-      title: "Tibetan Singing Bowls",
-      url: "https://evoluteur.github.io/tibetan-singing-bowls/",
+      id: "sashiko-maker",
+      title: "Sashiko Maker",
+      url: "https://evoluteur.github.io/sashiko-maker/",
     },
     {
       id: "platonic-solids",
@@ -52,6 +52,11 @@ const mediaList = {
       url: "https://evoluteur.github.io/sacred-geometry/#flower",
     },
     {
+      id: "enso-maker",
+      title: "Enso Maker",
+      url: "https://evoluteur.github.io/enso-maker/",
+    },
+    {
       id: "motivational-numerology",
       title: "Motivational Numerology",
       url: "https://evoluteur.github.io/motivational-numerology/",
@@ -60,6 +65,16 @@ const mediaList = {
       id: "healing-frequencies",
       title: "Healing Frequencies",
       url: "https://evoluteur.github.io/healing-frequencies",
+    },
+    {
+      id: "zen-garden",
+      title: "Zen Garden",
+      url: "https://evoluteur.github.io/zen-garden/",
+    },
+    {
+      id: "tibetan-singing-bowls",
+      title: "Tibetan Singing Bowls",
+      url: "https://evoluteur.github.io/tibetan-singing-bowls/",
     },
     {
       id: "react-morph-charts",
