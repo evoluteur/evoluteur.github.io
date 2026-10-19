@@ -404,7 +404,7 @@
   <url>
     <loc>https://evoluteur.github.io/spiral-gallery/</loc>
     <lastmod>2026-10-08</lastmod>
-    <priority>0.65</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/cymatics/</loc>
@@ -449,6 +449,36 @@
   <url>
     <loc>https://evoluteur.github.io/truchet-tiles/</loc>
     <lastmod>2026-10-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/slime-mold/</loc>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/game-of-life/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/lightning-and-coral/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/space-filling-curves/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/apollonian-gasket/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://evoluteur.github.io/mandelbrot-julia/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>
