@@ -136,11 +136,11 @@
     </style>
     <meta
       name="keywords"
-      content="olivier, giulieri, generative art, reaction-diffusion, turing patterns, snowflake, cellular automaton, fractals, mandelbrot, maze generator, truchet tiles, 10 print, space-filling curve, hilbert curve, slime mold, physarum, game of life, conway, diffusion-limited aggregation, lightning, julia set, apollonian gasket, labyrinth, harmonograph, lissajous, cymatics, chladni figures, golden angle, spirals, islamic patterns, girih, kolam, kumiko, sashiko, celtic knot, rose window, sacred geometry, flower of life, mandala, sri yantra, enso, zen garden"
+      content="olivier, giulieri, generative art, reaction-diffusion, turing patterns, snowflake, cellular automaton, fractals, mandelbrot, maze generator, truchet tiles, 10 print, space-filling curve, hilbert curve, slime mold, physarum, game of life, conway, diffusion-limited aggregation, lightning, julia set, apollonian gasket, boids, murmuration, labyrinth, harmonograph, lissajous, cymatics, chladni figures, golden angle, spirals, islamic patterns, girih, kolam, kumiko, sashiko, celtic knot, rose window, sacred geometry, flower of life, mandala, sri yantra, enso, zen garden"
     />
     <meta
       name="description"
-      content="Generative Art: flow fields, strange attractors, Turing patterns, slime molds, the Game of Life, lightning and coral, snowflakes, the Mandelbrot set and other fractals, mazes and labyrinths, Truchet tiles, space-filling curves, harmonographs, Islamic patterns, kolams, Celtic knots, mandalas and sacred geometry, drawn live in the browser."
+      content="Generative Art: flow fields, strange attractors, Turing patterns, slime molds, the Game of Life, lightning and coral, flocks of birds, snowflakes, the Mandelbrot set and other fractals, mazes and labyrinths, Truchet tiles, space-filling curves, harmonographs, Islamic patterns, kolams, Celtic knots, mandalas and sacred geometry, drawn live in the browser."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -149,7 +149,7 @@
     />
     <meta
       property="og:description"
-      content="Generative Art: flow fields, strange attractors, Turing patterns, slime molds, the Game of Life, lightning and coral, snowflakes, the Mandelbrot set and other fractals, mazes and labyrinths, Truchet tiles, space-filling curves, harmonographs, Islamic patterns, kolams, Celtic knots, mandalas and sacred geometry, drawn live in the browser."
+      content="Generative Art: flow fields, strange attractors, Turing patterns, slime molds, the Game of Life, lightning and coral, flocks of birds, snowflakes, the Mandelbrot set and other fractals, mazes and labyrinths, Truchet tiles, space-filling curves, harmonographs, Islamic patterns, kolams, Celtic knots, mandalas and sacred geometry, drawn live in the browser."
     />
     <meta
       property="og:url"
@@ -175,11 +175,11 @@
         download the result.
       </p>
 
-      <h2>Simulations</h2>
+      <h2 id="simulations">Simulations</h2>
       <p class="section-intro">
         Nature's patterns from simple rules: vibrating sand, ice, currents,
-        chaos, chemistry, coastlines, the sunflower, a slime mold, living
-        cells, coral and lightning.
+        chaos, chemistry, the sunflower, a slime mold, living
+        cells, coral and lightning, and flocks of birds.
       </p>
       <div class="cards projects">
         <div class="gh">
@@ -399,48 +399,6 @@
           <h3>
             <a
               class="extlink"
-              href="https://evoluteur.github.io/infinite-coastlines/"
-              target="_blank"
-              >Infinite Coastlines</a
-            >
-          </h3>
-          <a
-            class="card-pix"
-            href="https://evoluteur.github.io/infinite-coastlines/"
-            target="_blank"
-            rel="noopener"
-            tabindex="-1"
-            aria-hidden="true"
-          >
-            <img
-              src="pix/code/infinite-coastlines.png"
-              alt=""
-              loading="lazy"
-              onerror="this.parentNode.style.display = 'none'"
-            />
-          </a>
-          <p>
-            An interactive guide to the coastline paradox and fractal dimension:
-            shrinking rulers, the Koch snowflake and the Mandelbrot set.
-          </p>
-          <a
-            class="card-gh"
-            href="https://github.com/evoluteur/infinite-coastlines"
-            target="_blank"
-            rel="noopener"
-            title="Infinite Coastlines on GitHub"
-            aria-label="Infinite Coastlines on GitHub"
-            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-              /></svg
-          ></a>
-        </div>
-        <div class="gh">
-          <h3>
-            <a
-              class="extlink"
               href="https://evoluteur.github.io/sunflower-golden-angle/"
               target="_blank"
               >Sunflower Golden Angle</a
@@ -513,6 +471,47 @@
             rel="noopener"
             title="Slime Mold on GitHub"
             aria-label="Slime Mold on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/murmurations/"
+              target="_blank"
+              >Murmurations</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/murmurations/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/murmurations.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            Thousands of birds follow three simple rules and turn as one, like starlings at dusk. Your pointer is the falcon.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/murmurations"
+            target="_blank"
+            rel="noopener"
+            title="Murmurations on GitHub"
+            aria-label="Murmurations on GitHub"
             ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
               <path
                 fill="currentColor"
@@ -604,7 +603,7 @@
         </div>
       </div>
 
-      <h2>Curves and mazes</h2>
+      <h2 id="curves-and-mazes">Curves and mazes</h2>
       <p class="section-intro">Paths drawn by algorithms, random tiles and pendulums.</p>
       <div class="cards projects">
         <div class="gh">
@@ -862,11 +861,53 @@
         </div>
       </div>
 
-      <h2>Fractals</h2>
+      <h2 id="fractals">Fractals</h2>
       <p class="section-intro">
-        Detail at every scale, from a formula repeated or circles fitted into gaps.
+        Detail at every scale: coastlines measured with ever smaller rulers, a formula repeated, circles fitted into gaps.
       </p>
       <div class="cards projects">
+        <div class="gh">
+          <h3>
+            <a
+              class="extlink"
+              href="https://evoluteur.github.io/infinite-coastlines/"
+              target="_blank"
+              >Infinite Coastlines</a
+            >
+          </h3>
+          <a
+            class="card-pix"
+            href="https://evoluteur.github.io/infinite-coastlines/"
+            target="_blank"
+            rel="noopener"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <img
+              src="pix/code/infinite-coastlines.png"
+              alt=""
+              loading="lazy"
+              onerror="this.parentNode.style.display = 'none'"
+            />
+          </a>
+          <p>
+            An interactive guide to the coastline paradox and fractal dimension:
+            shrinking rulers, the Koch snowflake and the Mandelbrot set.
+          </p>
+          <a
+            class="card-gh"
+            href="https://github.com/evoluteur/infinite-coastlines"
+            target="_blank"
+            rel="noopener"
+            title="Infinite Coastlines on GitHub"
+            aria-label="Infinite Coastlines on GitHub"
+            ><svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+        </div>
         <div class="gh">
           <h3>
             <a
@@ -951,7 +992,7 @@
         </div>
       </div>
 
-      <h2>Patterns from traditions</h2>
+      <h2 id="patterns-from-traditions">Patterns from traditions</h2>
       <p class="section-intro">
         The rules of artisans, from Islamic tilings to Japanese lattices,
         rebuilt as generators.
@@ -1211,7 +1252,7 @@
         </div>
       </div>
 
-      <h2>Sacred geometry and Zen</h2>
+      <h2 id="sacred-geometry-and-zen">Sacred geometry and Zen</h2>
       <p class="section-intro">
         Circles, triangles and symmetry, drawn to scale or by hand.
       </p>

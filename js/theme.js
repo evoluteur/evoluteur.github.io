@@ -87,3 +87,32 @@
     });
   });
 })();
+
+/*
+  Section links (page.html#fractals): the pictures above the section load
+  after the jump and push it down, so keep it in place as they load, until
+  the visitor scrolls.
+*/
+(function () {
+  if (!location.hash) return;
+  document.addEventListener("DOMContentLoaded", function () {
+    var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!target) return;
+    var moved = false;
+    ["wheel", "touchmove", "keydown", "mousedown"].forEach(function (e) {
+      window.addEventListener(e, function () {
+        moved = true;
+      }, { once: true, passive: true });
+    });
+    var align = function () {
+      if (!moved) target.scrollIntoView();
+    };
+    document.querySelectorAll("img").forEach(function (img) {
+      if (!img.complete) img.addEventListener("load", align);
+    });
+    window.addEventListener("load", align);
+    setTimeout(function () {
+      moved = true;
+    }, 4000);
+  });
+})();
