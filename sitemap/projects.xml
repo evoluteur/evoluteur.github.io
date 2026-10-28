@@ -108,7 +108,7 @@
   <url>
     <loc>https://evoluteur.github.io/braille-quiz/</loc>
     <lastmod>2026-10-16</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/repo-atlas/</loc>
@@ -189,7 +189,7 @@
   <url>
     <loc>https://evoluteur.github.io/scuba-diving-log-book/</loc>
     <lastmod>2026-01-25</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/van-tharp-marble-game/</loc>
@@ -279,7 +279,7 @@
   <url>
     <loc>https://evoluteur.github.io/music-of-the-spheres/</loc>
     <lastmod>2026-10-04</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/music-of-the-spheres/about.html</loc>
@@ -349,7 +349,7 @@
   <url>
     <loc>https://evoluteur.github.io/kumiko-maker/</loc>
     <lastmod>2026-10-06</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/sashiko-maker/</loc>
@@ -359,7 +359,7 @@
   <url>
     <loc>https://evoluteur.github.io/reaction-diffusion/</loc>
     <lastmod>2026-10-04</lastmod>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/snowflake-grower/</loc>
@@ -404,7 +404,7 @@
   <url>
     <loc>https://evoluteur.github.io/spiral-gallery/</loc>
     <lastmod>2026-10-08</lastmod>
-    <priority>0.7</priority>
+    <priority>0.74</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/cymatics/</loc>
@@ -414,7 +414,7 @@
   <url>
     <loc>https://evoluteur.github.io/cymatics/modes.html</loc>
     <lastmod>2026-09-26</lastmod>
-    <priority>0.6</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/cymatics/math.html</loc>
@@ -474,7 +474,7 @@
   <url>
     <loc>https://evoluteur.github.io/apollonian-gasket/</loc>
     <lastmod>2026-10-18</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://evoluteur.github.io/mandelbrot-julia/</loc>
@@ -482,8 +482,13 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://evoluteur.github.io/buddhabrot/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.72</priority>
+  </url>
+  <url>
     <loc>https://evoluteur.github.io/murmurations/</loc>
     <lastmod>2026-10-19</lastmod>
-    <priority>0.7</priority>
+    <priority>0.72</priority>
   </url>
 </urlset>
