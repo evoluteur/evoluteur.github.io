@@ -58,7 +58,30 @@ function otherMe(direction) {
   } else if (pixMeIdx > maxIdx) {
     pixMeIdx = 0;
   }
-  pix.src = `pix/olivier/${pixMe[pixMeIdx]}.webp`;
+  const src = `pix/olivier/${pixMe[pixMeIdx]}.webp`;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce || !pix.animate) {
+    pix.src = src;
+    return;
+  }
+  // Card flip in the arrow's direction; preload so there's no blank frame
+  const sign = direction === "+" ? 1 : -1;
+  const next = new Image();
+  next.src = src;
+  const half = (from, to, easing) =>
+    pix.animate(
+      [{ transform: `perspective(800px) rotateY(${from}deg)` },
+       { transform: `perspective(800px) rotateY(${to}deg)` }],
+      { duration: 200, easing }
+    ).finished;
+  const ready = next.decode ? next.decode().catch(() => {}) : Promise.resolve();
+  pix.getAnimations().forEach((a) => a.finish());
+  const token = (otherMe.token = (otherMe.token || 0) + 1);
+  Promise.all([half(0, -90 * sign, "ease-in"), ready]).then(() => {
+    if (token !== otherMe.token) return; // a newer click took over
+    pix.src = src;
+    return half(90 * sign, 0, "ease-out");
+  });
 }
 function more(id) {
   const elem = $(id + "_x");
