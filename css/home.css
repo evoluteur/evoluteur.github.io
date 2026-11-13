@@ -1206,3 +1206,18 @@ section.c0 {
     opacity: 0;
   }
 }
+
+/* Nav dots: active section */
+.c7-dots > a > div {
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.c7-dots > a.active > div {
+  box-shadow:
+    0 0 0 1.5px white,
+    0 0 6px 2px rgba(2, 136, 209, 0.5);
+}
+.c7-dots > a.active:not(:hover) > div {
+  transform: scale(1.4);
+}

@@ -171,6 +171,11 @@ function setupHomePage() {
   }
   document.querySelector(".arrow-left")?.addEventListener("click", () => otherMe("-"));
   document.querySelector(".arrow-right")?.addEventListener("click", () => otherMe("+"));
+  const ogPix = $("og-pix");
+  if (ogPix) {
+    ogPix.style.cursor = "pointer";
+    ogPix.addEventListener("click", () => otherMe("+"));
+  }
   const omImg = document.querySelector(".om");
   if (omImg) {
     omImg.addEventListener("mouseover", playOm);
@@ -338,3 +343,46 @@ function helloTypewriter() {
 }
 
 document.addEventListener("DOMContentLoaded", helloTypewriter);
+
+// Nav dots: highlight the dot of the section currently in view
+function navDotsSpy() {
+  const links = [...document.querySelectorAll(".c7-dots > a[href^='#']")];
+  const items = links
+    .map((a) => ({ a, sec: document.getElementById(a.getAttribute("href").slice(1)) }))
+    .filter((x) => x.sec);
+  if (!items.length) return;
+  let current = null;
+  const update = () => {
+    // current = last section whose top passed 40% of the screen (else the first one)
+    const line = window.innerHeight * 0.4;
+    let active = items[0];
+    items.forEach((x) => {
+      if (x.sec.getBoundingClientRect().top <= line) active = x;
+    });
+    // at the very bottom, select the last section
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+      active = items[items.length - 1];
+    }
+    if (active === current) return;
+    current = active;
+    items.forEach(({ a }) => {
+      a.classList.toggle("active", a === active.a);
+      if (a === active.a) a.setAttribute("aria-current", "true");
+      else a.removeAttribute("aria-current");
+    });
+  };
+  let ticking = false;
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      ticking = false;
+      update();
+    });
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  update();
+}
+
+document.addEventListener("DOMContentLoaded", navDotsSpy);
