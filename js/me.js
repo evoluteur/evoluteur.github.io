@@ -281,3 +281,37 @@ function stopOm() {
   omSound.pause();
   omSound.currentTime = 0;
 }
+
+// "Hello" in many languages (typewriter effect)
+const hellos = [
+  "Hello", "Bonjour", "Hola", "Ciao", "Hallo", "Olá", "Привет",
+  "你好", "안녕", "नमस्ते", "Merhaba", "Hej", "Aloha", "שלום", "Salut",
+];
+
+function helloTypewriter() {
+  const el = document.getElementById("hello-word");
+  if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  // Split into graphemes so scripts like Devanagari type correctly
+  const seg = window.Intl?.Segmenter ? new Intl.Segmenter() : null;
+  const chars = (w) => (seg ? [...seg.segment(w)].map((s) => s.segment) : [...w]);
+  let i = 0;
+  el.classList.add("typing");
+  const erase = () => {
+    const c = chars(el.textContent);
+    if (c.length) {
+      el.textContent = c.slice(0, -1).join("");
+      setTimeout(erase, 70);
+    } else {
+      i = (i + 1) % hellos.length;
+      setTimeout(() => type(chars(hellos[i]), 0), 300);
+    }
+  };
+  const type = (c, n) => {
+    el.textContent = c.slice(0, n + 1).join("");
+    if (n + 1 < c.length) setTimeout(() => type(c, n + 1), 120);
+    else setTimeout(erase, 2000);
+  };
+  setTimeout(erase, 2500);
+}
+
+document.addEventListener("DOMContentLoaded", helloTypewriter);

@@ -5,6 +5,9 @@
 
 .home {
   padding-left: 8px;
+  #omg-theme-picker.floating {
+    position: absolute;
+  }
   & .row-label {
     width: 70px;
     flex-shrink: 0;
@@ -575,8 +578,8 @@ section.c0 {
 }
 .hello {
   background-color: #03a9f4;
-  width: 12vw;
-  height: 12vw;
+  width: 15vw;
+  height: 15vw;
   margin-left: 10px;
 }
 .helloworld {
@@ -1181,5 +1184,25 @@ section.c0 {
   }
   50% {
     transform: scale(2);
+  }
+}
+
+/* "Hello" typewriter caret */
+#hello-word {
+  white-space: nowrap;
+}
+#hello-word.typing::after {
+  content: "";
+  display: inline-block;
+  width: 0.06em;
+  height: 0.9em;
+  margin-left: 0.05em;
+  vertical-align: -0.05em;
+  background: white;
+  animation: caret-blink 1s steps(1) infinite;
+}
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
   }
 }
