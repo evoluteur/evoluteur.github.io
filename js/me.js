@@ -386,3 +386,80 @@ function navDotsSpy() {
 }
 
 document.addEventListener("DOMContentLoaded", navDotsSpy);
+
+// Go board: replace the photo with an SVG board and place the stones one by one
+function goBoard() {
+  const img = document.querySelector("img.goban");
+  if (!img) return;
+  const NS = "http://www.w3.org/2000/svg";
+  const W = 260, H = 140; // wide and short
+  const gx = (c) => 87.3 + 33.3 * c;
+  const gy = (r) => 8.3 + 31.7 * r;
+  // [color, col, row] — classic 3-3 invasion joseki in the top-right corner
+  // (col 5 = right edge, row 0 = top edge)
+  const moves = [
+    ["b", 2, 3], // Q16  4-4 point
+    ["w", 3, 2], // R17  3-3 invasion
+    ["b", 3, 3], // R16  block
+    ["w", 2, 2], // Q17  crawl
+    ["b", 1, 2], // P17  hane
+    ["w", 1, 1], // P18  hane
+    ["b", 0, 1], // O18  hane
+    ["w", 2, 1], // Q18  connect (Black keeps sente)
+  ];
+  let h = `<defs>
+    <linearGradient id="go-wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c48a"/><stop offset="1" stop-color="#d4a464"/>
+    </linearGradient>
+    <radialGradient id="go-b" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#666"/><stop offset="1" stop-color="#111"/>
+    </radialGradient>
+    <radialGradient id="go-w" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#cfcfcf"/>
+    </radialGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="url(#go-wood)"/>`;
+  for (let i = -2; i < 6; i++) {
+    h += `<line x1="${gx(i)}" y1="${gy(0)}" x2="${gx(i)}" y2="${H}" stroke="#3a2a15" stroke-width="0.8"/>`;
+  }
+  for (let i = 0; i < 5; i++) {
+    h += `<line x1="0" y1="${gy(i)}" x2="${gx(5)}" y2="${gy(i)}" stroke="#3a2a15" stroke-width="0.8"/>`;
+  }
+  moves.forEach(([c, col, row], i) => {
+    const x = gx(col), y = gy(row);
+    h += `<g class="go-stone" style="--d:${i * 0.35}s">
+      <circle cx="${x + 1.5}" cy="${y + 2}" r="15" fill="rgba(0,0,0,0.25)"/>
+      <circle cx="${x}" cy="${y}" r="15" fill="url(#go-${c})"/></g>`;
+  });
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("class", "goban go-svg");
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", "Go board: the 3-3 invasion joseki played move by move");
+  svg.innerHTML = h;
+  img.replaceWith(svg);
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    svg.classList.add("go-static");
+    return;
+  }
+  const play = () => {
+    svg.classList.remove("go-play");
+    void svg.getBoundingClientRect(); // restart the animation
+    svg.classList.add("go-play");
+  };
+  svg.addEventListener("click", play);
+  if (window.IntersectionObserver) {
+    const io = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        play();
+        io.disconnect();
+      }
+    }, { threshold: 0.6 });
+    io.observe(svg);
+  } else {
+    play();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", goBoard);

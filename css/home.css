@@ -1221,3 +1221,36 @@ section.c0 {
 .c7-dots > a.active:not(:hover) > div {
   transform: scale(1.4);
 }
+
+/* Go board animation */
+.go-svg {
+  width: 260px;
+  height: 140px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.go-stone {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.go-static .go-stone {
+  opacity: 1;
+}
+.go-play .go-stone {
+  animation: go-drop 0.35s var(--d) both;
+}
+@keyframes go-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(1.3);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
