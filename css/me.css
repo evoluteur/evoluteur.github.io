@@ -115,11 +115,53 @@ td {
 }
 .cards.quotes {
   > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 300px;
     min-width: 200px;
+    padding: 52px 24px 18px;
+    font-size: 1.05em;
+    line-height: 1.45;
+    /* big decorative opening quote mark */
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: 10px;
+      left: 16px;
+      font: 700 5rem/1 Georgia, "Times New Roman", serif;
+      color: var(--primary-color);
+      opacity: 0.6;
+    }
+    /* the author */
     > div {
-      margin-top: 10px;
+      margin-top: 16px;
       color: bisque;
+      text-align: right;
+      font-size: 0.72em;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      &::before {
+        content: "\2014\00a0";
+      }
+    }
+    /* the first quote is featured: full width, larger, centered */
+    &:first-child {
+      flex-basis: 100%;
+      padding: 76px 10% 28px;
+      font-size: 1.5em;
+      text-align: center;
+      &::before {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 7rem;
+      }
+      > div {
+        text-align: center;
+        font-size: 0.55em;
+      }
     }
   }
 }
