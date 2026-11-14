@@ -565,7 +565,7 @@ section.c0 {
   height: 525px;
   margin-bottom: 40px;
   > div {
-    margin: 100px;
+    margin: 60px 100px 100px;
     max-width: 400px;
     > p > a {
       background-color: #7b1fa2 !important;
@@ -662,6 +662,8 @@ section.c0 {
 }
 #inspiration2 img {
   width: 187px;
+  height: 140px;
+  aspect-ratio: 187 / 140; /* same shape for all, even non-matching images */
 }
 #omg-art2 {
   min-height: 220px;
@@ -675,6 +677,7 @@ section.c0 {
 }
 #recipes_learning2 {
   position: relative;
+  min-height: 260px; /* room for the .jcircle (top 70px + 180px) */
   > .pixTitleHolder {
     z-index: 5;
   }
@@ -799,6 +802,9 @@ section.c0 {
     filter: none;
   }
   .home .row-label,
+  #recipes_learning2 {
+    min-height: 0;
+  }
   .jcircle {
     display: none;
   }
@@ -1253,4 +1259,9 @@ section.c0 {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+/* Stories: keep the dragon positioned within the movies part */
+.stories-movies {
+  position: relative;
 }

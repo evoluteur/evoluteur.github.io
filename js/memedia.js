@@ -20,6 +20,87 @@ const shuffle = (arr) => {
 };
 
 const mediaList = {
+  traditions: [
+    {
+      id: "mandala-maker",
+      pix: "mandala-eso",
+      title: "Mandala Maker",
+      url: "https://evoluteur.github.io/mandala-maker/",
+    },
+    {
+      id: "islamic-patterns",
+      title: "Islamic Patterns",
+      url: "https://evoluteur.github.io/islamic-patterns/",
+    },
+    {
+      id: "kolam-maker",
+      title: "Kolam Maker",
+      url: "https://evoluteur.github.io/kolam-maker/",
+    },
+    {
+      id: "celtic-knot-maker",
+      title: "Celtic Knot Maker",
+      url: "https://evoluteur.github.io/celtic-knot-maker/",
+    },
+    {
+      id: "rose-window-maker",
+      title: "Rose Window Maker",
+      url: "https://evoluteur.github.io/rose-window-maker/",
+    },
+    {
+      id: "kumiko-maker",
+      title: "Kumiko Maker",
+      url: "https://evoluteur.github.io/kumiko-maker/",
+    },
+    {
+      id: "sashiko-maker",
+      title: "Sashiko Maker",
+      url: "https://evoluteur.github.io/sashiko-maker/",
+    },
+    {
+      id: "sacred-geometry",
+      pix: "flower-of-lfe",
+      title: "Sacred Geometry",
+      url: "https://evoluteur.github.io/sacred-geometry/",
+    },
+  ],
+  sound: [
+    {
+      id: "cymatics",
+      title: "Cymatics",
+      url: "https://evoluteur.github.io/cymatics/",
+    },
+    {
+      id: "music-of-the-spheres",
+      title: "Music of the Spheres",
+      url: "https://evoluteur.github.io/music-of-the-spheres/",
+    },
+    {
+      id: "harmonograph-maker",
+      title: "Harmonograph Maker",
+      url: "https://evoluteur.github.io/harmonograph-maker/",
+    },
+    {
+      id: "tibetan-singing-bowls",
+      title: "Tibetan Singing Bowls",
+      url: "https://evoluteur.github.io/tibetan-singing-bowls/",
+    },
+    {
+      id: "crystal-singing-bowls",
+      title: "Crystal Singing Bowls",
+      url: "https://evoluteur.github.io/crystal-singing-bowls/",
+    },
+    {
+      id: "binaural-beats",
+      title: "Binaural Beats",
+      url: "https://evoluteur.github.io/binaural-beats/",
+    },
+    {
+      id: "healing-frequencies",
+      title: "Healing Frequencies",
+      url: "https://evoluteur.github.io/healing-frequencies/",
+    },
+  ],
   code: [
     {
       id: "meet-the-fans",
@@ -47,11 +128,6 @@ const mediaList = {
       url: "https://evoluteur.github.io/platonic-solids/",
     },
     {
-      id: "sacred-geometry",
-      title: "Sacred Geometry",
-      url: "https://evoluteur.github.io/sacred-geometry/#flower",
-    },
-    {
       id: "enso-maker",
       title: "Enso Maker",
       url: "https://evoluteur.github.io/enso-maker/",
@@ -62,19 +138,9 @@ const mediaList = {
       url: "https://evoluteur.github.io/motivational-numerology/",
     },
     {
-      id: "healing-frequencies",
-      title: "Healing Frequencies",
-      url: "https://evoluteur.github.io/healing-frequencies",
-    },
-    {
       id: "zen-garden",
       title: "Zen Garden",
       url: "https://evoluteur.github.io/zen-garden/",
-    },
-    {
-      id: "tibetan-singing-bowls",
-      title: "Tibetan Singing Bowls",
-      url: "https://evoluteur.github.io/tibetan-singing-bowls/",
     },
     {
       id: "react-morph-charts",
@@ -566,6 +632,12 @@ const mediaList = {
       url: "https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Mandel_zoom_15_one_island.jpg",
     },
     {
+      id: "buddhabrot",
+      src: "pix/code/buddhabrot.png",
+      title: "Buddhabrot",
+      url: "https://evoluteur.github.io/buddhabrot/",
+    },
+    {
       id: "snowflake",
       title: "Snowflake",
       url: "http://www.snowcrystals.com/photos/photos.html",
@@ -649,7 +721,7 @@ const mediaList = {
     {
       id: "chakras",
       title: "Meditation",
-      url: "https://www.meetup.com/find/events/?allMeetups=false&keywords=meditation",
+      url: "fun/meditation.html",
     },
     {
       id: "sai-maa",

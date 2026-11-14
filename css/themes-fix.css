@@ -128,7 +128,8 @@ html[data-theme="light"] .c7-dots > a:hover > .dTitle > span {
   background-color: #fdfdff;
 }
 /* Code's navy (--c6) can't be read on the dark background: same hue, lighter */
-html[data-theme="dark"] .c6 .sTitle {
+html[data-theme="dark"] .c6 .sTitle,
+html[data-theme="dark"] .c7-dots-6 > .dTitle {
   color: #7986cb;
 }
 

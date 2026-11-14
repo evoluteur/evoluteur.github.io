@@ -15,13 +15,15 @@ const pixAreas = [
   "art",
   "omg-art",
   "meditation",
+  "sound",
+  "traditions",
 ];
 const brTitles = [
   { id: "code", br: "Code" },
-  { id: "comics", br: "Graphic Novels" },
-  { id: "recipes", br: "Cooking" },
-  { id: "movies", br: "Movies" },
-  { id: "inspiration", br: "Inspiration" },
+  { id: "patterns", br: "Patterns" },
+  { id: "making", br: "Making" },
+  { id: "stories", br: "Stories" },
+  { id: "sound", br: "Sound" },
   { id: "meditation", br: "Meditation" },
   { id: "name", br: "your name" },
   { id: "congrats", br: "Congratulations!" },
@@ -36,6 +38,8 @@ const brTitles = [
 ];
 const pixFormat = {
   code: ".png",
+  sound: ".png",
+  traditions: ".png",
   recipes: ".webp",
   inspiration: ".webp",
   meditation: ".webp",
@@ -98,6 +102,9 @@ const pixDir = (id) => {
   if (id === "inspiration") {
     return "pix/fractals/";
   }
+  if (id === "sound" || id === "traditions") {
+    return "pix/code/";
+  }
   return id.startsWith("comic") ? "pix/comics/" : `pix/${id}/`;
 };
 const cLink = (m) => m.url || "http://www.imdb.com/title/" + m.imdb;
@@ -121,7 +128,7 @@ function mosaic(id, more) {
     arrListP,
     pixPath = pixDir(id),
     imageLink = function (m) {
-      let pix = `<img src="${pixPath + m.id + ext}" alt="${m.title}" loading="lazy" />`;
+      let pix = `<img src="${m.src || pixPath + (m.pix || m.id) + ext}" alt="${m.title}" loading="lazy" />`;
       if (m.title) {
         pix += `<div class="pixTitle">${m.title}</div>`;
       }
