@@ -11,7 +11,9 @@
     text-decoration: none !important;
   }
   .cube {
-    text-align: center;
+    /* fills the rest of the first row, so the section cards start below */
+    flex: 1 0 55%;
+    text-align: left;
     border: 0 !important;
     background-color: transparent;
     > img {
@@ -19,10 +21,53 @@
       height: 314px;
     }
   }
+  /* one card per home page section, in its color */
+  .cards > div:not(.card-home, .cube) {
+    width: 300px;
+    max-width: 420px;
+    > h2 {
+      margin-top: 0.3em;
+    }
+  }
+  h3 {
+    font-size: 1em;
+    margin: 1.2em 0 0.3em;
+    > a {
+      font-weight: inherit;
+    }
+  }
+  ul {
+    margin: 0.3em 0;
+    padding-left: 22px;
+  }
+  ul.cols {
+    columns: 2 150px;
+    column-gap: 40px;
+  }
+  .c1 {
+    border-left: 8px solid var(--c1) !important;
+  }
+  .c2 {
+    border-left: 8px solid var(--c2) !important;
+  }
+  .c3 {
+    border-left: 8px solid var(--c3) !important;
+  }
+  .c4 {
+    border-left: 8px solid var(--c4) !important;
+  }
+  .c5 {
+    border-left: 8px solid var(--c5) !important;
+    flex-basis: 520px;
+    max-width: none !important;
+  }
+  .c6 {
+    border-left: 8px solid var(--c6) !important;
+  }
   .cab {
     top: 270px;
-    /* one ride across on page load, then it stays off-screen */
-    animation: cab-ride 10s 1 linear both;
+    /* one ride across on page load, then back to its off-screen start */
+    animation: cab-ride 10s 1 linear;
   }
   @media (prefers-reduced-motion: reduce) {
     .cab {
