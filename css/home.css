@@ -398,6 +398,25 @@ section.c0 {
     animation: dragon-charge 8s 1 linear;
   }
 }
+/* scroll reveals (classes added by scrollReveals in me.js) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px) scale(0.96);
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
+  &.in {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media print {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 /* cab and dragon run once, when scrolled into view (see playOnce in me.js) */
 .home .cab {
   visibility: hidden;
