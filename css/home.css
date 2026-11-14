@@ -391,7 +391,20 @@ section.c0 {
   position: absolute;
   top: 200px;
   z-index: 1001;
-  animation: dragon-charge 8s infinite linear;
+  visibility: hidden;
+  &.play {
+    visibility: visible;
+    animation: dragon-charge 8s 1 linear;
+  }
+}
+/* cab and dragon run once, when scrolled into view (see playOnce in me.js) */
+.home .cab {
+  visibility: hidden;
+  animation: none;
+  &.play {
+    visibility: visible;
+    animation: cab-ride 10s 1 linear;
+  }
 }
 
 @keyframes dragon-charge {

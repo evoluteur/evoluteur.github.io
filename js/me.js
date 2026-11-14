@@ -470,3 +470,33 @@ function goBoard() {
 }
 
 document.addEventListener("DOMContentLoaded", goBoard);
+
+// Cab and dragon: one pass each, the first time their spot scrolls into view
+function playOnce() {
+  if (
+    !window.IntersectionObserver ||
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  )
+    return;
+  [
+    [".cab", "#stories-braille"],
+    [".dragon", ".stories-movies"],
+  ].forEach(([sel, triggerSel]) => {
+    const el = document.querySelector(sel);
+    const trigger = document.querySelector(triggerSel);
+    if (!el || !trigger) return;
+    el.addEventListener("animationend", () => el.classList.remove("play"));
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          el.classList.add("play");
+          io.disconnect();
+        }
+      },
+      { threshold: 0.5 },
+    );
+    io.observe(trigger);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", playOnce);

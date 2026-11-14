@@ -21,5 +21,12 @@
   }
   .cab {
     top: 270px;
+    /* one ride across on page load, then it stays off-screen */
+    animation: cab-ride 10s 1 linear both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cab {
+      animation: none;
+    }
   }
 }
