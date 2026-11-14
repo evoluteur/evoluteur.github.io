@@ -501,34 +501,7 @@ function playOnce() {
 
 document.addEventListener("DOMContentLoaded", playOnce);
 
-// Scroll reveals: thumbnails fade and rise in as they enter the viewport,
-// staggered within each batch that appears together
-function scrollReveals() {
-  if (
-    !window.IntersectionObserver ||
-    window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  )
-    return;
-  const items = document.querySelectorAll(
-    ".home .pixGroup .pixTitleHolder, .home .pixGroup.pixTitleHolder",
-  );
-  const io = new IntersectionObserver(
-    (entries) => {
-      let i = 0;
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        el.style.transitionDelay = `${Math.min(i++, 12) * 60}ms`;
-        el.classList.add("in");
-        io.unobserve(el);
-      });
-    },
-    { rootMargin: "0px 0px -8% 0px" },
-  );
-  items.forEach((el) => {
-    el.classList.add("reveal");
-    io.observe(el);
-  });
-}
-
-document.addEventListener("DOMContentLoaded", scrollReveals);
+// Scroll reveals for the thumbnails (shared code in theme.js)
+document.addEventListener("DOMContentLoaded", () =>
+  window.omgReveal?.(".home .pixGroup .pixTitleHolder, .home .pixGroup.pixTitleHolder"),
+);

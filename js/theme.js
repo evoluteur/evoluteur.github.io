@@ -116,3 +116,49 @@
     }, 4000);
   });
 })();
+
+/*
+  Scroll reveals: cards and thumbnails fade and rise in as they enter the
+  viewport, staggered within each batch that appears together.
+  Cards are picked up on every page; window.omgReveal(selector) is for
+  content rendered later (the home page thumbnails, see me.js).
+*/
+(function () {
+  var ok =
+    window.IntersectionObserver &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var io =
+    ok &&
+    new IntersectionObserver(
+      function (entries) {
+        var i = 0;
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var el = entry.target;
+          io.unobserve(el);
+          el.style.transitionDelay = Math.min(i++, 12) * 60 + "ms";
+          el.classList.add("in");
+          // once shown, leave no trace (so hover effects are not delayed)
+          var done = function (e) {
+            if (e && (e.target !== el || e.propertyName !== "opacity")) return;
+            el.removeEventListener("transitionend", done);
+            el.classList.remove("reveal", "in");
+            el.style.transitionDelay = "";
+          };
+          el.addEventListener("transitionend", done);
+          setTimeout(done, 2000);
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px" },
+    );
+  window.omgReveal = function (selector) {
+    if (!io) return;
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.classList.add("reveal");
+      io.observe(el);
+    });
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    window.omgReveal(".cards > div");
+  });
+})();
