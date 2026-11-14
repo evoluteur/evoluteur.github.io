@@ -39,7 +39,7 @@
     border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
     background-color: color-mix(in srgb, currentColor 12%, transparent);
     font-size: 0.9em;
-    > span {
+    > span:first-child {
       font-weight: 400;
       color: var(--primary-color);
       margin-right: 4px;
@@ -156,4 +156,28 @@ ul.checklist {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 0 20px;
+}
+
+/* servings dropdown (built by js/recipe.js) */
+select.recipe-yield {
+  font: inherit;
+  font-weight: 400;
+  color: inherit;
+  padding: 1px 4px;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, currentColor 50%, transparent);
+  background-color: color-mix(in srgb, currentColor 12%, transparent);
+  cursor: pointer;
+  > option {
+    color: #1a1a1a;
+    background-color: white;
+  }
+}
+@media print {
+  select.recipe-yield {
+    appearance: none;
+    border: 0;
+    background: none;
+    padding: 0;
+  }
 }
